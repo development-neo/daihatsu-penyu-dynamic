@@ -21,17 +21,23 @@ class Projects extends Model
 
     public function render() {
 
-        echo 
-        '<style type="text/css">
+        echo '<style type="text/css">
             ._container { width: 1000px; margin: 0px auto; display: block; }
             ._container ._section { width: 100%; display: table; padding: 20px 10px; border: .5px #aaa solid; }
             ._container ._section ._grid{ float: left; padding: 10px 0px; border: .5px #bbb solid; diplay: inherit; }
             ._container ._section .grid-12 { width: 100%; }
-            ._container ._section .grid-6 { width: 50%; }
+            ._container ._section .grid-11 { width: 91.666666666667%; }
+            ._container ._section .grid-10 { width: 83.333333333333%; }
+            ._container ._section .grid-9  { width: 75%; }
+            ._container ._section .grid-8  { width: 66.666666666666%; }
+            ._container ._section .grid-7  { width: 58.333333333333%; }
+            ._container ._section .grid-6  { width: 50%; }
+            ._container ._section .grid-5  { width: 41.666666666667%; }
+            ._container ._section .grid-4  { width: 33.333333333333%; }
+            ._container ._section .grid-3  { width: 25%; }
+            ._container ._section .grid-2  { width: 16.666666666667%; }
+            ._container ._section .grid-1  { width:  8.333333333333%; }
         </style>';
-
-
-
 
         $project = $this->where('status', 1)->first();
         $public = $project->d_publics()->get();
@@ -105,22 +111,13 @@ class Projects extends Model
                         ]);
                         $_code .= '</div>';
                     }
-                    // dd($sections);
                 }
-                // dd($pages->d_sections()->get());
             }
             $_code .= '</div></body>';
         }
         echo $_code;
-        // echo '<pre>';
-        // print_r($data); exit;
-
-        // dd($html);
-
         exit;
-
         $html = $project;
-
         return $html;
 
     }
