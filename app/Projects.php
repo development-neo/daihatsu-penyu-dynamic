@@ -117,6 +117,7 @@ class Projects extends Model
                                         ->get();
                                     foreach($d_components as $list_components) {
                                         array_push($components, [
+                                            'pk' => $list_components->id,
                                             'type' => $list_components->m_type_component()->first()->name,
                                             'id' => $list_components->html_id,
                                             'class' => $list_components->html_class,
@@ -126,6 +127,7 @@ class Projects extends Model
                                     }
                                 }
                                 array_push($grids, [
+                                    'pk' => $list_grids->id,
                                     'length' => $list_grids->length,
                                     'id' => $list_grids->html_id,
                                     'class' => $list_grids->html_class,
@@ -134,6 +136,7 @@ class Projects extends Model
                             }
                         }
                         array_push($data['body']['sections'], [
+                            'pk' => $list_sections->id,
                             'name' => $list_sections->name,
                             'id' => 'id',
                             'class' => 'class',
