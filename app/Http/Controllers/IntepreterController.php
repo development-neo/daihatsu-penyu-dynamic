@@ -74,6 +74,8 @@ class IntepreterController extends Controller
             $string = $this->button($d_components);
         elseif($d_components['type'] == 'link') 
             $string = $this->link($d_components);
+        elseif($d_components['type'] == 'accordion') 
+            $string = $this->accordion($d_components);
 
         return $string;
     } 
@@ -84,7 +86,7 @@ class IntepreterController extends Controller
         $data = (array)$d_components['data'];
         if(count($data) > 0) {
             if($d_components['library_component'] == 'bootstrap_slider') {
-                $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].'carousel slide" data-ride="carousel">';
+                $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].' carousel slide" data-ride="carousel">';
                 $string .= '<ol class="carousel-indicators">';
                 foreach($data as $key => $d_data) {
                     $arr_d_data = (array)$d_data;
@@ -164,6 +166,42 @@ class IntepreterController extends Controller
         $string .= '<a href="'.$d_components['data']['href'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'">'.$d_components['data']['value'].'</a>';
         return $string;
 
+    }
+
+    public function accordion($d_components) {
+
+        // dd($d_components);
+        $string = '';
+        $data = (array)$d_components['data'];
+        if(count($data) > 0) {
+            $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].' accordion">';
+            // $string .= '<div class="carousel-inner">';
+            foreach($data as $key => $d_data) {
+                $arr_d_data = (array)$d_data;
+                $arr_heading = (array)$arr_d_data['heading'];
+                $arr_body = (array)$arr_d_data['body'];
+                // dd($arr_heading);
+                $string .= '<div class="card">
+                    <div class="card-header" id="heading'.$key.'">
+                        <'.$arr_heading['type'].' class="mb-0">
+                            <button class="btn btn-link '.($key == 0 ? 'true' : 'false').'" data-toggle="collapse" data-target="#collapse'.$key.'" aria-expanded="'.($key == 0 ? 'true' : 'false').'" aria-controls="collapse'.$key.'">'.$arr_heading['value'].'</button>
+                        </'.$arr_heading['type'].'>
+                    </div>
+
+                    <div id="collapse'.$key.'" class="collapse" aria-labelledby="heading'.$key.'" data-parent="#'.$d_components['id'].'">
+                        <div class="card-body">'.$arr_body['value'].'</div>
+                    </div>
+                </div>';
+                // $string .= '<div class="carousel-item '. ($key == 0 ? 'active' : '') . '">';
+                // $string .= '<img src="'.$arr_d_data['src'].'" style="width: 100%;">';
+                // $string .= '</div>';
+            }
+            // $string .= '</div>';
+            $string .= '</div>';
+        }
+        // dd($string);
+        return $string;
+        
     }
 
 }

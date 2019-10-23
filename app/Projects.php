@@ -25,9 +25,34 @@ class Projects extends Model
 
     public function array_initialization() {
 
-        // $array = (object)[
-        //     'type' => 'h2',
-        //     'value' => 'tentang penyu',
+        // $array = (object) [
+        //     [
+        //         'heading' => [
+        //             'type' => 'h2',
+        //             'value' => 'Lorem Ipsum Dolor Sit Amet',
+        //         ],
+        //         'body' => [
+        //             'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        //         ],
+        //     ],
+        //     [
+        //         'heading' => [
+        //             'type' => 'h2',
+        //             'value' => 'Lorem Ipsum Dolor Sit Amet',
+        //         ],
+        //         'body' => [
+        //             'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        //         ],
+        //     ],
+        //     [
+        //         'heading' => [
+        //             'type' => 'h2',
+        //             'value' => 'Lorem Ipsum Dolor Sit Amet',
+        //         ],
+        //         'body' => [
+        //             'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        //         ],
+        //     ],
         // ];
 
         // dd(json_encode($array));
@@ -118,9 +143,6 @@ class Projects extends Model
                 }
             }
         }
-        // echo '<pre>';
-        // print_r($data); exit;
-        
         return $data;
     }
 
