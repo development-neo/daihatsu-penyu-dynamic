@@ -58,8 +58,33 @@ class Projects extends Model
         // dd(json_encode($array));
         // exit;
 
+        $data = [
+            'name' => '',
+            'meta' => '',
+            'css' => '',
+            'information' => '',
+            'body' => [
+                'navbar' => [],
+                'sections' => [],
+                'footer' => [],
+            ]
+        ];
+
         $project = $this->where('status', 1)->first();
         $public = $project->d_publics()->get();
+
+        $navbar = [
+            'data' => [],
+        ];
+        foreach($public as $key => $temp) {
+            if($temp->parent == null && $temp->status == 1) 
+                array_push($navbar['data'], [
+                    'val' => $temp->name,
+                    'url' => url($temp->url),
+                ]);
+        }
+
+        $data['body']['navbar'] = $navbar;
 
         $segment = \Request::segments();
 
@@ -78,15 +103,9 @@ class Projects extends Model
             $css = [];
             if($project->d_css()->first())
                 $css = $project->d_css()->first()->toArray()['code'];
-            $data = [
-                'name' => $html->url,
-                'meta' => $html->meta,
-                'css' => $css,
-                'information' => '',
-                'body' => [
-                    'sections' => []
-                ]
-            ];
+            $data['name'] = $html->url;
+            $data['meta'] = $html->meta;
+            $data['css'] = $css;
             
             if($html->m_pages()->first()) {
                 $pages = $html

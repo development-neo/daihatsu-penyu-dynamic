@@ -6,6 +6,7 @@
         </style>
     </head>
     <body>
-        {!! $intepreter['body'] !!}
+        {!! $intepreter['body']['navbar'] !!}
+        {!! $intepreter['body']['section'] !!}
     </body>
 </html>

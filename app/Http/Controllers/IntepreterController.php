@@ -35,28 +35,42 @@ class IntepreterController extends Controller
             'meta' => $html['meta'],
             'css' => $html['css']
         ];
-        $intepreter['body'] = '';
-        $intepreter['body'] .= '<div class="_container">';
+        $intepreter['body']['navbar'] = '';
+        $intepreter['body']['navbar'] .= '<div class="_navbar">';
+        $intepreter['body']['navbar'] .= '<div class="_container">';
+        $intepreter['body']['navbar'] .= '<div class="_menu-link">';
+        $intepreter['body']['navbar'] .= '<ul>';
+        // dd($html['body']['navbar']['data']);
+        if(count($html['body']['navbar']['data']) > 0)
+            foreach($html['body']['navbar']['data'] as $key => $temp) 
+                $intepreter['body']['navbar'] .= '<li><a href="'.$temp['url'].'">'.$temp['val'].'</a></li>';
+
+        $intepreter['body']['navbar'] .= '</ul>';
+        $intepreter['body']['navbar'] .= '</div>';
+        $intepreter['body']['navbar'] .= '</div>';
+        $intepreter['body']['navbar'] .= '</div>';
+        $intepreter['body']['section'] = '';
+        $intepreter['body']['section'] .= '<div class="_container">';
         if(!empty($sections)) 
             foreach($sections as $key => $d_sections) {
-                $intepreter['body'] .= '<div id="'.$d_sections['id'].'" class="_section '.$d_sections['class'].'">';
+                $intepreter['body']['section'] .= '<div id="'.$d_sections['id'].'" class="_section '.$d_sections['class'].'">';
                 if(!empty($d_sections['grids']))
                     foreach($d_sections['grids'] as $key => $d_grids) {
-                        $intepreter['body'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
-                        $intepreter['body'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
+                        $intepreter['body']['section'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
+                        $intepreter['body']['section'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
                         'Section ID : '. $d_sections['pk'].'<br/>'.
                         'Grid ID : '. $d_grids['pk'].
                         '</div>';
                         if(!empty($d_grids['components'])) {
                             foreach($d_grids['components'] as $d_components) {
-                                $intepreter['body'] .= $this->render_component($d_components);
+                                $intepreter['body']['section'] .= $this->render_component($d_components);
                             }
                         }
-                        $intepreter['body'] .= '</div>';
+                        $intepreter['body']['section'] .= '</div>';
                     }
-                $intepreter['body'] .= '</div>';
+                $intepreter['body']['section'] .= '</div>';
             }
-        $intepreter['body'] .= '</div>';
+        $intepreter['body']['section'] .= '</div>';
 
         return $intepreter;
     }
