@@ -72,6 +72,8 @@ class IntepreterController extends Controller
             $string = $this->video($d_components);
         elseif($d_components['type'] == 'button') 
             $string = $this->button($d_components);
+        elseif($d_components['type'] == 'link') 
+            $string = $this->link($d_components);
 
         return $string;
     } 
@@ -150,6 +152,16 @@ class IntepreterController extends Controller
         $d_components['data'] = (array)$d_components['data'];
         $string = '';
         $string .= '<a href="'.$d_components['data']['href'].'" id="'.$d_components['id'].'" class="_btn'.$d_components['class'].'">'.$d_components['data']['value'].'</a>';
+        return $string;
+
+    }
+
+    public function link($d_components) {
+
+        $d_components = (array)$d_components;
+        $d_components['data'] = (array)$d_components['data'];
+        $string = '';
+        $string .= '<a href="'.$d_components['data']['href'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'">'.$d_components['data']['value'].'</a>';
         return $string;
 
     }
