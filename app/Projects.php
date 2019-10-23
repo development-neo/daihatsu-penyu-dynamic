@@ -10,6 +10,10 @@ class Projects extends Model
     
     protected $fillable = ['name', 'status'];
 
+    public function d_css() {
+        return $this->hasMany('App\Css', 'projects', 'id');
+    }
+
     public function d_publics() {
         return $this->hasMany('App\Publics', 'projects', 'id');
     }
@@ -19,25 +23,15 @@ class Projects extends Model
             ->first();
     }
 
-    public function render() {
+    public function array_initialization() {
 
-        echo '<style type="text/css">
-            ._container { width: 1000px; margin: 0px auto; display: block; }
-            ._container ._section { width: 100%; display: table; padding: 20px 10px; border: .5px #aaa solid; }
-            ._container ._section ._grid{ float: left; padding: 10px 0px; border: .5px #bbb solid; diplay: inherit; }
-            ._container ._section .grid-12 { width: 100%; }
-            ._container ._section .grid-11 { width: 91.666666666667%; }
-            ._container ._section .grid-10 { width: 83.333333333333%; }
-            ._container ._section .grid-9  { width: 75%; }
-            ._container ._section .grid-8  { width: 66.666666666666%; }
-            ._container ._section .grid-7  { width: 58.333333333333%; }
-            ._container ._section .grid-6  { width: 50%; }
-            ._container ._section .grid-5  { width: 41.666666666667%; }
-            ._container ._section .grid-4  { width: 33.333333333333%; }
-            ._container ._section .grid-3  { width: 25%; }
-            ._container ._section .grid-2  { width: 16.666666666667%; }
-            ._container ._section .grid-1  { width:  8.333333333333%; }
-        </style>';
+        // $array = (object)[
+        //     'type' => 'h2',
+        //     'value' => 'tentang penyu',
+        // ];
+
+        // dd(json_encode($array));
+        // exit;
 
         $project = $this->where('status', 1)->first();
         $public = $project->d_publics()->get();
@@ -56,17 +50,19 @@ class Projects extends Model
                                 $html = $publics;
                                 
         if($html != null) {
+            $css = [];
+            if($project->d_css()->first())
+                $css = $project->d_css()->first()->toArray()['code'];
             $data = [
                 'name' => $html->url,
                 'meta' => $html->meta,
+                'css' => $css,
                 'information' => '',
                 'body' => [
                     'sections' => []
                 ]
             ];
             
-            $_code = '<body>';
-            $_code .= '<div class="_container">';
             if($html->m_pages()->first()) {
                 $pages = $html
                     ->m_pages()
@@ -81,8 +77,6 @@ class Projects extends Model
                         ->orderBy('sequence')
                         ->get();
                     foreach($d_sections as $list_sections) {
-                        $_code .= '<div class="_section">';
-                        $_code .= $list_sections->name.'<br/>';
                         $grids = [];
                         if($list_sections->d_grids()->get()) {
                             $d_grids = $list_sections
@@ -90,17 +84,28 @@ class Projects extends Model
                                 ->orderBy('sequence')
                                 ->get();
                             foreach($d_grids as $list_grids) {
-                                $_code .= '<div class="_grid grid-'.$list_grids->length.'">';
-                                $_code .= $list_grids->length;
                                 $components = [];
-                                $html_component = '';
+                                if($list_grids->d_components()->get()) {
+                                    $d_components = $list_grids
+                                        ->d_components()
+                                        ->orderBy('sequence')
+                                        ->get();
+                                    foreach($d_components as $list_components) {
+                                        array_push($components, [
+                                            'type' => $list_components->m_type_component()->first()->name,
+                                            'id' => $list_components->html_id,
+                                            'class' => $list_components->html_class,
+                                            'library_component' => $list_components->library_component,
+                                            'data' => $list_components->content != '' ? json_decode($list_components->content) : '',
+                                        ]);
+                                    }
+                                }
                                 array_push($grids, [
                                     'length' => $list_grids->length,
                                     'id' => $list_grids->html_id,
-                                    'class' => $list_grids->class,
+                                    'class' => $list_grids->html_class,
                                     'components' => $components,
                                 ]);
-                                $_code .= '</div>';
                             }
                         }
                         array_push($data['body']['sections'], [
@@ -109,17 +114,15 @@ class Projects extends Model
                             'class' => 'class',
                             'grids' => $grids,
                         ]);
-                        $_code .= '</div>';
                     }
                 }
             }
-            $_code .= '</div></body>';
         }
-        echo $_code;
-        exit;
-        $html = $project;
-        return $html;
-
+        // echo '<pre>';
+        // print_r($data); exit;
+        
+        return $data;
     }
 
 }
+

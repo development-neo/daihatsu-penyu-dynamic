@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/{segment}', 'HomeController@index')->name('home');
-Route::get('/{segment}/{segment2}', 'HomeController@index')->name('home');
-Route::get('/{segment}/{segment2}/{segment3}', 'HomeController@index')->name('home');
-Route::get('/{segment}/{segment2}/{segment3}/{segment4}', 'HomeController@index')->name('home');
-Route::get('/{segment}/{segment2}/{segment3}/{segment4}/{segment5}', 'HomeController@index')->name('home');
+Route::get('/{segment}', 'IntepreterController@index')->name('home');
+Route::get('/{segment}/{segment2}', 'IntepreterController@index')->name('home');
+Route::get('/{segment}/{segment2}/{segment3}', 'IntepreterController@index')->name('home');
+Route::get('/{segment}/{segment2}/{segment3}/{segment4}', 'IntepreterController@index')->name('home');
+Route::get('/{segment}/{segment2}/{segment3}/{segment4}/{segment5}', 'IntepreterController@index')->name('home');
 
 Route::get('/administrator/content-management', 'Administrator\ContentManagementController@index');
 Route::get('/administrator/content-management/project/new', 'Administrator\ContentManagement\ProjectController@new');

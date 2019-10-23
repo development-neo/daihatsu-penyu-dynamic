@@ -13,4 +13,8 @@ class Components extends Model
         return $this->belongsTo('App\Grids', 'grids');
     }
 
+    public function m_type_component() {
+        return $this->belongsTo('App\TypeComponent', 'type_component', 'id');
+    }
+
 }
