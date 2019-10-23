@@ -25,15 +25,12 @@ class IntepreterController extends Controller
     {
         $html = new \App\Projects;
         $html = $html->array_initialization();
-        // dd($html);
         $intepreter = $this->intepreter($html);
-        // echo $intepreter;
         return view('render_html', compact('intepreter'));
     }
 
     public function intepreter($html = '') {
         $sections = $html['body']['sections'];
-        // dd($html);
         $intepreter['head'] = [
             'meta' => $html['meta'],
             'css' => $html['css']
@@ -48,7 +45,6 @@ class IntepreterController extends Controller
                         $intepreter['body'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
                         if(!empty($d_grids['components'])) {
                             foreach($d_grids['components'] as $d_components) {
-                                // $intepreter['body'] .= $d_components['type'];
                                 $intepreter['body'] .= $this->render_component($d_components);
                             }
                         }
@@ -72,6 +68,10 @@ class IntepreterController extends Controller
             $string = $this->paragraph($d_components);
         elseif($d_components['type'] == 'image') 
             $string = $this->image($d_components);
+        elseif($d_components['type'] == 'video') 
+            $string = $this->video($d_components);
+        elseif($d_components['type'] == 'button') 
+            $string = $this->button($d_components);
 
         return $string;
     } 
@@ -130,6 +130,26 @@ class IntepreterController extends Controller
         $d_components['data'] = (array)$d_components['data'];
         $string = '';
         $string .= '<img src="'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"/>';
+        return $string;
+
+    }
+
+    public function video($d_components) {
+
+        $d_components = (array)$d_components;
+        $d_components['data'] = (array)$d_components['data'];
+        $string = '';
+        $string .= '<embed src="'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;height auto"></embed>';
+        return $string;
+
+    }
+    
+    public function button($d_components) {
+
+        $d_components = (array)$d_components;
+        $d_components['data'] = (array)$d_components['data'];
+        $string = '';
+        $string .= '<a href="'.$d_components['data']['href'].'" id="'.$d_components['id'].'" class="_btn'.$d_components['class'].'">'.$d_components['data']['value'].'</a>';
         return $string;
 
     }
