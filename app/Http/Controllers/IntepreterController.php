@@ -37,14 +37,14 @@ class IntepreterController extends Controller
         ];
         $intepreter['body']['navbar'] = '';
         $intepreter['body']['navbar'] .= '<div class="_navbar">';
-        $intepreter['body']['navbar'] .= '<div class="_container">';
+        $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
         $intepreter['body']['navbar'] .= '<div class="_menu-link">';
         $intepreter['body']['navbar'] .= '<ul>';
-        // dd($html['body']['navbar']['data']);
+        
         if(count($html['body']['navbar']['data']) > 0)
             foreach($html['body']['navbar']['data'] as $key => $temp) 
                 $intepreter['body']['navbar'] .= '<li><a href="'.$temp['url'].'">'.$temp['val'].'</a></li>';
-
+                
         $intepreter['body']['navbar'] .= '</ul>';
         $intepreter['body']['navbar'] .= '</div>';
         $intepreter['body']['navbar'] .= '</div>';
@@ -57,7 +57,7 @@ class IntepreterController extends Controller
                 if(!empty($d_sections['grids']))
                     foreach($d_sections['grids'] as $key => $d_grids) {
                         $intepreter['body']['section'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
-                        $intepreter['body']['section'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
+                        // $intepreter['body']['section'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
                         'Section ID : '. $d_sections['pk'].'<br/>'.
                         'Grid ID : '. $d_grids['pk'].
                         '</div>';

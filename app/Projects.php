@@ -157,8 +157,8 @@ class Projects extends Model
                         array_push($data['body']['sections'], [
                             'pk' => $list_sections->id,
                             'name' => $list_sections->name,
-                            'id' => 'id',
-                            'class' => 'class',
+                            'id' => $list_sections->html_id,
+                            'class' => $list_sections->html_class,
                             'grids' => $grids,
                         ]);
                     }
