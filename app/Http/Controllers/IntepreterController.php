@@ -50,10 +50,10 @@ class IntepreterController extends Controller
         $intepreter['body']['navbar'] .= '</div>';
         $intepreter['body']['navbar'] .= '</div>';
         $intepreter['body']['section'] = '';
-        $intepreter['body']['section'] .= '<div class="_container">';
         if(!empty($sections)) 
             foreach($sections as $key => $d_sections) {
                 $intepreter['body']['section'] .= '<div id="'.$d_sections['id'].'" class="_section '.$d_sections['class'].'">';
+                $intepreter['body']['section'] .= '<div class="_container">';
                 if(!empty($d_sections['grids']))
                     foreach($d_sections['grids'] as $key => $d_grids) {
                         $intepreter['body']['section'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
@@ -69,8 +69,8 @@ class IntepreterController extends Controller
                         $intepreter['body']['section'] .= '</div>';
                     }
                 $intepreter['body']['section'] .= '</div>';
+                $intepreter['body']['section'] .= '</div>';
             }
-        $intepreter['body']['section'] .= '</div>';
 
         return $intepreter;
     }
