@@ -57,7 +57,7 @@ class IntepreterController extends Controller
                 if(!empty($d_sections['grids']))
                     foreach($d_sections['grids'] as $key => $d_grids) {
                         $intepreter['body']['section'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
-                        // $intepreter['body']['section'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
+                        $intepreter['body']['section'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
                         'Section ID : '. $d_sections['pk'].'<br/>'.
                         'Grid ID : '. $d_grids['pk'].
                         '</div>';
