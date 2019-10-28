@@ -35,6 +35,7 @@ class IntepreterController extends Controller
             'meta' => $html['meta'],
             'css' => $html['css']
         ];
+
         $intepreter['body']['navbar'] = '';
         $intepreter['body']['navbar'] .= '<div class="_navbar">';
         $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
@@ -103,7 +104,8 @@ class IntepreterController extends Controller
         $string = '';
         $data = (array)$d_components['data'];
         if(count($data) > 0) {
-            if($d_components['library_component'] == 'bootstrap_slider') {
+            // if($d_components['library_component'] == 'bootstrap_slider') {
+                $string .= '<div class="'.$d_components['library_component'].'">';
                 $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].' carousel slide" data-ride="carousel">';
                 $string .= '<ol class="carousel-indicators">';
                 foreach($data as $key => $d_data) {
@@ -119,8 +121,19 @@ class IntepreterController extends Controller
                     $string .= '</div>';
                 }
                 $string .= '</div>';
+                    
+                $string .= 
+                    '<a class="carousel-control-prev" href="#'.$d_components['id'].'" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#'.$d_components['id'].'" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>';
                 $string .= '</div>';
-            }
+                $string .= '</div>';
+            // }
         }
         return $string;
         
