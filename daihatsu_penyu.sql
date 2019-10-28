@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2019 at 12:49 PM
+-- Generation Time: Oct 28, 2019 at 06:17 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -59,76 +59,76 @@ CREATE TABLE `components` (
 --
 
 INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_component`, `type_component`, `sequence`, `grids`, `created_at`, `updated_at`) VALUES
-(2, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}', 'bootstrap_slider', 1, 1, 1, NULL, NULL),
-(3, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Tentang Penyu\"}', NULL, 2, 1, 2, NULL, NULL),
+(2, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}', 'bootstrap_carousel_type_3', 1, 1, 1, NULL, NULL),
+(3, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Tentang Penyu\"}', NULL, 2, 1, 2, NULL, NULL),
 (4, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 2, NULL, NULL),
-(5, NULL, '_text-center', '{\"type\":\"h2\",\"value\":\"Klasifikasi Penyu\"}', NULL, 2, 1, 3, NULL, NULL),
+(5, NULL, '_text-center _font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Klasifikasi Penyu\"}', NULL, 2, 1, 3, NULL, NULL),
 (6, NULL, '_text-center', '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 3, NULL, NULL),
-(7, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Penyu Lekang\"}', NULL, 2, 1, 5, NULL, NULL),
+(7, NULL, '', '{\"type\":\"h4\",\"value\":\"Penyu Lekang\"}', NULL, 2, 1, 5, NULL, NULL),
 (8, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 5, NULL, NULL),
-(9, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Cara Hidup Penyu\"}', NULL, 2, 1, 6, NULL, NULL),
+(9, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Cara Hidup Penyu\"}', NULL, 2, 1, 6, NULL, NULL),
 (10, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 6, NULL, NULL),
-(11, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Masa Bertelur Penyu\"}', NULL, 2, 1, 7, NULL, NULL),
+(11, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Masa Bertelur Penyu\"}', NULL, 2, 1, 7, NULL, NULL),
 (12, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 7, NULL, NULL),
-(13, NULL, '_text-center', '{\"type\":\"h2\",\"value\":\"Fakta Tentang Penyu\"}', NULL, 2, 1, 8, NULL, NULL),
+(13, NULL, '_text-center _font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Fakta Tentang Penyu\"}', NULL, 2, 1, 8, NULL, NULL),
 (14, NULL, '_text-center', '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 8, NULL, NULL),
 (15, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 9, NULL, NULL),
-(16, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Gallery Foto & Video\"}', NULL, 2, 1, 10, NULL, NULL),
+(16, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Gallery Foto & Video\"}', NULL, 2, 1, 10, NULL, NULL),
 (17, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 11, NULL, NULL),
 (18, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 12, NULL, NULL),
-(19, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Wilayah Konservasi\"}', NULL, 2, 1, 13, NULL, NULL),
+(19, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"Wilayah Konservasi\"}', NULL, 2, 1, 13, NULL, NULL),
 (20, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 13, NULL, NULL),
-(21, NULL, '_text-center', '{\"type\":\"h1\",\"value\":\"LATAR BELAKANG TERBENTUKNYA PENYU UNTUK INDONESIA\"}', NULL, 2, 1, 15, NULL, NULL),
+(21, NULL, '_text-center _font-permanent-marker', '{\"type\":\"h1\",\"value\":\"LATAR BELAKANG TERBENTUKNYA PENYU UNTUK INDONESIA\"}', NULL, 2, 1, 15, NULL, NULL),
 (22, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Tentang Penyu Untuk Indonesia\"}', NULL, 2, 2, 15, NULL, NULL),
 (23, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 3, 15, NULL, NULL),
 (24, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Ranah Kegiatan\"}', NULL, 2, 1, 16, NULL, NULL),
 (25, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 16, NULL, NULL),
 (26, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 17, NULL, NULL),
-(27, NULL, '_text-center', '{\"type\":\"h2\",\"value\":\"TUJUAN DIBENTUKNYA PENYU UNTUK INDONESIA\"}', NULL, 2, 1, 18, NULL, NULL),
+(27, NULL, '_text-center _font-permanent-marker', '{\"type\":\"h2\",\"value\":\"TUJUAN DIBENTUKNYA PENYU UNTUK INDONESIA\"}', NULL, 2, 1, 18, NULL, NULL),
 (28, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 18, NULL, NULL),
 (29, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Pencapaian Kami\"}', NULL, 2, 1, 19, NULL, NULL),
 (30, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 19, NULL, NULL),
 (31, NULL, '_text-center', '{\"type\":\"h2\",\"value\":\"Update Berita\"}', NULL, 2, 1, 20, NULL, NULL),
 (32, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}', 'bootstrap_slider', 1, 2, 20, NULL, NULL),
-(33, NULL, '_text-center', '{\"type\":\"h2\",\"value\":\"MEDIA\"}', NULL, 2, 1, 21, NULL, NULL),
+(33, NULL, '_text-center _font-permanent-marker', '{\"type\":\"h2\",\"value\":\"MEDIA\"}', NULL, 2, 1, 21, NULL, NULL),
 (35, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 21, NULL, NULL),
 (36, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}', 'bootstrap_slider', 1, 1, 22, NULL, NULL),
 (37, NULL, '_padding-10', '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 33, NULL, '0000-00-00 00:00:00'),
-(38, NULL, NULL, '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU\"}\r\n', NULL, 2, 1, 34, NULL, NULL),
+(38, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU\"}\r\n', NULL, 2, 1, 34, NULL, NULL),
 (39, NULL, NULL, '{\"type\":\"p\",\"value\":\"Bali\"}', NULL, 3, 2, 34, NULL, NULL),
 (40, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 3, 34, NULL, NULL),
 (41, NULL, '', '{\"href\":\"konservasi-kami/detail\",\"value\":\"Details\"}', NULL, 7, 4, 34, NULL, NULL),
-(42, NULL, NULL, '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU PASIR JAMBAK\"}\r\n', NULL, 2, 1, 35, NULL, NULL),
+(42, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU PASIR JAMBAK\"}\r\n', NULL, 2, 1, 35, NULL, NULL),
 (43, NULL, NULL, '{\"type\":\"p\",\"value\":\"Padang\"}\r\n', NULL, 3, 2, 35, NULL, NULL),
 (44, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}\r\n', NULL, 3, 3, 35, NULL, NULL),
 (45, NULL, NULL, '{\"href\":\"konservasi-kami/detail\",\"value\":\"Details\"}', NULL, 7, 4, 35, NULL, NULL),
 (46, NULL, '_padding-10', '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 36, NULL, NULL),
 (47, NULL, '_padding-10', '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 37, NULL, NULL),
-(48, NULL, NULL, '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU BATU HIU\"}', NULL, 2, 1, 38, NULL, NULL),
+(48, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU BATU HIU\"}', NULL, 2, 1, 38, NULL, NULL),
 (49, NULL, NULL, '{\"type\":\"p\",\"value\":\"Pangandaran\"}', NULL, 3, 2, 38, NULL, NULL),
 (50, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 3, 38, NULL, NULL),
 (51, NULL, NULL, '{\"href\":\"konservasi-kami/detail\",\"value\":\"Details\"}', NULL, 7, 4, 38, NULL, NULL),
-(52, NULL, NULL, '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU PULAU PRAMUKA\"}\r\n', NULL, 2, 1, 39, NULL, NULL),
+(52, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU PULAU PRAMUKA\"}\r\n', NULL, 2, 1, 39, NULL, NULL),
 (53, NULL, NULL, '{\"type\":\"p\",\"value\":\"Kepulauan Seribu\"}\r\n', NULL, 3, 2, 39, NULL, NULL),
 (54, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}\r\n', NULL, 3, 3, 39, NULL, NULL),
 (55, NULL, NULL, '{\"href\":\"konservasi-kami/detail\",\"value\":\"Details\"}', NULL, 7, 4, 39, NULL, NULL),
 (56, NULL, '_padding-10', '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 40, NULL, NULL),
 (57, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 41, NULL, NULL),
 (58, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Sosialisasi\"}\r\n', NULL, 2, 1, 42, NULL, NULL),
-(59, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Lokasi\"}\r\n', NULL, 2, 1, 43, NULL, NULL),
+(59, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-map-marker\'></i>Lokasi\"}\r\n', NULL, 2, 1, 43, NULL, NULL),
 (60, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"}\r\n', NULL, 3, 2, 43, NULL, NULL),
-(61, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Waktu\"}\r\n', NULL, 2, 1, 44, NULL, NULL),
+(61, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-clock-o\'></i>Waktu\"}\r\n', NULL, 2, 1, 44, NULL, NULL),
 (62, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet.\"}\r\n', NULL, 3, 2, 44, NULL, NULL),
-(63, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Target\"}\r\n', NULL, 2, 1, 45, NULL, NULL),
+(63, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-bullseye\'></i>Target\"}\r\n', NULL, 2, 1, 45, NULL, NULL),
 (64, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur\"}\r\n', NULL, 3, 2, 45, NULL, NULL),
 (65, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Materi\"}\r\n', NULL, 2, 1, 46, NULL, NULL),
 (66, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}\r\n', NULL, 3, 2, 46, NULL, NULL),
 (67, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Dokumentasi\"}\r\n', NULL, 2, 1, 47, NULL, NULL),
 (68, 'carouselHome', '', '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}', 'bootstrap_slider', 1, 2, 47, NULL, NULL),
 (69, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Penyelamatan Penyu\"}\r\n', NULL, 2, 1, 48, NULL, NULL),
-(70, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Lokasi\"}\r\n', NULL, 2, 1, 49, NULL, NULL),
+(70, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-map-marker\'></i>Lokasi\"}\r\n', NULL, 2, 1, 49, NULL, NULL),
 (71, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"}\r\n', NULL, 3, 2, 49, NULL, NULL),
-(72, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Waktu\"}\r\n', NULL, 2, 1, 50, NULL, NULL),
+(72, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-clock-o\'></i>Waktu\"}\r\n', NULL, 2, 1, 50, NULL, NULL),
 (73, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet,\"}\r\n', NULL, 3, 2, 50, NULL, NULL),
 (74, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Jumlah penyu dan jumlah telur yang diselamatkan\"}\r\n', NULL, 2, 1, 51, NULL, NULL),
 (75, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}\r\n', NULL, 3, 2, 51, NULL, NULL),
@@ -143,25 +143,25 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 (84, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Dokumentasi\"}', NULL, 2, 1, 56, NULL, NULL),
 (85, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}\r\n', 'bootstrap_slider', 1, 2, 56, NULL, NULL),
 (86, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Pelepasliaran Tukik\"}', NULL, 2, 1, 57, NULL, NULL),
-(87, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Lokasi\"}', NULL, 2, 1, 58, NULL, NULL),
+(87, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-map-marker\'></i>Lokasi\"}', NULL, 2, 1, 58, NULL, NULL),
 (88, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"}', NULL, 3, 2, 58, NULL, NULL),
-(89, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Waktu\"}', NULL, 2, 1, 59, NULL, NULL),
+(89, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-clock-o\'></i>Waktu\"}', NULL, 2, 1, 59, NULL, NULL),
 (90, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet,\"}', NULL, 3, 2, 59, NULL, NULL),
 (91, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Kegiatan, jenis penyu yang dilepaskan, jumlah penyu yang dilepaskan\"}', NULL, 2, 1, 60, NULL, NULL),
 (92, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 2, 60, NULL, NULL),
 (93, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Dokumentasi\"}\r\n', NULL, 2, 1, 61, NULL, NULL),
 (94, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}\r\n', 'bootstrap_slider', 1, 2, 61, NULL, NULL),
 (95, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Pembersihan Pantai\"}', NULL, 2, 1, 62, NULL, NULL),
-(96, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Lokasi\"}', NULL, 2, 1, 63, NULL, NULL),
+(96, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-map-marker\'></i>Lokasi\"}', NULL, 2, 1, 63, NULL, NULL),
 (97, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"}', NULL, 3, 2, 63, NULL, NULL),
-(98, NULL, NULL, '{\"type\":\"h3\",\"value\":\"Waktu\"}', NULL, 2, 1, 64, NULL, NULL),
+(98, NULL, '_icon-alignment', '{\"type\":\"h3\",\"value\":\"<i class=\'fa fa-clock-o\'></i>Waktu\"}', NULL, 2, 1, 64, NULL, NULL),
 (99, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet,\"}', NULL, 3, 2, 64, NULL, NULL),
 (100, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Dokumentasi\"}', NULL, 2, 1, 65, NULL, NULL),
 (101, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}\r\n', 'bootstrap_slider', 1, 2, 65, NULL, NULL),
 (102, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Kegiatan Lain\"}\r\n', NULL, 2, 1, 66, NULL, NULL),
 (103, 'carouselHome', NULL, '{\"0\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"1\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"},\"2\":{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo\"}}', 'bootstrap_slider', 1, 2, 66, NULL, NULL),
 (104, NULL, '_padding-10', '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 67, NULL, NULL),
-(105, NULL, NULL, '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU\"}', NULL, 2, 1, 68, NULL, NULL),
+(105, NULL, '_font-permanent-marker', '{\"type\":\"h2\",\"value\":\"KONSERVASI PENYU\"}', NULL, 2, 1, 68, NULL, NULL),
 (106, NULL, NULL, '{\"type\":\"p\",\"value\":\"Bali\"}', NULL, 3, 2, 68, NULL, NULL),
 (107, NULL, NULL, '{\"type\":\"p\",\"value\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet.\"}', NULL, 3, 3, 68, NULL, NULL),
 (108, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 4, 68, NULL, NULL),
@@ -211,7 +211,13 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 (152, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Batu Hiu, Pangandaran\"}', NULL, 2, 1, 82, NULL, NULL),
 (153, NULL, NULL, '{\"type\":\"h2\",\"value\":\"Pulau Pramuka, Jakarta\"}', NULL, 2, 1, 84, NULL, NULL),
 (154, NULL, NULL, '{\"src\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\",\"href\":\"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg\"}', NULL, 4, 1, 14, NULL, NULL),
-(155, NULL, 'fab fa-facebook', '{\"href\":\"google.com\",\"value\":\"kjhjkjh\"}', NULL, 7, 1, 86, NULL, NULL);
+(155, NULL, '', '{\"href\":\"google.com\",\"value\":\"dad\"}', NULL, 8, 1, 86, NULL, NULL),
+(156, NULL, '_text-center', '{\"type\":\"h6\",\"value\":\"Sosialisasi\"}', NULL, 2, 1, 90, NULL, NULL),
+(157, NULL, '_text-center', '{\"type\":\"h6\",\"value\":\"Penyelamatan Penyu\"}', NULL, 2, 1, 91, NULL, NULL),
+(158, NULL, '_text-center', '{\"type\":\"h6\",\"value\":\"Pembesaran Tukik\"}', NULL, 2, 1, 92, NULL, NULL),
+(159, NULL, '_text-center', '{\"type\":\"h6\",\"value\":\"Pelepasan Tukik\"}', NULL, 2, 1, 93, NULL, NULL),
+(160, NULL, '_text-center', '{\"type\":\"h6\",\"value\":\"Pembersihan Pantai\"}', NULL, 2, 1, 94, NULL, NULL),
+(161, NULL, '_text-center', '{\"type\":\"h6\",\"value\":\"Kegiatan lain-lain\"}', NULL, 2, 1, 95, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -232,7 +238,7 @@ CREATE TABLE `css` (
 --
 
 INSERT INTO `css` (`id`, `projects`, `code`, `created_at`, `updated_at`) VALUES
-(1, 1, '._navbar {position: fixed;left: 0px;top: 0px;width: 100%;background-color: #fff;z-index: 99999999;padding: 10px 0px; }\r\n._navbar ._menu-link { float: right;}\r\n._navbar ._menu-link ul { width: 100%;padding: 0px;list-style: none;display: table;margin: 0px;}\r\n._navbar ._menu-link ul li { float: left;}\r\n._navbar ._menu-link ul li a {text-decoration: none;color: #333;padding: 8px 10px;display: block;text-transform: capitalize; }\r\n            ._text-center { text-align: center; }\r\n            ._text-right { text-align: right; }\r\n            ._float-right { float: right!important; }\r\n            ._container { width: 1000px; margin: 0px auto; display: block;}\r\n            ._section ._container { display: table; padding: 20px 10px; border: .5px #aaa dashed;}\r\n            ._section ._container ._grid{ float: left; padding: 10px 0px; display: inherit;border: .5px #aaa dashed; position: relative;}\r\n            ._section ._container .grid-12 { width: 100%; }\r\n            ._section ._container .grid-11 { width: 91.666666666667%; }\r\n            ._section ._container .grid-10 { width: 83.333333333333%; }\r\n            ._section ._container .grid-9  { width: 75%; }\r\n            ._section ._container .grid-8  { width: 66.666666666666%; }\r\n            ._section ._container .grid-7  { width: 58.333333333333%; }\r\n            ._section ._container .grid-6  { width: 50%; }\r\n            ._section ._container .grid-5  { width: 41.666666666667%; }\r\n            ._section ._container .grid-4  { width: 33.333333333333%; }\r\n            ._section ._container .grid-3  { width: 25%; }\r\n            ._section ._container .grid-2  { width: 16.666666666667%; }\r\n            ._section ._container .grid-1  { width:  8.333333333333%; }\r\n            ._btn { padding: 5px 17px; display: block; width: fit-content; border: .5px #d4d4d4 solid; border-radius: 9px; color: white; background-color : #2f94e0;}\r\n            ._btn:hover { text-decoration: none; color: #fff; background-color: #d4d4d4; }\r\n._galery-image img {\r\nwidth : 25% !important;\r\nfloat : left;\r\npadding : 5px;\r\n}\r\n._padding-10{\r\npadding : 10px;\r\n}\r\n._berita-berita-lain img{\r\nwidth : 50%!important;\r\nfloat : left;\r\n}\r\n._berita-berita-lain h6{\r\nheight : 80px;\r\n}\r\n._lokasi-image img{\r\nwidth : 33% !important;\r\nfloat: left;\r\npadding : 3px;\r\n}\r\n._galery-video {\r\nwidth : 50% !important;\r\nfloat : left;\r\npadding : 5px;\r\n}\r\n._container-width-full ._container {\r\nwidth: 100% !important;\r\n    padding: 20px 0px;	\r\n}\r\n._container-width-full ._container ._grid {\r\nwidth: 100% !important;\r\n    padding: 20px 0px;	\r\n}\r\n._section ._container ._grid-1000{\r\nwidth: 1000px !important;\r\nfloat: unset;\r\nmargin: 0px auto;\r\n}\r\nbody {\r\npadding-top: 60px;\r\n}\r\n._padding-less-container-grid ._container {\r\npadding: 0px !important;\r\n}\r\n._padding-less-container-grid ._container ._grid{\r\npadding: 0px !important;\r\n}\r\n._social-media-badge {\r\nposition : absolute\r\n}', '2019-10-22 11:58:36', '2019-10-22 11:58:36');
+(1, 1, '._navbar {position: fixed;left: 0px;top: 0px;width: 100%;background-color: #fff;z-index: 99999999;padding: 10px 0px; }\r\n._navbar ._menu-link { float: right;}\r\n._navbar ._menu-link ul { width: 100%;padding: 0px;list-style: none;display: table;margin: 0px;}\r\n._navbar ._menu-link ul li { float: left;}\r\n._navbar ._menu-link ul li a {text-decoration: none;color: #333;padding: 8px 10px;display: block;text-transform: capitalize; }\r\n            ._text-center { text-align: center; }\r\n            ._text-right { text-align: right; }\r\n            ._float-right { float: right!important; }\r\n            ._container { width: 1000px; margin: 0px auto; display: block;}\r\n            ._section ._container { display: table; padding: 20px 10px; border: .5px #aaa dashed;}\r\n            ._section ._container ._grid{ float: left; padding: 10px 0px; display: inherit;border: .5px #aaa dashed; position: relative;}\r\n            ._section ._container .grid-12 { width: 100%; }\r\n            ._section ._container .grid-11 { width: 91.666666666667%; }\r\n            ._section ._container .grid-10 { width: 83.333333333333%; }\r\n            ._section ._container .grid-9  { width: 75%; }\r\n            ._section ._container .grid-8  { width: 66.666666666666%; }\r\n            ._section ._container .grid-7  { width: 58.333333333333%; }\r\n            ._section ._container .grid-6  { width: 50%; }\r\n            ._section ._container .grid-5  { width: 41.666666666667%; }\r\n            ._section ._container .grid-4  { width: 33.333333333333%; }\r\n            ._section ._container .grid-3  { width: 25%; }\r\n            ._section ._container .grid-2  { width: 16.666666666667%; }\r\n            ._section ._container .grid-1  { width:  8.333333333333%; }\r\n            ._btn { padding: 5px 17px; display: block; width: fit-content; border: .5px #2f94e0 solid; border-radius: 9px; color: white; background-color : #2f94e0;}\r\n            ._btn:hover { text-decoration: none; color: #2f94e0; background-color: #FFFFFF; }\r\n._galery-image img {\r\nwidth : 25% !important;\r\nfloat : left;\r\npadding : 5px;\r\n}\r\n._padding-10{\r\npadding : 10px;\r\n}\r\n._berita-berita-lain img{\r\nwidth : 50%!important;\r\nfloat : left;\r\n}\r\n._berita-berita-lain h6{\r\nheight : 80px;\r\n}\r\n._lokasi-image img{\r\nwidth : 33% !important;\r\nfloat: left;\r\npadding : 3px;\r\n}\r\n._galery-video {\r\nwidth : 50% !important;\r\nfloat : left;\r\npadding : 5px;\r\n}\r\n._container-width-full ._container {\r\nwidth: 100% !important;\r\n    padding: 20px 0px;	\r\n}\r\n._container-width-full ._container ._grid {\r\nwidth: 100% !important;\r\n    padding: 20px 0px;	\r\n}\r\n._section ._container ._grid-1000{\r\nwidth: 1000px !important;\r\nfloat: unset;\r\nmargin: 0px auto;\r\n}\r\nbody {\r\npadding-top: 60px;\r\n}\r\n._padding-less-container-grid ._container {\r\npadding: 0px !important;\r\n}\r\n._padding-less-container-grid ._container ._grid{\r\npadding: 0px !important;\r\n}\r\n._social-media-badge {\r\nposition : absolute\r\n}\r\n._font-permanent-marker {\r\nfont-family: \'Permanent Marker\', cursive;\r\ncolor : #2679BF;\r\n}\r\n._konservasi-detail-border {\r\n\r\n}\r\n._section-konservasi-overview .grid-2 {\r\nborder: .5px #aaa solid;\r\n    border-bottom: none;\r\n    border-top: none;\r\n    border-right: none !important;\r\n}\r\n\r\n._section-konservasi-overview .grid-2:nth-child(2) {\r\nborder:none!important;\r\n}\r\n._icon-alignment i {\r\nmargin : 0px 10px 0px 10px;\r\n}\r\n._section-konservasi-overview .grid-2:last-child {\r\nborder-right:none!important;\r\n}\r\n\r\n.carousel-control-next{\r\nposition: absolute;\r\nbottom: 15px;\r\nright: 15px;\r\nborder: 5px solid;\r\npadding: 10px;\r\nwidth: 50px;\r\nheight: 50px;\r\nborder-radius: 15pc;\r\ntop: unset;\r\nbackground-color: white;\r\n}\r\n\r\n.carousel-control-prev{\r\nposition: absolute;\r\nbottom: 15px;\r\nright: 75px;\r\nborder: 5px solid;\r\npadding: 10px;\r\nwidth: 50px;\r\nheight: 50px;\r\nborder-radius: 15pc;\r\ntop: unset;\r\nleft: unset;\r\n}\r\n\r\n.carousel-indicators{\r\nvisibility : hidden;\r\n}', '2019-10-22 11:58:36', '2019-10-22 11:58:36');
 
 -- --------------------------------------------------------
 
@@ -344,7 +350,13 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 (86, NULL, NULL, 12, 1, 38, NULL, NULL),
 (87, NULL, NULL, 12, 2, 38, NULL, NULL),
 (88, NULL, NULL, 12, 3, 38, NULL, NULL),
-(89, NULL, NULL, 12, 4, 38, NULL, NULL);
+(89, NULL, NULL, 12, 4, 38, NULL, NULL),
+(90, NULL, '', 2, 2, 21, NULL, NULL),
+(91, NULL, '', 2, 3, 21, NULL, NULL),
+(92, NULL, '', 2, 4, 21, NULL, NULL),
+(93, NULL, '', 2, 5, 21, NULL, NULL),
+(94, NULL, '', 2, 6, 21, NULL, NULL),
+(95, NULL, NULL, 2, 7, 21, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -367,6 +379,30 @@ INSERT INTO `groups` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (1, 'test group 1 updated', '2019-09-24 01:44:41', '2019-09-24 01:46:28'),
 (4, 'test', '2019-10-02 01:40:36', '2019-10-02 01:40:36'),
 (5, 'test', '2019-10-02 01:49:50', '2019-10-02 01:49:50');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `library_components`
+--
+
+CREATE TABLE `library_components` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `css` text,
+  `javascript` text,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `library_components`
+--
+
+INSERT INTO `library_components` (`id`, `name`, `css`, `javascript`, `created_at`, `updated_at`) VALUES
+(1, 'bootstrap_carousel_type_1', '.carousel-control-next{\r\nposition: absolute;\r\nbottom: 15px;\r\nright: 15px;\r\nborder: 5px solid;\r\npadding: 10px;\r\nwidth: 50px;\r\nheight: 50px;\r\nborder-radius: 15pc;\r\ntop: unset;\r\nbackground-color: transparent;\r\n}\r\n\r\n.carousel-control-prev{\r\nposition: absolute;\r\nbottom: 15px;\r\nright: 75px;\r\nborder: 5px solid;\r\npadding: 10px;\r\nwidth: 50px;\r\nheight: 50px;\r\nborder-radius: 15pc;\r\ntop: unset;\r\nleft: unset;\r\n}\r\n\r\n.carousel-indicators{\r\nvisibility : hidden;\r\n}', NULL, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, 'bootstrap_carousel_type_2', '.carousel-control-next{\r\nposition: absolute;\r\nbottom: 15px;\r\nright: 15px;\r\nborder: 5px solid;\r\npadding: 10px;\r\nwidth: 50px;\r\nheight: 50px;\r\nborder-radius: 15pc;\r\ntop: unset;\r\nbackground-color : transparent;\r\n}\r\n\r\n.carousel-control-prev{\r\nposition: absolute;\r\nbottom: 15px;\r\nright: 75px;\r\nborder: 5px solid;\r\npadding: 10px;\r\nwidth: 50px;\r\nheight: 50px;\r\nborder-radius: 15pc;\r\ntop: unset;\r\nleft: unset;\r\n}\r\n\r\n.carousel-indicators{\r\nvisibility: visible;\r\n}', NULL, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, 'bootstrap_carousel_type_3', '.carousel-control-prev{\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    z-index: 1;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    width: 15%;\r\n    color: #fff;\r\n    text-align: center;\r\n    opacity: .5;\r\n    transition: opacity .15s ease;\r\n}\r\n.carousel-control-next{\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    z-index: 1;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    width: 15%;\r\n    color: #fff;\r\n    text-align: center;\r\n    opacity: .5;\r\n    transition: opacity .15s ease;\r\n}\r\n.carousel-indicators ol li{\r\nvisibility: visible;\r\n}\r\nwidth: 10px;\r\n    height: 10px;\r\n    border-radius: 15pc;\r\n    border: unset;', NULL, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -496,15 +532,15 @@ CREATE TABLE `publics` (
 --
 
 INSERT INTO `publics` (`id`, `name`, `url`, `meta`, `parent`, `pages`, `projects`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'beranda', 'beranda', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 1, 1, 1, '2019-10-16 09:03:35', '2019-10-16 09:03:34'),
-(2, 'tentang kami', 'tentang-kami', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 2, 1, 1, '2019-10-16 09:03:37', '2019-10-16 09:03:31'),
-(3, 'konservasi kami', 'konservasi-kami', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 3, 1, 1, '2019-10-16 09:03:37', '2019-10-16 09:03:50'),
-(4, 'lokasi', 'lokasi', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 4, 1, 1, '2019-10-16 09:03:38', '2019-10-16 09:03:48'),
+(1, 'beranda', 'beranda', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\r\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap\" rel=\"stylesheet\">', NULL, 1, 1, 1, '2019-10-16 09:03:35', '2019-10-16 09:03:34'),
+(2, 'tentang kami', 'tentang-kami', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\r\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap\" rel=\"stylesheet\">', NULL, 2, 1, 1, '2019-10-16 09:03:37', '2019-10-16 09:03:31'),
+(3, 'konservasi kami', 'konservasi-kami', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\r\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap\" rel=\"stylesheet\">', NULL, 3, 1, 1, '2019-10-16 09:03:37', '2019-10-16 09:03:50'),
+(4, 'lokasi', 'lokasi', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\r\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap\" rel=\"stylesheet\">', NULL, 4, 1, 1, '2019-10-16 09:03:38', '2019-10-16 09:03:48'),
 (5, 'kontak kami', 'kontak-kami', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 5, 1, 1, '2019-10-16 09:03:39', '2019-10-16 09:03:48'),
 (6, 'galeri', 'galeri', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 6, 1, 1, '2019-10-16 09:03:40', '2019-10-16 09:03:47'),
 (7, 'berita', 'berita', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 7, 1, 1, '2019-10-16 09:03:40', '2019-10-16 09:03:46'),
 (8, 'faq', 'faq', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', NULL, 8, 1, 1, '2019-10-16 09:03:41', '2019-10-16 09:03:46'),
-(9, 'detail', 'detail', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', 3, 9, 1, 1, '2019-10-16 09:03:41', '2019-10-16 09:03:52'),
+(9, 'detail', 'detail', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">', 3, 9, 1, 1, '2019-10-16 09:03:41', '2019-10-16 09:03:52'),
 (10, 'detail', 'detail', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', 4, 10, 1, 1, '2019-10-16 09:03:42', '2019-10-16 09:03:45'),
 (11, 'detail', 'detail', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', 5, 11, 1, 1, '2019-10-16 09:03:43', '2019-10-16 09:03:45'),
 (12, 'read', 'read', '<script\r\n  src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\r\n  integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\r\n  crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">', 7, 12, 1, 1, '2019-10-16 09:03:43', '2019-10-16 09:03:44'),
@@ -552,7 +588,7 @@ INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `page
 (18, 'section konservasi padang', NULL, NULL, 2, 3, NULL, NULL),
 (19, 'section konservasi pangandaran', NULL, NULL, 3, 3, NULL, NULL),
 (20, 'section konservasi kepulauan seribu', NULL, NULL, 4, 3, NULL, NULL),
-(21, 'section location ilustrator', NULL, '_padding-less-container-grid ._container', 1, 9, NULL, NULL),
+(21, 'section location ilustrator', NULL, '_padding-less-container-grid _container _section-konservasi-overview', 1, 9, NULL, NULL),
 (22, 'section sosialisasi', NULL, NULL, 2, 9, NULL, NULL),
 (23, 'section penyelamatan penyu', NULL, NULL, 3, 9, NULL, NULL),
 (24, 'section pembesaran tukik', NULL, NULL, 4, 9, NULL, NULL),
@@ -635,6 +671,12 @@ ALTER TABLE `groups`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `library_components`
+--
+ALTER TABLE `library_components`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
@@ -690,7 +732,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `components`
 --
 ALTER TABLE `components`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=156;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
 
 --
 -- AUTO_INCREMENT for table `css`
@@ -702,13 +744,19 @@ ALTER TABLE `css`
 -- AUTO_INCREMENT for table `grids`
 --
 ALTER TABLE `grids`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `groups`
 --
 ALTER TABLE `groups`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `library_components`
+--
+ALTER TABLE `library_components`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -750,36 +798,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
--- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               10.3.16-MariaDB - mariadb.org binary distribution
--- Server OS:                    Win64
--- HeidiSQL Version:             10.2.0.5599
--- --------------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8 */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-
--- Dumping structure for table daihatsu_penyu.library_components
-CREATE TABLE IF NOT EXISTS `library_components` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) DEFAULT NULL,
-  `css` text DEFAULT NULL,
-  `javascript` text DEFAULT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Dumping data for table daihatsu_penyu.library_components: ~0 rows (approximately)
-DELETE FROM `library_components`;
-/*!40000 ALTER TABLE `library_components` DISABLE KEYS */;
-/*!40000 ALTER TABLE `library_components` ENABLE KEYS */;
-
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
