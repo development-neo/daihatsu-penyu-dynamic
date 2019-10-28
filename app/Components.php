@@ -18,7 +18,7 @@ class Components extends Model
     }
 
     public function m_library_component() {
-        return $this->belongsTo('App\LibraryComponents', 'library_component', 'id');
+        return $this->belongsTo('App\LibraryComponents', 'library_component', 'name');
     }
 
 }

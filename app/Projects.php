@@ -135,6 +135,11 @@ class Projects extends Model
                                         ->orderBy('sequence')
                                         ->get();
                                     foreach($d_components as $list_components) {
+
+                                        if($list_components->library_component != '')
+                                            $data['css'] .= $list_components->m_library_component()->first()->css;
+                                            // dd($list_components->m_library_component()->first()->css);
+                                            // echo $list_components->m_library_component()->first(); echo '<br/>';
                                         array_push($components, [
                                             'pk' => $list_components->id,
                                             'type' => $list_components->m_type_component()->first()->name,
@@ -165,6 +170,7 @@ class Projects extends Model
                 }
             }
         }
+        // exit;
         return $data;
     }
 
