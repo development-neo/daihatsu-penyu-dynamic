@@ -9,4 +9,5 @@
         {!! $intepreter['body']['navbar'] !!}
         {!! $intepreter['body']['section'] !!}
     </body>
+    {!! $intepreter['footer']['javascript'] !!}
 </html>

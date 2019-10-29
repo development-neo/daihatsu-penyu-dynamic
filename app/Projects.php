@@ -106,6 +106,7 @@ class Projects extends Model
             $data['name'] = $html->url;
             $data['meta'] = $html->meta;
             $data['css'] = $css;
+            $data['javascript'] = '';
             
             if($html->m_pages()->first()) {
                 $pages = $html
@@ -136,8 +137,10 @@ class Projects extends Model
                                         ->get();
                                     foreach($d_components as $list_components) {
 
-                                        if($list_components->library_component != '')
+                                        if($list_components->library_component != '') {
                                             $data['css'] .= $list_components->m_library_component()->first()->css;
+                                            $data['javascript'] .= $list_components->m_library_component()->first()->javascript;
+                                        }
                                             // dd($list_components->m_library_component()->first()->css);
                                             // echo $list_components->m_library_component()->first(); echo '<br/>';
                                         array_push($components, [
@@ -170,6 +173,7 @@ class Projects extends Model
                 }
             }
         }
+        // dd($data);
         // exit;
         return $data;
     }

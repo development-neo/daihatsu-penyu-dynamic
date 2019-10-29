@@ -73,6 +73,9 @@ class IntepreterController extends Controller
                 $intepreter['body']['section'] .= '</div>';
             }
 
+        $intepreter['footer']['javascript'] = $html['javascript'];
+        // dd($intepreter);
+
         return $intepreter;
     }
 
@@ -118,6 +121,10 @@ class IntepreterController extends Controller
                     $arr_d_data = (array)$d_data;
                     $string .= '<div class="carousel-item '. ($key == 0 ? 'active' : '') . '">';
                     $string .= '<img src="'.$arr_d_data['src'].'" style="width: 100%;">';
+                    $string .= '<div class="carousel-caption d-none d-md-block">';
+                    $string .= '<h5>'.$arr_d_data['heading'].'</h5>';
+                    $string .= '<p>'.$arr_d_data['description'].'</p>';
+                    $string .= ' </div>';
                     $string .= '</div>';
                 }
                 $string .= '</div>';
