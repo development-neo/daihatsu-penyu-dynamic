@@ -98,6 +98,8 @@ class IntepreterController extends Controller
             $string = $this->link($d_components);
         elseif($d_components['type'] == 'accordion') 
             $string = $this->accordion($d_components);
+        elseif($d_components['type'] == 'slider') 
+            $string = $this->slider($d_components);
 
         return $string;
     } 
@@ -240,6 +242,28 @@ class IntepreterController extends Controller
         // dd($string);
         return $string;
         
+    }
+
+    public function slider($d_components) {
+
+        $string = '';
+        $data = (array)$d_components['data'];
+        if(count($data) > 0) {
+            $string .= '<div class="'.$d_components['library_component'].'">';
+            $string .= '<div id="'.$d_components['id'].'" class="slider-item-container '.$d_components['class'].'">';
+            foreach($data as $key => $d_data) {
+                $arr_d_data = (array)$d_data;
+                $string .= '<div class="slider-item '. ($key == 0 ? 'active' : '') . '">';
+                $string .= '<img src="'.$arr_d_data['src'].'">';
+                $string .= '<h5 class="slider-heading">'.$arr_d_data['heading'].'</h5>';
+                $string .= '<p class="slider-description">'.$arr_d_data['description'].'</p>';
+                $string .= '</div>';
+            }
+            $string .= '</div>';
+            $string .= '</div>';
+        }
+        return $string;
+
     }
 
 }
