@@ -137,7 +137,7 @@ class Projects extends Model
                                         ->get();
                                     foreach($d_components as $list_components) {
 
-                                        if($list_components->library_component != '') {
+                                        if($list_components->m_library_component()->first()) {
                                             $data['css'] .= $list_components->m_library_component()->first()->css;
                                             $data['javascript'] .= $list_components->m_library_component()->first()->javascript;
                                         }

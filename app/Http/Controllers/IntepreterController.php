@@ -124,8 +124,8 @@ class IntepreterController extends Controller
                     $string .= '<div class="carousel-item '. ($key == 0 ? 'active' : '') . '">';
                     $string .= '<img src="'.$arr_d_data['src'].'" style="width: 100%;">';
                     $string .= '<div class="carousel-caption d-none d-md-block">';
-                    $string .= '<h5>'.$arr_d_data['heading'].'</h5>';
-                    $string .= '<p>'.$arr_d_data['description'].'</p>';
+                    $string .= '<h5>'.(array_key_exists('heading', $arr_d_data) ? $arr_d_data['heading'] : '').'</h5>';
+                    $string .= '<p>'.(array_key_exists('description', $arr_d_data) ? $arr_d_data['description'] : '').'</p>';
                     $string .= ' </div>';
                     $string .= '</div>';
                 }
