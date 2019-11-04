@@ -122,7 +122,7 @@ class IntepreterController extends Controller
                 foreach($data as $key => $d_data) {
                     $arr_d_data = (array)$d_data;
                     $string .= '<div class="carousel-item '. ($key == 0 ? 'active' : '') . '">';
-                    $string .= '<img src="'.$arr_d_data['src'].'" style="width: 100%;">';
+                    $string .= '<img src="'.url('uploads/image/').'/'.$arr_d_data['src'].'" style="width: 100%;">';
                     $string .= '<div class="carousel-caption d-none d-md-block">';
                     $string .= '<h5>'.(array_key_exists('heading', $arr_d_data) ? $arr_d_data['heading'] : '').'</h5>';
                     $string .= '<p>'.(array_key_exists('description', $arr_d_data) ? $arr_d_data['description'] : '').'</p>';
@@ -173,7 +173,7 @@ class IntepreterController extends Controller
         $d_components = (array)$d_components;
         $d_components['data'] = (array)$d_components['data'];
         $string = '';
-        $string .= '<img src="'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"/>';
+        $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"/>';
         return $string;
 
     }
@@ -254,7 +254,7 @@ class IntepreterController extends Controller
             foreach($data as $key => $d_data) {
                 $arr_d_data = (array)$d_data;
                 $string .= '<div class="slider-item '. ($key == 0 ? 'active' : '') . '">';
-                $string .= '<img src="'.$arr_d_data['src'].'">';
+                $string .= '<img src="'.url('uploads/image/').'/'.$arr_d_data['src'].'">';
                 $string .= '<h5 class="slider-heading">'.$arr_d_data['heading'].'</h5>';
                 $string .= '<p class="slider-description">'.$arr_d_data['description'].'</p>';
                 $string .= '</div>';
