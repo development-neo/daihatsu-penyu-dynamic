@@ -117,8 +117,18 @@ class Projects extends Model
                                 
         if($html != null) {
             $css = [];
-            if($project->d_css()->first())
+            if($project->d_css()->first()) {
                 $css = $project->d_css()->first()->toArray()['code'];
+                $cssResponsive = $project->d_css()->first()->d_cssResponsive()->get()->toArray();
+                foreach($cssResponsive as $key => $temp) {
+                    $css .= '@media only screen and (max-width: '.$temp['max-width'].'px) and (min-width: '.$temp['min-width'].'px)  {';
+                    $css .= $temp['code'];
+                    $css .= '}';
+                }
+                // echo $css; exit;
+                // dd($cssResponsive);
+            }
+            
             $data['name'] = $html->url;
             $data['meta'] = $html->meta;
             $data['css'] = $css;

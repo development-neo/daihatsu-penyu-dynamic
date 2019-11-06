@@ -15,4 +15,8 @@ class Css extends Model
         return $this->belongsTo('App\Projects', 'projects');
     }
 
+    public function d_cssResponsive() {
+        return $this->hasMany('App\CssResponsive', 'css', 'id');
+    }
+
 }
