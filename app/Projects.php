@@ -129,8 +129,8 @@ class Projects extends Model
                             echo explode('{', $temp)[0]; echo '{ }<br/>';
                         }
                     }
+                    exit;
                 }
-                exit;
                 $cssResponsive = $project->d_css()->first()->d_cssResponsive()->get()->toArray();
                 foreach($cssResponsive as $key => $temp) {
                     $css .= '@media only screen and (max-width: '.$temp['max-width'].'px) and (min-width: '.$temp['min-width'].'px)  {';
