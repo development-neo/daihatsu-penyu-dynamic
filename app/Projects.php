@@ -74,6 +74,7 @@ class Projects extends Model
         $public = $project->d_publics()->get();
 
         $navbar = [
+            'logo' => 'https://daihatsu.co.id/images/revamp2017/daihatsu-logo.svg',
             'data' => [],
         ];
         foreach($public as $key => $temp) {
@@ -84,7 +85,22 @@ class Projects extends Model
                 ]);
         }
 
+        $footer = [
+            'logo' => 'https://daihatsu.co.id/images/revamp2017/daihatsu-logo.svg',
+            'data' => [],
+            'contact_detail' => 'Jl Danau Sunter Kav 6 -10 <br/>Telp: (+62 21) 819 4807 <br/>Email: me@daihatsu.co.id <br/>Contact Center:  (+62 21) 1500 709',
+            'copyright' => 'Copyright ©  2010-2019 Daihatsu Penyu Untuk Indonesia. All rights reserved.'
+        ];
+        foreach($public as $key => $temp) {
+            if($temp->parent == null && $temp->status == 1) 
+                array_push($footer['data'], [
+                    'val' => $temp->name,
+                    'url' => url($temp->url),
+                ]);
+        }
+
         $data['body']['navbar'] = $navbar;
+        $data['body']['footer'] = $footer;
 
         $segment = \Request::segments();
 

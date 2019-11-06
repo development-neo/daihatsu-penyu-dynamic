@@ -8,6 +8,7 @@
     <body>
         {!! $intepreter['body']['navbar'] !!}
         {!! $intepreter['body']['section'] !!}
+        {!! $intepreter['body']['footer'] !!}
     </body>
     {!! $intepreter['footer']['javascript'] !!}
 </html>

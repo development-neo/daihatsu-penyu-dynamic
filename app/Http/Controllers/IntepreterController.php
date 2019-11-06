@@ -39,6 +39,7 @@ class IntepreterController extends Controller
         $intepreter['body']['navbar'] = '';
         $intepreter['body']['navbar'] .= '<div class="_navbar">';
         $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
+        $intepreter['body']['navbar'] .= '<img src="'.$html['body']['navbar']['logo'].'" class="_site-logo">';
         $intepreter['body']['navbar'] .= '<div class="_menu-link">';
         $intepreter['body']['navbar'] .= '<ul>';
         
@@ -50,6 +51,32 @@ class IntepreterController extends Controller
         $intepreter['body']['navbar'] .= '</div>';
         $intepreter['body']['navbar'] .= '</div>';
         $intepreter['body']['navbar'] .= '</div>';
+
+        
+        $intepreter['body']['footer'] = '';
+        $intepreter['body']['footer'] .= '<div class="_footer _section ">';
+        $intepreter['body']['footer'] .= '<div class="_container _width-d-1000">';
+        $intepreter['body']['footer'] .= '<div class="_grid grid-3">';
+        $intepreter['body']['footer'] .= '<img src="'.$html['body']['footer']['logo'].'" class="_site-logo">';
+        $intepreter['body']['footer'] .= '<p class="_site-contact_detail">'.$html['body']['footer']['contact_detail'].'</p>';
+        $intepreter['body']['footer'] .= '</div>';
+        $intepreter['body']['footer'] .= '<div class="_grid grid-9">';
+        $intepreter['body']['footer'] .= '<div class="_menu-link">';
+        $intepreter['body']['footer'] .= '<ul>';
+        
+        if(count($html['body']['footer']['data']) > 0)
+            foreach($html['body']['footer']['data'] as $key => $temp) 
+                $intepreter['body']['footer'] .= '<li><a href="'.$temp['url'].'">'.$temp['val'].'</a></li>';
+                
+        $intepreter['body']['footer'] .= '</ul>';
+        $intepreter['body']['footer'] .= '</div>';
+        $intepreter['body']['footer'] .= '</div>';
+        $intepreter['body']['footer'] .= '<div class="_grid grid-12 _text-center">';
+        $intepreter['body']['footer'] .= $html['body']['footer']['copyright'];
+        $intepreter['body']['footer'] .= '</div>';
+        $intepreter['body']['footer'] .= '</div>';
+        $intepreter['body']['footer'] .= '</div>';
+
         $intepreter['body']['section'] = '';
         if(!empty($sections)) 
             foreach($sections as $key => $d_sections) {
