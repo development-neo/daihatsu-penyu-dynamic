@@ -40,11 +40,11 @@ class IntepreterController extends Controller
         $intepreter['body']['navbar'] .= '<div class="_navbar">';
         $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
         $intepreter['body']['navbar'] .= '<img src="'.$html['body']['navbar']['logo'].'" class="_site-logo">';
-        $intepreter['body']['navbar'] .= '<div class="_menu-link">';
-        $intepreter['body']['navbar'] .= '<ul class="_show-desktop">';
         $intepreter['body']['navbar'] .= '<div class="burger-menu _show-mobile">';
         $intepreter['body']['navbar'] .= '<i class="fa fa-list"></i>';
         $intepreter['body']['navbar'] .= '</div>';    
+        $intepreter['body']['navbar'] .= '<div class="_menu-link _show-desktop"">';
+        $intepreter['body']['navbar'] .= '<ul>';
 
         if(count($html['body']['navbar']['data']) > 0)
             foreach($html['body']['navbar']['data'] as $key => $temp) 
@@ -104,6 +104,16 @@ class IntepreterController extends Controller
             }
 
         $intepreter['footer']['javascript'] = $html['javascript'];
+        $intepreter['footer']['javascript'] .= 
+        '<script>
+        $(".burger-menu").click(function (){
+            if($("._show-desktop").css("display") == "none"){
+                $("._menu-link").css("display","block");
+            }else if($("._menu-link").css("display") == "block"){
+                $("._menu-link").css("display","none");
+            }
+        });
+        </script>';
         // dd($intepreter);
 
         return $intepreter;
