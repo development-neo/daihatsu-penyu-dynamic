@@ -39,7 +39,7 @@ class IntepreterController extends Controller
         $intepreter['body']['navbar'] = '';
         $intepreter['body']['navbar'] .= '<div class="_navbar">';
         $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
-        $intepreter['body']['navbar'] .= '<img src="'.$html['body']['navbar']['logo'].'" class="_site-logo">';
+        $intepreter['body']['navbar'] .= '<a href="/beranda"><img src="'.$html['body']['navbar']['logo'].'" class="_site-logo"></a>';
         $intepreter['body']['navbar'] .= '<div class="burger-menu _show-mobile">';
         $intepreter['body']['navbar'] .= '<i class="fa fa-list"></i>';
         $intepreter['body']['navbar'] .= '</div>';    
@@ -106,13 +106,25 @@ class IntepreterController extends Controller
         $intepreter['footer']['javascript'] = $html['javascript'];
         $intepreter['footer']['javascript'] .= 
         '<script>
-        $(".burger-menu").click(function (){
-            if($("._show-desktop").css("display") == "none"){
-                $("._menu-link").css("display","block");
-            }else if($("._menu-link").css("display") == "block"){
-                $("._menu-link").css("display","none");
-            }
-        });
+            $(document).ready(function(){
+                var URL = window.location.href;
+                var navbarMenu = $("._menu-link ul li").find("a");
+                $("._menu-link ul li").removeClass("active");
+                console.log(URL);
+                for (const [key, value] of Object.entries(navbarMenu)) {
+                    const subject = value.href;
+                    if(subject && URL.match(subject + ".*")){
+                        $("._menu-link ul li").eq(key).addClass("active");
+                    }
+                }
+            });
+            $(".burger-menu").click(function (){
+                if($("._show-desktop").css("display") == "none"){
+                    $("._menu-link").css("display","block");
+                }else if($("._menu-link").css("display") == "block"){
+                    $("._menu-link").css("display","none");
+                }
+            });
         </script>';
         // dd($intepreter);
 
