@@ -26,32 +26,14 @@ class Projects extends Model
     public function array_initialization() {
 
         // $array = (object) [
-        //     [
-        //         'heading' => [
-        //             'type' => 'h2',
-        //             'value' => 'Lorem Ipsum Dolor Sit Amet',
-        //         ],
-        //         'body' => [
-        //             'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        //         ],
-        //     ],
-        //     [
-        //         'heading' => [
-        //             'type' => 'h2',
-        //             'value' => 'Lorem Ipsum Dolor Sit Amet',
-        //         ],
-        //         'body' => [
-        //             'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        //         ],
-        //     ],
-        //     [
-        //         'heading' => [
-        //             'type' => 'h2',
-        //             'value' => 'Lorem Ipsum Dolor Sit Amet',
-        //         ],
-        //         'body' => [
-        //             'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        //         ],
+        //     'src' =>'IMG-20180327-WA0010.jpg',
+        //     'href' =>'https://wallpapermemory.com/uploads/200/mount-bromo-wallpaper-hd-1920x1200-320096.jpg',
+        //     'title' =>'This is fucking title',
+        //     'additional' => [
+        //         'This is fucking additional text',
+        //         'This is fucking additional text with long description that so funny to show.',
+        //         'This is date',
+        //         'This is other what do you want to write',
         //     ],
         // ];
 

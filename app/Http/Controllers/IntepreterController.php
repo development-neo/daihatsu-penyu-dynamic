@@ -152,6 +152,8 @@ class IntepreterController extends Controller
             $string = $this->accordion($d_components);
         elseif($d_components['type'] == 'slider') 
             $string = $this->slider($d_components);
+        elseif($d_components['type'] == 'card') 
+            $string = $this->card($d_components);
 
         return $string;
     } 
@@ -314,6 +316,26 @@ class IntepreterController extends Controller
             $string .= '</div>';
             $string .= '</div>';
         }
+        return $string;
+
+    }
+
+    public function card($d_components) {
+
+        $d_components = (array)$d_components;
+        $d_components['data'] = (array)$d_components['data'];
+        $string = '';
+        $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].' '.$d_components['library_component'].' _card">';
+        $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"/>';
+        $string .= '<div class="_card-text-container">';
+        $string .= '<h4 class="_card-heading">'.$d_components['data']['title'].'</h4>';
+        if(count($d_components['data']['additional']) > 0){
+            foreach($d_components['data']['additional'] as $key => $additional) {
+                $string .= '<p class="_card-text">'.$additional.'</h4>';
+            }
+        }
+        $string .= '</div>';
+        $string .= '</div>';
         return $string;
 
     }
