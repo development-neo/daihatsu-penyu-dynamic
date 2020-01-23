@@ -36,7 +36,7 @@ p {
 }
 
 ._show-desktop {
-    display: unset;
+    display: unset !important;
 }
 
 ._section {}
@@ -46,60 +46,64 @@ p {
     left: 0px;
     top: 0px;
     width: 100%;
+    height: 56px;
     background-color: #fff;
     z-index: 99999999;
     box-shadow: 0px 1px 5px lightgrey;
 }
 
 ._navbar ._menu-link {
-    float: right;
+    float: right !important;
+    width: fit-content !important;
 }
 
-._navbar ._menu-link ul {
-    width: 100%;
+._navbar ._container ._grid ._site-logo {
+    margin: 8px 0px;
+}
+
+._navbar ._menu-link a {
+    width: fit-content;
     padding: 0px;
     list-style: none;
     display: table;
-    margin: 0px;
-}
-
-._navbar ._menu-link ul li {
     float: left;
+    margin: 15px 10px 0px 10px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 15px;
 }
 
-._navbar ._menu-link ul li.active {
+._navbar ._menu-link a.active {
+    color: #2679BF;
     border-bottom: 2px solid #2679BF;
 }
 
-._navbar ._menu-link ul li.active a {
-    color: #2679BF;
+._navbar ._container {
+    padding: unset !important;
 }
 
-._navbar ._menu-link ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 15px 10px;
-    display: block;
-    text-transform: capitalize;
+._navbar ._container ._grid {
+    padding: unset !important;
 }
 
 ._footer ._menu-link {
-    float: right;
+    float: right !important;
+    width: fit-content !important;
 }
 
-._footer ._menu-link ul {
-    width: 100%;
+._footer ._menu-link a {
+    width: fit-content;
     padding: 0px;
     list-style: none;
     display: table;
     margin: 0px;
 }
 
-._footer ._menu-link ul li {
+._footer ._menu-link a {
     float: left;
 }
 
-._footer ._menu-link ul li a {
+._footer ._menu-link a {
     text-decoration: none;
     color: #333;
     padding: 8px 10px;
@@ -109,6 +113,7 @@ p {
 
 ._footer ._container {
     border-top: .5px #aaa solid;
+    padding: 10px 0px !important;
 }
 
 ._navbar ._site-logo,
@@ -128,7 +133,7 @@ p {
     float: left;
     margin: 10px 0px;
     color: #9A9A9A;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 ._footer ._container .grid-12 {
@@ -140,7 +145,11 @@ p {
     width: 105%;
 }
 
-._footer ._container .grid-9 ._menu-link ul li a {
+.__component_id_219 {
+    font-size: 12px;
+}
+
+._footer ._container ._menu-link a {
     color: #197BBE;
     font-size: 14px;
 }
@@ -506,8 +515,6 @@ p._sub-tittle-konservasi {
 }
 
 #section-pembersihan {}
-
-{}
 
 #section-pembesaran {}
 

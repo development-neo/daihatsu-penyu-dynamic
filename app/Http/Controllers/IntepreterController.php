@@ -39,39 +39,7 @@ class IntepreterController extends Controller
         // $intepreter['body']['navbar'] .= '</div>';
 
         $intepreter['body']['footer'] = '';
-        $intepreter['body']['footer'] .= '<div class="_footer _section ">';
-        $intepreter['body']['footer'] .= '<div class="_container _width-d-1000">';
-        $intepreter['body']['footer'] .= '
-            <div class="_grid grid-3">
-                <h5>Contact Customer Service</h5>
-                <hr/>
-                <h5>1-500 898</h5>
-            </div>
-            <div class="_grid grid-3">
-                <h5>Need Help ?</h5>
-                <hr/>
-                <a href="'.url('contact-us').'">Contact Us</a>
-                <a href="">FAQ</a>
-            </div>
-            <div class="_grid grid-3">
-                <h5>Lorem Ipsum</h5>
-                <hr/>
-                <a href="">Lorem Ipsum</a>
-                <a href="">Lorem Ipsum</a>
-            </div>
-            <div class="_grid grid-3">
-                <h5>Connect</h5>
-                <hr/>
-                <div class="_socmed-container">
-                    <a href=""><i class="fa fa-facebook"/></i></a>
-                    <a href=""><i class="fa fa-twitter"/></i></a>
-                    <a href=""><i class="fa fa-instagram"/></i></a>
-                    <a href=""><i class="fa fa-youtube"/></i></a>
-                </div>
-            </div>
-        ';
-        $intepreter['body']['footer'] .= '</div>';
-        $intepreter['body']['footer'] .= '</div>';
+        
 
         $intepreter['body']['section'] = '';
         if(!empty($sections))

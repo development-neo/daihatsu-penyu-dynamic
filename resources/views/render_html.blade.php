@@ -26,6 +26,7 @@
     <script type="text/javascript" src="{{ url('js/library_components/slider-3.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/library_components/slider-4.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/library_components/video-1.js') }}"></script>
+    <script type="text/javascript" src="{{ url('js/custom.js') }}"></script>
     @if(isset($_GET['css_tab']))
     
         @include('render_html.css_tab', $intepreter)
