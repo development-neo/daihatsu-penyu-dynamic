@@ -23,18 +23,20 @@
 .slider-2 .slider-item-container .slider-item .slider-heading {
     position: relative;
     font-family: 'Permanent Marker', cursive;
-    text-align: center;
     color: black;
     margin-top: 75px;
+    padding-left: 50px;
+    font-size: 28px;
 }
 
 .slider-2 .slider-item-container .slider-item .slider-description {
     position: relative;
     color: black;
-    top: 35%;
-    text-align: center;
+    padding: 0px 0px 0px 50px;
     height: 70px;
     overflow: hidden;
+    font-size: 17px;
+    margin-top: -10px;
 }
 
 .slider-2 .slider-item-container .active .slider-heading {

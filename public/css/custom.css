@@ -260,6 +260,20 @@ p {
     color: black;
 }
 
+.__grid_id_134 {
+    margin-top: 130px;
+}
+
+.__component_id_220 {
+    font-size: 35px;
+}
+
+.__component_id_221 {
+    font-size: 16px;
+    height: 133px;
+    overflow: hidden;
+}
+
 ._galery-image img {
     width: 25% !important;
     float: left;
@@ -397,6 +411,33 @@ body {
 
 ._section-konservasi-overview .grid-2:last-child {
     border-right: none!important;
+}
+
+body._page_faq {
+    background-image: url(/uploads/image/faq.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -600px;
+}
+
+body._page_kontak-kami {
+    background-image: url(/uploads/image/kontak.png);
+    background-size: 102%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+body._page_lokasi {
+    background-image: url(/uploads/image/lokasi.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -60px;
+    background-position-y: 150px;
+}
+
+._page_faq .__section_id_12 ._container,
+._page_faq .__section_id_13 ._container {
+    background-color: white;
 }
 
 ._beranda-section0 {
