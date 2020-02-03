@@ -103,7 +103,7 @@ class IntepreterController extends Controller
                 $intepreter['body']['section'] .= '</div>';
             }
 
-        $intepreter['footer']['javascript'] = $html['javascript']['library_component'];
+        $intepreter['footer']['javascript'] = $html['javascript'];
         $intepreter['footer']['javascript'] .= 
         '<script>
             $(document).ready(function(){
@@ -326,7 +326,7 @@ class IntepreterController extends Controller
         $d_components['data'] = (array)$d_components['data'];
         $string = '';
         $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].' '.$d_components['library_component'].' _card">';
-        $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src'].'" style="width: 100%;"/>';
+        $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"/>';
         $string .= '<div class="_card-text-container">';
         $string .= '<h4 class="_card-heading">'.$d_components['data']['title'].'</h4>';
         if(count($d_components['data']['additional']) > 0){

@@ -43,7 +43,10 @@ class Projects extends Model
         $data = [
             'name' => '',
             'meta' => '',
-            'css' => '',
+            'css' => [
+                'main' => '',
+                'library_component' => '',
+            ],
             'information' => '',
             'body' => [
                 'navbar' => [],
@@ -100,7 +103,10 @@ class Projects extends Model
         if($html != null) {
             $css = [];
             if($project->d_css()->first()) {
-                $css = $project->d_css()->first()->toArray()['code'];
+                $css = 
+                '<style type="text/css" class="css_1900_1201">'.
+                $project->d_css()->first()->toArray()['code'].
+                '</style>';
 
                 if(isset($_GET['css_coder'])) {
                     $string = '._navbar{position:fixed;left:0;top:0;width:100%;background-color:#fff;z-index:99999999;padding:10px 0;box-shadow:0 1px 5px #d3d3d3}._navbar ._menu-link{float:right}._navbar ._menu-link ul{width:100%;padding:0;list-style:none;display:table;margin:0}._navbar ._menu-link ul li{float:left}._navbar ._menu-link ul li a{text-decoration:none;color:#333;padding:8px 10px;display:block;text-transform:capitalize}._footer ._menu-link{float:right}._footer ._menu-link ul{width:100%;padding:0;list-style:none;display:table;margin:0}._footer ._menu-link ul li{float:left}._footer ._menu-link ul li a{text-decoration:none;color:#333;padding:8px 10px;display:block;text-transform:capitalize}._footer ._container{border-top:.5px #aaa solid}._footer ._site-logo,._navbar ._site-logo{width:120px;display:block;float:left}._footer ._site-contact_detail{float:left;margin:10px 0;color:#666}._text-center{text-align:center}._text-right{text-align:right}._float-right{float:right!important}._container{width:1000px;margin:0 auto;display:block}._section ._container{display:table;padding:20px 10px}._container-margin-20 ._container{margin-top:20px}._section ._container ._grid{float:left;padding:10px 0;display:inherit;position:relative}._section ._container .grid-12{width:100%}._section ._container .grid-11{width:91.666666666667%}._section ._container .grid-10{width:83.333333333333%}._section ._container .grid-9{width:75%}._section ._container .grid-8{width:66.666666666666%}._section ._container .grid-7{width:58.333333333333%}._section ._container .grid-6{width:50%}._section ._container .grid-5{width:41.666666666667%}._section ._container .grid-4{width:33.333333333333%}._section ._container .grid-3{width:25%}._section ._container .grid-2{width:16.666666666667%}._section ._container .grid-1{width:8.333333333333%}._btn{padding:5px 17px;display:block;width:fit-content;border:.5px #2f94e0 solid;border-radius:9px;color:#fff;background-color:#2f94e0}._btn:hover{text-decoration:none;color:#2f94e0;background-color:#fff}._galery-image img{width:25%!important;float:left;padding:5px;height:150px;object-fit:cover;object-position:center}._padding-10{padding:10px}._berita-berita-lain img{width:50%!important;float:left}._berita-berita-lain h6{height:80px}._lokasi-image img{width:33%!important;float:left;padding:3px}._galery-video{width:50%!important;float:left;padding:5px}._galery-video-full{padding:5px}._container-width-full ._container{width:100%!important;padding:20px 0}._container-width-full ._container ._grid{width:100%!important;padding:20px 0}._section ._container ._grid-1000{width:1000px!important;float:unset;margin:0 auto}body{padding-top:60px}._padding-less-container-grid ._container{padding:0!important}._padding-less-container-grid ._container ._grid{padding:0!important}._social-media-badge{position:fixed;z-index:1;top:35%;width:calc((100% - 980px)/ 2);display:block;text-align:center}._social-media-badge ._container{position:absolute;width:100%}._font-permanent-marker{font-family:"Permanent Marker",cursive;color:#2679bf}._font-ubuntu-marker{font-family:Ubuntu,sans-serif}._font-ubuntu-marker-bold{font-family:Ubuntu,sans-serif;font-weight:700}._section-konservasi-overview .grid-2{border:.5px #aaa solid;border-bottom:none;border-top:none;border-right:none!important}._section-konservasi-overview .grid-2:nth-child(2){border:none!important}._icon-alignment i{margin:0 15px 0 10px}._section-konservasi-overview .grid-2:last-child{border-right:none!important}.carousel-control-next{position:absolute;bottom:15px;right:15px;border:5px solid;padding:10px;width:50px;height:50px;border-radius:15pc;top:unset;background-color:#fff}.carousel-control-prev{position:absolute;bottom:15px;right:75px;border:5px solid;padding:10px;width:50px;height:50px;border-radius:15pc;top:unset;left:unset}._beranda-section1{background-image:url(/uploads/image/section1-beranda.png);background-position:center;background-size:cover;height:500px}._beranda-section2{background-image:url(/uploads/image/section2-beranda.png);background-size:100%;background-repeat:no-repeat;background-position-y:500px}._beranda-section3{background-image:url(/uploads/image/section3-beranda.png);background-position:right;background-size:250px;background-repeat:no-repeat;background-position-x:800px}._beranda-section4{background-image:url(/uploads/image/section4-beranda.png);background-position:left;background-size:250px;background-repeat:no-repeat;background-position-x:200px}._beranda-section-7{background-image:url(/uploads/image/section-galery-beranda.png);background-position:center;background-size:cover;background-repeat:no-repeat}.carousel-indicators{visibility:hidden}._icon-social-badge-instagram{color:#aa3a9e;border:1px solid;padding:7px 0 0 0;border-radius:15pc;width:33px;height:33px;text-decoration:none}._icon-social-badge-instagram:hover{color:#882d7e;text-decoration:none}._icon-social-badge-facebook{border:1px solid;padding:8px 0 0 0;border-radius:15pc;width:33px;height:33px;text-decoration:none}._icon-social-badge-facebook:hover{text-decoration:none}._icon-social-badge-twitter{color:#00acee;border:1px solid;border-radius:15pc;width:33px;height:33px;padding:7px 0 0 0;text-decoration:none}._icon-social-badge-twitter:hover{color:#0c8cbd;text-decoration:none}._icon-social-badge-youtube{color:red;width:33px;height:33px;border:1px solid;border-radius:15pc;padding:6px 0 0 0;text-decoration:none}._icon-social-badge-youtube:hover{color:#b50606;text-decoration:none}._berita-image-2 img{width:100%;height:185px;background-size:cover}._breadcrumb{margin:0;padding:0;margin-top:-10px;margin-bottom:0;font-size:14px}._breadcrumb a{color:#000}._breadcrumb .fa{margin:0 5px}._accordion-icon .icon-accordion{margin-left:680px;border:1px solid;padding:0 5px;border-radius:15px}._border ._container{border:.5px solid #000;margin-bottom:30px}._shadow ._container{box-shadow:0 1px 10px #d3d3d3!important;margin-bottom:30px;border-radius:5px}._accordion-icon .card{border-radius:0;border:unset;border-bottom:1px solid rgba(0,0,0,.1)!important;background-color:#fff}._accordion-icon .card .card-header{background-color:#fff}._accordion-icon .card .card-header .mb-0{border-bottom:1px solid #fff}._accordion-icon .card .card-header .mb-0 .btn{color:#000}._konservasi-kami-content{margin-top:15%}:target{padding-top:70px;margin-top:-70px}'; 
@@ -115,9 +121,11 @@ class Projects extends Model
                 }
                 $cssResponsive = $project->d_css()->first()->d_cssResponsive()->get()->toArray();
                 foreach($cssResponsive as $key => $temp) {
-                    $css .= '@media only screen and (max-width: '.$temp['max-width'].'px) and (min-width: '.$temp['min-width'].'px)  {';
+                    $css .= '<style type="text/css" class="css_'.$temp['max-width'].'_'.$temp['min-width'].'">';
+                    $css .= '@media (max-width: '.$temp['max-width'].'px) and (min-width: '.$temp['min-width'].'px)  {';
                     $css .= $temp['code'];
                     $css .= '}';
+                    $css .= '</style>';
                 }
                 // echo $css; exit;
                 // dd($cssResponsive);
@@ -125,8 +133,10 @@ class Projects extends Model
             
             $data['name'] = $html->url;
             $data['meta'] = $html->meta;
-            $data['css'] = $css;
-            $data['javascript'] = '';
+            $data['css']['main'] = $css;
+            $data['css']['library_component'] = '';
+            $data['javascript']['main'] = '';
+            $data['javascript']['library_component'] = '';
             
             if($html->m_pages()->first()) {
                 $pages = $html
@@ -158,8 +168,8 @@ class Projects extends Model
                                     foreach($d_components as $list_components) {
 
                                         if($list_components->m_library_component()->first()) {
-                                            $data['css'] .= $list_components->m_library_component()->first()->css;
-                                            $data['javascript'] .= $list_components->m_library_component()->first()->javascript;
+                                            $data['css']['library_component'] .= $list_components->m_library_component()->first()->css;
+                                            $data['javascript']['library_component'] .= $list_components->m_library_component()->first()->javascript;
                                         }
                                             // dd($list_components->m_library_component()->first()->css);
                                             // echo $list_components->m_library_component()->first(); echo '<br/>';
