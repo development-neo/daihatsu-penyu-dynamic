@@ -10,6 +10,7 @@
         <link href="{{ url('css/library_components/slider-3.css') }}" rel="stylesheet"/>
         <link href="{{ url('css/library_components/slider-4.css') }}" rel="stylesheet"/>
         <link href="{{ url('css/library_components/video-1.css') }}" rel="stylesheet"/>
+        <link href="{{ url('css/library_components/card-1.css') }}" rel="stylesheet"/>
         <link href="{{ url('css/responsive-1200.css') }}" rel="stylesheet"/>
         <link href="{{ url('css/responsive-992.css') }}" rel="stylesheet"/>
         <link href="{{ url('css/responsive-768.css') }}" rel="stylesheet"/>
@@ -26,6 +27,7 @@
     <script type="text/javascript" src="{{ url('js/library_components/slider-3.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/library_components/slider-4.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/library_components/video-1.js') }}"></script>
+    <script type="text/javascript" src="{{ url('js/library_components/card-1.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/custom.js') }}"></script>
     @if(isset($_GET['css_tab']))
     

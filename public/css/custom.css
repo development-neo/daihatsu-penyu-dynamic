@@ -582,6 +582,7 @@ p._sub-tittle-konservasi {
 ._icon-social-badge-instagram:hover {
     color: #882d7e;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 ._icon-social-badge-facebook {
@@ -595,6 +596,7 @@ p._sub-tittle-konservasi {
 
 ._icon-social-badge-facebook:hover {
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 ._icon-social-badge-twitter {
@@ -610,6 +612,7 @@ p._sub-tittle-konservasi {
 ._icon-social-badge-twitter:hover {
     color: #0c8cbd;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 ._icon-social-badge-youtube {
@@ -625,6 +628,7 @@ p._sub-tittle-konservasi {
 ._icon-social-badge-youtube:hover {
     color: #b50606;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 ._berita-image-2 img {
@@ -785,6 +789,18 @@ p._sub-tittle-konservasi {
 
 ._card a:hover {
     color: white;
+}
+
+.__section_id_28 ._container h4 {
+    font-size: 21px;
+}
+
+.__section_id_28 ._container img {
+    padding: 10px;
+}
+
+.__section_id_28 ._container a {
+    margin: auto;
 }
 
 :target {
