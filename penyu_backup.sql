@@ -46,9 +46,9 @@ CREATE TABLE IF NOT EXISTS `components` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=220 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=243 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table penyu_backup.components: ~217 rows (approximately)
+-- Dumping data for table penyu_backup.components: ~225 rows (approximately)
 /*!40000 ALTER TABLE `components` DISABLE KEYS */;
 INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_component`, `type_component`, `sequence`, `grids`, `status`, `created_at`, `updated_at`) VALUES
 	(2, '', '_show-desktop', '{"src":"heading-beranda.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', '', 4, 1, 1, 1, NULL, NULL),
@@ -169,14 +169,14 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 	(118, NULL, '_font-ubuntu-marker-bold', '{"type":"h3","value":"(Lokasi konservasi)"}', NULL, 2, 1, 75, 1, NULL, NULL),
 	(119, NULL, NULL, '{"type":"p","value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet."}', NULL, 3, 2, 75, 1, NULL, NULL),
 	(120, NULL, NULL, '{"src":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 1, 76, 1, NULL, NULL),
-	(121, 'sliderHome', NULL, '{"0":{"src":"slider-1.png","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"This is Heading"}],"description":[{"tag":"p","text":"This is description lorem ipsum dolor sit amet"}]},"1":{"src":"_DSC6951.JPG","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"This is Heading 2"}],"description":[{"tag":"p","text":"This is description lorem ipsum dolor sit amet"}]},"2":{"src":"_DSC6927.JPG","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"This is Heading 3"}],"description":[{"tag":"p","text":"This is description lorem ipsum dolor sit amet"}]},"3":{"src":"_DSC6927.JPG","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"This is Heading 4"}],"description":[{"tag":"p","text":"This is description lorem ipsum dolor sit amet"}]}}', 'slider-2', 6, 1, 77, 1, NULL, NULL),
+	(121, 'sliderHome', NULL, '{"0":{"src":"Parancak-contact.png","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"Parancak"}],"description":[{"tag":"p","text":"Bali"}]},"1":{"src":"Pasir-contact.png","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"Pasir Jambak"}],"description":[{"tag":"p","text":"Padang"}]},"2":{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"Batu Hiu"}],"description":[{"tag":"p","text":"Pangandaran"}]},"3":{"src":"pulau-contact.png","href":"https:\\/\\/wallpapermemory.com\\/desktop-backgrounds\\/nature\\/mountain\\/mount-bromo","heading":[{"tag":"h4","text":"Pulau Seribu"}],"description":[{"tag":"p","text":"Kepulauan Seribu"}]}}', 'slider-2', 6, 1, 77, 1, NULL, NULL),
 	(122, NULL, '', '{"src":"IMG-20180327-WA0003.jpg","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 5, 30, 1, NULL, NULL),
 	(123, NULL, NULL, '{"src":"_DSC5965.JPG","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 1, 30, 1, NULL, NULL),
 	(124, NULL, '_galery-video', '{"src":"https://www.youtube.com/embed/zfefVEgwGPk","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 5, 1, 31, 1, NULL, NULL),
 	(125, NULL, '_galery-video', '{"src":"https://www.youtube.com/embed/zfefVEgwGPk","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 5, 2, 31, 1, NULL, NULL),
 	(126, NULL, '_padding-10 _gradient', '{"src":"Image 7.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>Pelepasan Tukik</a>","additional":["Selengkapnya","Viewers","This is date"]}', NULL, 12, 1, 27, 1, NULL, NULL),
 	(127, NULL, '_padding-10 _gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 1, 28, 1, NULL, NULL),
-	(128, NULL, '_padding-10 _gradient', '{"src":"animal-animal-photography-aquatic-2.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 2, 28, 1, NULL, NULL),
+	(128, NULL, '_padding-10 _gradient', '{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 2, 28, 1, NULL, NULL),
 	(129, NULL, '_padding-10 _font-ubuntu-marker', '{"type":"h3","value":"BERITA LAINYA"}', NULL, 2, 1, 29, 1, NULL, NULL),
 	(130, NULL, '_padding-10', '{"src":"_DSC5979.JPG","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 2, 29, 1, NULL, NULL),
 	(131, NULL, '_padding-10 _font-ubuntu-marker', '{"type":"h6","value":"<a href=\'\'>NAMA BERITA</a>"}', NULL, 2, 3, 29, 1, NULL, NULL),
@@ -267,7 +267,30 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 	(216, NULL, NULL, '{"href":"/galeri","value":"Galeri"}', NULL, 8, 6, 132, 1, NULL, NULL),
 	(217, NULL, NULL, '{"href":"/berita","value":"Berita"}', NULL, 8, 7, 132, 1, NULL, NULL),
 	(218, NULL, NULL, '{"href":"/faq","value":"Faq"}', NULL, 8, 8, 132, 1, NULL, NULL),
-	(219, NULL, '_text-center', '{"type":"p","value":"Copyright © 2010-2019 Daihatsu Penyu Untuk Indonesia. All rights reserved."}', NULL, 3, 1, 133, 1, NULL, NULL);
+	(219, NULL, '_text-center', '{"type":"p","value":"Copyright © 2010-2019 Daihatsu Penyu Untuk Indonesia. All rights reserved."}', NULL, 3, 1, 133, 1, NULL, NULL),
+	(220, NULL, '_font-permanent-marker', '{"type":"h2","value":"Contact Us"}', NULL, 2, 1, 134, 1, NULL, NULL),
+	(221, NULL, NULL, '{"type":"p","value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum et dui semper semper. Nulla ut arcu tempor, dictum metus eget, pharetra eros. Suspendisse potenti. Mauris euismod eros vel quam venenatis, nec luctus augue iaculis. Donec cursus accumsan lectus. Cras vitae sapien at metus vulputate volutpat dictum sed leo. Sed laoreet urna erat, eu pretium enim mollis sit amet."}', NULL, 3, 2, 134, 1, NULL, NULL),
+	(222, NULL, '_font-permanent-marker _text-center', '{"type":"h4","value":"Konservasi Penyu Parancak, Bali"}', '', 2, 1, 135, 1, NULL, NULL),
+	(223, NULL, NULL, '{"src":"konservasi-bali.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', '', 4, 2, 135, 1, NULL, NULL),
+	(224, NULL, NULL, '{"href":"konservasi-kami/detail","value":"View on map"}', '', 7, 3, 135, 1, NULL, NULL),
+	(225, NULL, '_font-permanent-marker _text-center', '{"type":"h4","value":"Konservasi Penyu Pasir Jambak, Padang"}', '', 2, 1, 136, 1, NULL, NULL),
+	(226, NULL, NULL, '{"src":"konservasi-pangandaran.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 2, 136, 1, NULL, NULL),
+	(227, NULL, NULL, '{"href":"konservasi-kami/detail","value":"View on map"}', NULL, 7, 3, 136, 1, NULL, NULL),
+	(228, NULL, '_font-permanent-marker _text-center', '{"type":"h4","value":"Konservasi Penyu Batu Hiu, Pangandaran"}', NULL, 2, 1, 137, 1, NULL, NULL),
+	(229, NULL, NULL, '{"src":"padang.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 2, 137, 1, NULL, NULL),
+	(230, NULL, NULL, '{"href":"konservasi-kami/detail","value":"View on map"}', NULL, 7, 3, 137, 1, NULL, NULL),
+	(231, NULL, '_font-permanent-marker _text-center', '{"type":"h4","value":"Konservasi Penyu Pulau Pramuka"}', NULL, 2, 1, 138, 1, NULL, NULL),
+	(232, NULL, NULL, '{"src":"konservasi-pulau-pramuka.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 2, 138, 1, NULL, NULL),
+	(233, NULL, NULL, '{"href":"konservasi-kami/detail","value":"View on map"}', NULL, 7, 3, 138, 1, NULL, NULL),
+	(234, NULL, NULL, '{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 1, 139, 1, NULL, NULL),
+	(235, NULL, NULL, '{"type":"h3","value":"<b>JUDUL BERITA/ ARTIKEL TENTANG PENYU </b>"}', NULL, 2, 1, 140, 1, NULL, NULL),
+	(236, NULL, NULL, '{"type":"p","value":"Lokasi | keterangan dd/mm/yy"}', NULL, 3, 1, 141, 1, NULL, NULL),
+	(237, NULL, NULL, '{"type":"p","value":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam at, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br><br>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}', NULL, 3, 1, 142, 1, NULL, NULL),
+	(238, NULL, '_gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', NULL, 12, 1, 143, 1, NULL, NULL),
+	(239, NULL, '_gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', NULL, 12, 1, 144, 1, NULL, NULL),
+	(240, NULL, '_gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', NULL, 12, 1, 145, 1, NULL, NULL),
+	(241, NULL, '_gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', NULL, 12, 1, 146, 1, NULL, NULL),
+	(242, NULL, NULL, '{"type":"h3","value":"<b>Berita Lainya</b>"}', NULL, 2, 1, 147, 1, NULL, NULL);
 /*!40000 ALTER TABLE `components` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.css
@@ -323,7 +346,7 @@ CREATE TABLE IF NOT EXISTS `grids` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `status` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=148 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table penyu_backup.grids: ~131 rows (approximately)
 /*!40000 ALTER TABLE `grids` DISABLE KEYS */;
@@ -393,7 +416,7 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 	(64, NULL, NULL, 6, 3, 26, NULL, NULL, 1),
 	(65, NULL, NULL, 12, 4, 26, NULL, NULL, 1),
 	(66, NULL, NULL, 12, 1, 27, NULL, NULL, 1),
-	(67, NULL, '_grid-1000', 12, 1, 28, NULL, NULL, 1),
+	(67, NULL, '_grid-1000', 12, 1, 28, NULL, NULL, 0),
 	(69, NULL, NULL, 6, 1, 29, NULL, NULL, 1),
 	(70, NULL, NULL, 6, 2, 29, NULL, NULL, 1),
 	(71, NULL, '', 6, 1, 30, NULL, NULL, 1),
@@ -402,7 +425,7 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 	(74, NULL, NULL, 6, 2, 31, NULL, NULL, 1),
 	(75, NULL, NULL, 6, 1, 32, NULL, NULL, 1),
 	(76, NULL, NULL, 6, 2, 32, NULL, NULL, 1),
-	(77, NULL, NULL, 12, 1, 33, NULL, NULL, 1),
+	(77, NULL, NULL, 12, 1, 33, NULL, NULL, 0),
 	(78, NULL, NULL, 6, 1, 34, NULL, NULL, 1),
 	(79, NULL, NULL, 6, 2, 34, NULL, NULL, 1),
 	(80, NULL, NULL, 6, 1, 35, NULL, NULL, 1),
@@ -458,7 +481,21 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 	(130, NULL, '_menu-link _show-desktop', 10, 2, 47, NULL, NULL, 1),
 	(131, NULL, NULL, 3, 1, 48, NULL, NULL, 1),
 	(132, NULL, '_menu-link', 9, 2, 48, NULL, NULL, 1),
-	(133, NULL, NULL, 12, 3, 48, NULL, NULL, 1);
+	(133, NULL, NULL, 12, 3, 48, NULL, NULL, 1),
+	(134, NULL, NULL, 4, 1, 33, NULL, NULL, 1),
+	(135, NULL, NULL, 3, 1, 28, NULL, NULL, 1),
+	(136, NULL, NULL, 3, 2, 28, NULL, NULL, 1),
+	(137, NULL, NULL, 3, 3, 28, NULL, NULL, 1),
+	(138, NULL, NULL, 3, 4, 28, NULL, NULL, 1),
+	(139, NULL, '_image-berita', 12, 1, 74, NULL, NULL, 1),
+	(140, NULL, '_heading-berita', 12, 1, 75, NULL, NULL, 1),
+	(141, NULL, '_date-berita', 6, 2, 75, NULL, NULL, 1),
+	(142, NULL, '_content-berita', 12, 3, 75, NULL, NULL, 1),
+	(143, NULL, NULL, 3, 2, 76, NULL, NULL, 1),
+	(144, NULL, NULL, 3, 3, 76, NULL, NULL, 1),
+	(145, NULL, NULL, 3, 4, 76, NULL, NULL, 1),
+	(146, NULL, NULL, 3, 5, 76, NULL, NULL, 1),
+	(147, NULL, NULL, 12, 1, 76, NULL, NULL, 1);
 /*!40000 ALTER TABLE `grids` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.groups
@@ -644,7 +681,7 @@ CREATE TABLE IF NOT EXISTS `sections` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table penyu_backup.sections: ~48 rows (approximately)
 /*!40000 ALTER TABLE `sections` DISABLE KEYS */;
@@ -696,7 +733,33 @@ INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `page
 	(45, 'section social media badge - berita', NULL, '_social-media-badge', 0, 7, NULL, 0, NULL, NULL),
 	(46, 'section social media badge - faq', NULL, '_social-media-badge', 0, 8, NULL, 0, NULL, NULL),
 	(47, 'section navbar', NULL, '_navbar', 0, 1, NULL, 0, NULL, NULL),
-	(48, 'section footer', NULL, '_footer', 9, 1, NULL, 0, NULL, NULL);
+	(48, 'section footer', NULL, '_footer', 9, 1, NULL, 0, NULL, NULL),
+	(49, '', NULL, '_navbar', 0, 2, 47, 0, NULL, NULL),
+	(50, '', NULL, '_navbar', 0, 3, 47, 0, NULL, NULL),
+	(51, '', NULL, '_navbar', 0, 4, 47, 0, NULL, NULL),
+	(52, '', NULL, '_navbar', 0, 5, 47, 0, NULL, NULL),
+	(53, '', NULL, '_navbar', 0, 6, 47, 0, NULL, NULL),
+	(54, '', NULL, '_navbar', 0, 7, 47, 0, NULL, NULL),
+	(55, '', NULL, '_navbar', 0, 8, 47, 0, NULL, NULL),
+	(56, '', NULL, '_navbar', 0, 9, 47, 0, NULL, NULL),
+	(57, '', NULL, '_navbar', 0, 10, 47, 0, NULL, NULL),
+	(58, '', NULL, '_navbar', 0, 11, 47, 0, NULL, NULL),
+	(59, '', NULL, '_footer', 9, 2, 48, 0, NULL, NULL),
+	(60, '', NULL, '_footer', 9, 3, 48, 0, NULL, NULL),
+	(61, '', NULL, '_footer', 9, 4, 48, 0, NULL, NULL),
+	(62, '', NULL, '_footer', 9, 5, 48, 0, NULL, NULL),
+	(63, '', NULL, '_footer', 9, 6, 48, 0, NULL, NULL),
+	(64, '', NULL, '_footer', 9, 7, 48, 0, NULL, NULL),
+	(65, '', NULL, '_footer', 9, 8, 48, 0, NULL, NULL),
+	(66, '', NULL, '_footer', 9, 9, 48, 0, NULL, NULL),
+	(67, '', NULL, '_footer', 9, 10, 48, 0, NULL, NULL),
+	(68, '', NULL, '_footer', 9, 11, 48, 0, NULL, NULL),
+	(71, '', NULL, '_navbar', 0, 12, 47, 0, NULL, NULL),
+	(72, '', NULL, '_footer', 9, 12, 48, 0, NULL, NULL),
+	(73, '', NULL, '_social-media-badge', 0, 12, 38, 0, NULL, NULL),
+	(74, '', NULL, NULL, 1, 12, NULL, 0, NULL, NULL),
+	(75, '', NULL, NULL, 2, 12, NULL, 0, NULL, NULL),
+	(76, '', NULL, NULL, 3, 12, NULL, 0, NULL, NULL);
 /*!40000 ALTER TABLE `sections` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.type_component
