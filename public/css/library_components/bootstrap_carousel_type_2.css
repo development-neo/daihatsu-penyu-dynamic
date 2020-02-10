@@ -1,0 +1,104 @@
+.bootstrap_carousel_type_2 .carousel .carousel-indicators {
+    position: absolute;
+    right: 25;
+    bottom: 35%;
+    top: 35%;
+    z-index: 15;
+    justify-content: center;
+    list-style: none;
+    float: unset;
+    left: unset;
+    display: unset;
+    padding: unset;
+    margin: unset;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-indicators li {
+    box-sizing: content-box;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    margin: 15px;
+    border-radius: 15px;
+    flex: unset;
+    text-indent: unset;
+    border: unset;
+    transition: unset;
+    opacity: unset;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-indicators {
+    visibility: visible;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-control-prev {
+    position: absolute;
+    bottom: 130px;
+    right: 60px;
+    border: 2px solid #2679BF;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15pc;
+    top: unset;
+    left: unset;
+    opacity: unset;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-control-next {
+    background-color: transparent;
+    position: absolute;
+    bottom: 130px;
+    right: 15px;
+    border: 2px solid #2679BF;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15pc;
+    top: unset;
+    opacity: unset;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-control-prev .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232679BF' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e") !important;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-control-next .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232679BF' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e") !important;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-indicators {
+    opacity: 1!important;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-indicators .active {
+    opacity: 1!important;
+    background-color: #2679BF;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: absolute;
+    right: unset;
+    bottom: 0;
+    left: unset;
+    z-index: 10;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 120px;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    display: none;
+}
+
+.bootstrap_carousel_type_2 .carousel .carousel-inner .carousel-item .carousel-caption p {
+    text-align: left;
+    padding: 20px;
+    margin-top: -20px;
+    font-size: 13px;
+}
