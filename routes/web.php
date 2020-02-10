@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/json/generate-object', 'JsonController@generateObject');
+
+
 Route::get('/{segment}', 'IntepreterController@index')->name('home');
 Route::get('/{segment}/{segment2}', 'IntepreterController@index')->name('home');
 Route::get('/{segment}/{segment2}/{segment3}', 'IntepreterController@index')->name('home');
@@ -27,6 +30,7 @@ Route::get('/administrator/content-management/publics/{i}/page/{j}/add', 'Admini
 Route::get('/administrator/content-management/publics/{i}/add', 'Administrator\ContentManagement\PublicController@add');
 
 Route::get('/administrator/content-management/groups/add', 'Administrator\ContentManagement\GroupsController@add');
+
 
 Auth::routes();
 
@@ -77,3 +81,4 @@ Route::post('/api/component/update', 'Api\ComponentController@update');
 Route::post('/api/component/delete', 'Api\ComponentController@delete');
 Route::post('/api/component/update-sequence', 'Api\ComponentController@updateSequence');
 
+Route::post('/api/css/update', 'Api\CssController@update');
