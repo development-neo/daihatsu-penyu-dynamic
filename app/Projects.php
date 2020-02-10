@@ -24,9 +24,23 @@ class Projects extends Model
     }
 
     public function array_initialization() {
-        
+
+        // $array = (object) [
+        //     'src' =>'IMG-20180327-WA0010.jpg',
+        //     'href' =>'https://wallpapermemory.com/uploads/200/mount-bromo-wallpaper-hd-1920x1200-320096.jpg',
+        //     'title' =>'This is fucking title',
+        //     'additional' => [
+        //         'This is fucking additional text',
+        //         'This is fucking additional text with long description that so funny to show.',
+        //         'This is date',
+        //         'This is other what do you want to write',
+        //     ],
+        // ];
+
+        // dd(json_encode($array));
+        // exit;
+
         $data = [
-            'project' => '',
             'name' => '',
             'meta' => '',
             'css' => [
@@ -45,10 +59,7 @@ class Projects extends Model
         $public = $project->d_publics()->get();
 
         $navbar = [
-            'logo' => [
-                url('uploads/image/Logo.png'),
-                url('uploads/image/Logo-typograf.png'),
-            ],
+            'logo' => 'https://daihatsu.co.id/images/revamp2017/daihatsu-logo.svg',
             'data' => [],
         ];
         foreach($public as $key => $temp) {
@@ -79,10 +90,8 @@ class Projects extends Model
         $segment = \Request::segments();
 
         $html = null;
-        $className = '_page';
         if(!empty($segment))
-            foreach($segment as $key => $temp) {
-                $className .= '_'.$temp;
+            foreach($segment as $key => $temp)
                 foreach($public as $k => $publics)
                     if($temp == $publics->url)
                         if($html == null)
@@ -90,7 +99,6 @@ class Projects extends Model
                         else
                             if($html['id'] == $publics->parent)
                                 $html = $publics;
-            }
                                 
         if($html != null) {
             $css = [];
@@ -123,12 +131,7 @@ class Projects extends Model
                 // dd($cssResponsive);
             }
             
-            $data['project'] = $this->active()->name;
-            
-            $data['name'] = [
-                'page' => strtoupper($this->active()->name . ' | ' . $html->name),
-                'class' => $className,
-            ];
+            $data['name'] = $html->url;
             $data['meta'] = $html->meta;
             $data['css']['main'] = $css;
             $data['css']['library_component'] = '';
@@ -174,7 +177,7 @@ class Projects extends Model
                                             'pk' => $list_components->id,
                                             'type' => $list_components->m_type_component()->first()->name,
                                             'id' => $list_components->html_id,
-                                            'class' => '__component_id_'. $list_components->id .' ' . $list_components->html_class,
+                                            'class' => $list_components->html_class,
                                             'library_component' => $list_components->library_component,
                                             'data' => $list_components->content != '' ? json_decode($list_components->content) : '',
                                         ]);
@@ -184,7 +187,7 @@ class Projects extends Model
                                     'pk' => $list_grids->id,
                                     'length' => $list_grids->length,
                                     'id' => $list_grids->html_id,
-                                    'class' => '__grid_id_'. $list_grids->id .' ' . $list_grids->html_class,
+                                    'class' => $list_grids->html_class,
                                     'components' => $components,
                                 ]);
                             }
@@ -193,13 +196,15 @@ class Projects extends Model
                             'pk' => $list_sections->id,
                             'name' => $list_sections->name,
                             'id' => $list_sections->html_id,
-                            'class' => '__section_id_'. $list_sections->id .' ' . $list_sections->html_class,
+                            'class' => $list_sections->html_class,
                             'grids' => $grids,
                         ]);
                     }
                 }
             }
         }
+        // dd($data);
+        // exit;
         return $data;
     }
 
