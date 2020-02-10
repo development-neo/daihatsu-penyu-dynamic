@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class IntepreterController extends Controller
+class JsonController extends Controller
 {
     /**
      * Create a new controller instance.
