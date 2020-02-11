@@ -6,7 +6,7 @@ CREATE TABLE `posts_group` (
 	`sort` VARCHAR(4) NULL DEFAULT NULL,
 	`limit` INT(11) NULL DEFAULT NULL,
 	`additional_column` VARCHAR(200) NULL DEFAULT NULL,
-	`additional_operartors` VARCHAR(200) NULL DEFAULT NULL,
+	`additional_operators` VARCHAR(200) NULL DEFAULT NULL,
 	`additional_value` VARCHAR(200) NULL DEFAULT NULL,
 	`created_at` DATETIME NULL DEFAULT current_timestamp(),
 	`updated_at` DATETIME NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),

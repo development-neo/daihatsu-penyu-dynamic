@@ -19,6 +19,14 @@ Route::post('/category/soft-delete', 'CategoryController@softDelete');
 Route::post('/category/restore', 'CategoryController@restore');
 Route::post('/category/force-delete', 'CategoryController@forceDelete');
 
+Route::get('/posts-group', 'PostsGroupController@index');
+Route::get('/posts-group/get/{id}', 'PostsGroupController@get');
+Route::post('/posts-group/create', 'PostsGroupController@create');
+Route::post('/posts-group/update', 'PostsGroupController@update');
+Route::post('/posts-group/soft-delete', 'PostsGroupController@softDelete');
+Route::post('/posts-group/restore', 'PostsGroupController@restore');
+Route::post('/posts-group/force-delete', 'PostsGroupController@forceDelete');
+
 Route::get('/projects', 'ProjectsController@index');
 Route::get('/projects/get/{id}', 'ProjectsController@get');
 Route::post('/projects/create', 'ProjectsController@create');
