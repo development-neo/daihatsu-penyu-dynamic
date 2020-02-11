@@ -13,12 +13,10 @@
 
 
 -- Dumping database structure for penyu_backup
-DROP DATABASE IF EXISTS `penyu_backup`;
 CREATE DATABASE IF NOT EXISTS `penyu_backup` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `penyu_backup`;
 
 -- Dumping structure for table penyu_backup.categories
-DROP TABLE IF EXISTS `categories`;
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -32,7 +30,6 @@ CREATE TABLE IF NOT EXISTS `categories` (
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.components
-DROP TABLE IF EXISTS `components`;
 CREATE TABLE IF NOT EXISTS `components` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `html_id` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -48,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `components` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=243 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table penyu_backup.components: ~225 rows (approximately)
+-- Dumping data for table penyu_backup.components: ~240 rows (approximately)
 /*!40000 ALTER TABLE `components` DISABLE KEYS */;
 INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_component`, `type_component`, `sequence`, `grids`, `status`, `created_at`, `updated_at`) VALUES
 	(2, '', '_show-desktop', '{"src":"heading-beranda.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', '', 4, 1, 1, 1, NULL, NULL),
@@ -174,9 +171,9 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 	(123, NULL, NULL, '{"src":"_DSC5965.JPG","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 1, 30, 1, NULL, NULL),
 	(124, NULL, '_galery-video', '{"src":"https://www.youtube.com/embed/zfefVEgwGPk","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 5, 1, 31, 1, NULL, NULL),
 	(125, NULL, '_galery-video', '{"src":"https://www.youtube.com/embed/zfefVEgwGPk","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 5, 2, 31, 1, NULL, NULL),
-	(126, NULL, '_padding-10 _gradient', '{"src":"Image 7.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>Pelepasan Tukik</a>","additional":["Selengkapnya","Viewers","This is date"]}', NULL, 12, 1, 27, 1, NULL, NULL),
-	(127, NULL, '_padding-10 _gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 1, 28, 1, NULL, NULL),
-	(128, NULL, '_padding-10 _gradient', '{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 2, 28, 1, NULL, NULL),
+	(126, NULL, '_padding-5 _gradient', '{"src":"Image 7.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>Pelepasan Tukik</a>","additional":["Selengkapnya","Viewers","This is date"]}', NULL, 12, 1, 27, 1, NULL, NULL),
+	(127, NULL, '_padding-5 _gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 1, 28, 1, NULL, NULL),
+	(128, NULL, '_padding-5 _gradient', '{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 2, 28, 1, NULL, NULL),
 	(129, NULL, '_padding-10 _font-ubuntu-marker', '{"type":"h3","value":"BERITA LAINYA"}', NULL, 2, 1, 29, 1, NULL, NULL),
 	(130, NULL, '_padding-10', '{"src":"_DSC5979.JPG","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 2, 29, 1, NULL, NULL),
 	(131, NULL, '_padding-10 _font-ubuntu-marker', '{"type":"h6","value":"<a href=\'\'>NAMA BERITA</a>"}', NULL, 2, 3, 29, 1, NULL, NULL),
@@ -294,7 +291,6 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 /*!40000 ALTER TABLE `components` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.css
-DROP TABLE IF EXISTS `css`;
 CREATE TABLE IF NOT EXISTS `css` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `projects` int(11) NOT NULL DEFAULT '0',
@@ -311,7 +307,6 @@ INSERT INTO `css` (`id`, `projects`, `code`, `created_at`, `updated_at`) VALUES
 /*!40000 ALTER TABLE `css` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.css_responsive
-DROP TABLE IF EXISTS `css_responsive`;
 CREATE TABLE IF NOT EXISTS `css_responsive` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `css` int(11) NOT NULL DEFAULT '0',
@@ -334,7 +329,6 @@ INSERT INTO `css_responsive` (`id`, `css`, `code`, `max-width`, `min-width`, `cr
 /*!40000 ALTER TABLE `css_responsive` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.grids
-DROP TABLE IF EXISTS `grids`;
 CREATE TABLE IF NOT EXISTS `grids` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `html_id` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -348,7 +342,7 @@ CREATE TABLE IF NOT EXISTS `grids` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=148 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table penyu_backup.grids: ~131 rows (approximately)
+-- Dumping data for table penyu_backup.grids: ~145 rows (approximately)
 /*!40000 ALTER TABLE `grids` DISABLE KEYS */;
 INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `sections`, `created_at`, `updated_at`, `status`) VALUES
 	(1, NULL, '', 12, 1, 1, NULL, NULL, 1),
@@ -379,7 +373,7 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 	(27, NULL, '', 6, 1, 14, NULL, NULL, 1),
 	(28, NULL, '_berita-image-2', 3, 2, 14, NULL, NULL, 1),
 	(29, NULL, '_berita-berita-lain', 3, 3, 14, NULL, NULL, 1),
-	(30, NULL, '_galery-image', 12, 1, 15, NULL, NULL, 1),
+	(30, NULL, '_galery-image _modal-preview-1', 12, 1, 15, NULL, NULL, 1),
 	(31, NULL, NULL, 6, 1, 16, NULL, NULL, 1),
 	(32, NULL, NULL, 6, 2, 16, NULL, NULL, 1),
 	(33, NULL, NULL, 6, 1, 17, NULL, NULL, 1),
@@ -499,7 +493,6 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 /*!40000 ALTER TABLE `grids` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.groups
-DROP TABLE IF EXISTS `groups`;
 CREATE TABLE IF NOT EXISTS `groups` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -517,7 +510,6 @@ INSERT INTO `groups` (`id`, `name`, `created_at`, `updated_at`) VALUES
 /*!40000 ALTER TABLE `groups` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.library_components
-DROP TABLE IF EXISTS `library_components`;
 CREATE TABLE IF NOT EXISTS `library_components` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
@@ -541,7 +533,6 @@ INSERT INTO `library_components` (`id`, `name`, `css`, `javascript`, `created_at
 /*!40000 ALTER TABLE `library_components` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.migrations
-DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -569,7 +560,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.pages
-DROP TABLE IF EXISTS `pages`;
 CREATE TABLE IF NOT EXISTS `pages` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -604,7 +594,6 @@ INSERT INTO `pages` (`id`, `name`, `features_images`, `description`, `is_index`,
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.password_resets
-DROP TABLE IF EXISTS `password_resets`;
 CREATE TABLE IF NOT EXISTS `password_resets` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -617,7 +606,6 @@ CREATE TABLE IF NOT EXISTS `password_resets` (
 /*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.projects
-DROP TABLE IF EXISTS `projects`;
 CREATE TABLE IF NOT EXISTS `projects` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -634,7 +622,6 @@ INSERT INTO `projects` (`id`, `name`, `status`, `created_at`, `updated_at`) VALU
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.publics
-DROP TABLE IF EXISTS `publics`;
 CREATE TABLE IF NOT EXISTS `publics` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -668,7 +655,6 @@ INSERT INTO `publics` (`id`, `name`, `url`, `meta`, `parent`, `pages`, `projects
 /*!40000 ALTER TABLE `publics` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.sections
-DROP TABLE IF EXISTS `sections`;
 CREATE TABLE IF NOT EXISTS `sections` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -681,9 +667,9 @@ CREATE TABLE IF NOT EXISTS `sections` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table penyu_backup.sections: ~48 rows (approximately)
+-- Dumping data for table penyu_backup.sections: ~76 rows (approximately)
 /*!40000 ALTER TABLE `sections` DISABLE KEYS */;
 INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `pages`, `reference_id`, `status`, `created_at`, `updated_at`) VALUES
 	(1, 'section banner', NULL, '_container-width-full _padding-less-container-grid ._container _beranda-section0', 1, 1, NULL, 0, '2019-10-16 16:25:33', '2019-10-22 10:03:05'),
@@ -763,7 +749,6 @@ INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `page
 /*!40000 ALTER TABLE `sections` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.type_component
-DROP TABLE IF EXISTS `type_component`;
 CREATE TABLE IF NOT EXISTS `type_component` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,

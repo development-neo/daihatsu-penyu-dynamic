@@ -1,0 +1,76 @@
+.modal-preview-image-1 {
+    z-index: 2;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.modal-preview-image-1 .preview-image {
+    width: 764px;
+    height: 300px;
+    margin: 115.67px auto 0px;
+}
+
+.modal-preview-image-1 .preview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px;
+    display: block !important;
+}
+
+.modal-preview-image-1 .item-image {
+    width: 782px;
+    height: 72.86px;
+    margin: 21px auto 0px;
+}
+
+.modal-preview-image-1 .item-image img {
+    width: 91.33px;
+    height: 72.86px;
+    margin-left: 10.15px;
+    margin-right: 10.15px;
+    object-fit: cover;
+    float: left;
+    cursor: pointer;
+    display: none;
+}
+
+.modal-preview-image-1 .item-image img.active {
+    border: 1px solid white;
+}
+
+.modal-preview-image-1 .indicator {
+    position: absolute;
+    top: 45%;
+    padding: 0px 95px;
+    width: 100%;
+}
+
+.modal-preview-image-1 img {
+    width: 25px;
+}
+
+.modal-preview-image-1 .indicator .indicator-prev {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    float: left;
+    cursor: pointer;
+}
+
+.modal-preview-image-1 .indicator .indicator-next {
+    float: right;
+    cursor: pointer;
+}
+
+.modal-preview-image-1 .indicator .btn-close-modal {
+    position: absolute;
+    margin: -150px 140px 0px 0px;
+    top: 0;
+    right: 0;
+    border-radius: 15pc;
+    cursor: pointer;
+}
