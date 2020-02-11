@@ -10,6 +10,7 @@ CREATE TABLE `posts_group` (
 	`additional_value` VARCHAR(200) NULL DEFAULT NULL,
 	`created_at` DATETIME NULL DEFAULT current_timestamp(),
 	`updated_at` DATETIME NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+	`deleted_at` DATETIME DEFAULT NULL,
 	PRIMARY KEY (`id`)
 )
 ENGINE=InnoDB;
