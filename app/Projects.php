@@ -80,6 +80,7 @@ class Projects extends Model
 
         $html = null;
         $className = '_page';
+        
         if(!empty($segment))
             foreach($segment as $key => $temp) {
                 $className .= '_'.$temp;
@@ -91,7 +92,11 @@ class Projects extends Model
                             if($html['id'] == $publics->parent)
                                 $html = $publics;
             }
-                                
+        else
+            foreach($public as $k => $publics)
+                if($publics->is_home == 1)
+                    $html = $publics;
+                    
         if($html != null) {
             $css = [];
             if($project->d_css()->first()) {
