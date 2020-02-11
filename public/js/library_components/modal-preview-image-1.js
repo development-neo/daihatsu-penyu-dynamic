@@ -15,7 +15,8 @@ $('._modal-preview-1').children().click(function() {
     var preview = this.className;
     previewData(preview);
     initializeVariable();
-    $('.modal-preview-image-1').show();
+    var modal = $('.modal-preview-image-1');
+    animationFadeIn(modal);
 });
 
 // Action object on modal click
@@ -69,7 +70,8 @@ function initializeVariable() {
 
 // Process hide modal
 function hide() {
-    $('.modal-preview-image-1').hide();
+    var modal = $('.modal-preview-image-1');
+    animationFadeOut(modal);
 }
 
 // Process destroy data preview
@@ -97,11 +99,17 @@ function structureBase() {
 
 // Process push data from original section to modal
 function previewData(preview) {
+    // Data append for preview
     destroyPreview();
     var obj_image = $('.modal-preview-image-1 .item-image .' + preview);
     var obj_image_clone = obj_image.clone(true);
     $('.modal-preview-image-1 .preview-image').append(obj_image_clone);
+
+    // Animation Request
+    $('.modal-preview-image-1 .preview-image').children().hide();
+    var obj_image_preview = $('.modal-preview-image-1 .preview-image').children();
     $('.modal-preview-image-1 .item-image .' + preview).addClass('active');
+    animationFadeIn(obj_image_preview);
     itemScrolling();
 }
 
@@ -111,7 +119,14 @@ function itemScrolling() {
 
     obj_item.children().hide();
 
-    if (item_active > 6) {
+    // Data append request
+    if (item_active > 5 && item_active < obj_item.children().length - 1) {
+        var batas = item_active - 5;
+        for (i = batas; i <= item_active + 1; i++) {
+            var data = $('.modal-preview-image-1 .item-image').children()[i];
+            data.style.display = "block";
+        }
+    } else if (item_active == obj_item.children().length - 1) {
         var batas = item_active - 6;
         for (i = batas; i <= item_active; i++) {
             var data = $('.modal-preview-image-1 .item-image').children()[i];
@@ -122,5 +137,18 @@ function itemScrolling() {
             var data = $('.modal-preview-image-1 .item-image').children()[i];
             data.style.display = "block";
         }
+    }
+
+}
+
+function animationFadeIn(data) {
+    if (data != null) {
+        data.first().fadeIn("medium");
+    }
+}
+
+function animationFadeOut(data) {
+    if (data != null) {
+        data.first().fadeOut("medium");
     }
 }

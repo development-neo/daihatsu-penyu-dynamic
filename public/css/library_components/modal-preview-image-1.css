@@ -12,6 +12,8 @@
     width: 764px;
     height: 300px;
     margin: 115.67px auto 0px;
+    opacity: 1;
+    animation: opacity 1s ease-in;
 }
 
 .modal-preview-image-1 .preview-image img {
