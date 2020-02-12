@@ -36,7 +36,7 @@ p {
 }
 
 ._show-desktop {
-    display: unset !important;
+    display: block;
 }
 
 ._section {}
@@ -113,6 +113,7 @@ p {
 
 ._footer ._container {
     border-top: .5px #aaa solid;
+    margin-top: 12px;
     padding: 10px 0px !important;
 }
 
@@ -453,10 +454,11 @@ body._page_lokasi {
 
 ._beranda-section1 {
     background-image: url(/uploads/image/section1-beranda.png);
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: 100%;
     height: 565px;
     margin-bottom: 60px;
+    background-repeat: no-repeat;
 }
 
 ._beranda-section1 ._container ._grid h2 {
@@ -468,13 +470,13 @@ body._page_lokasi {
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 80px;
+    background-position-y: 140px;
 }
 
 ._beranda-section3 {
     background-image: url(/uploads/image/section3-beranda.png);
     background-position: right;
-    background-size: 1000px;
+    background-size: 900px;
     background-repeat: no-repeat;
     height: 580px;
     padding-top: 5%;
@@ -491,9 +493,9 @@ body._page_lokasi {
 
 ._beranda-section4 {
     background-image: url(/uploads/image/section4-beranda.png);
-    background-position-y: 45px;
-    background-position-x: 110px;
-    background-size: 600px;
+    background-position-y: 109px;
+    background-position-x: 75px;
+    background-size: 538px;
     background-repeat: no-repeat;
     margin-top: 60px;
 }

@@ -8,12 +8,17 @@
         p {
             font-size: 14px;
         }
+        ._navbar ._container ._grid {
+            display: block;
+        }
+        ._navbar ._container ._menu-link {
+            display: none;
+        }
         ._show-mobile {
-            visibility: visible;
-            display: unset;
+            display: none !important;
         }
         ._show-desktop {
-            display: none;
+            display: block !important;
         }
         .burger-menu {
             position: absolute;
@@ -65,7 +70,6 @@
         ._container-margin-20 ._container {
             padding: 10px 5px;
         }
-        ._section ._container ._grid {}
         ._section ._container .grid-12 {}
         ._section ._container .grid-11 {}
         ._section ._container .grid-10 {}
@@ -281,5 +285,8 @@
         }
         ._beranda-section-6 ._container ._grid:nth-child(3) {
             height: 270px;
+        }
+        .slider-3 .slider-item-container .slider-item h4 {
+            margin-top: 100px;
         }
     }

@@ -110,13 +110,17 @@
     object-fit: cover;
     margin-left: 35%;
     margin-right: 40%;
-    margin-top: 55px;
+    margin-top: 25px;
 }
 
 .slider-1 .preview-img .caption h5 {
     visibility: visible;
     color: black;
     position: absolute;
+}
+
+.slider-1 .preview-img .caption {
+    margin-top: 20px;
 }
 
 .slider-1 .preview-img .caption p {
@@ -129,6 +133,6 @@
 .slider-1 .slider-item-container .slider-item.active img {
     border: 1px solid #0A79A7 !important;
     box-shadow: 2px 5px 5px lightgrey !Important;
-    width: 80px !important;
-    height: 80px !important;
+    width: 80px;
+    height: 80px;
 }
