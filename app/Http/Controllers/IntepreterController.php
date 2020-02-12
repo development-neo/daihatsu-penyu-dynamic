@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class IntepreterController extends Controller
+class IntepreterController
 {
     
     public function index($segment = '', $segment2 = '', $segment3 = '', $segment4 = '', $segment5 = '')
