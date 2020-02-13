@@ -117,7 +117,6 @@ p {
 
 ._footer ._container {
     border-top: .5px #aaa solid;
-    margin-top: 12px;
     padding: 10px 0px !important;
 }
 
@@ -551,17 +550,18 @@ body._page_lokasi {
 .section-ilustrator ._container .grid-12 img {
     height: 70%;
     object-fit: cover;
+    width: 100%;
 }
 
 p._konservasi-kami-description {
     height: 137px;
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 35px;
 }
 
 p._sub-tittle-konservasi {
     margin-bottom: 51px;
-    margin-top: -31px;
+    margin-top: -18px;
 }
 
 ._image-konservasi-grid {
@@ -678,10 +678,22 @@ p._sub-tittle-konservasi {
     margin-bottom: 30px;
 }
 
+._border ._container {
+    box-shadow: 0px 0px 5px lightgray;
+    margin-bottom: 30px;
+}
+
 ._shadow ._container {
     box-shadow: 0px 1px 10px lightgrey !important;
     margin-bottom: 30px;
+}
+
+._sg_br_5 ._container {
     border-radius: 5px;
+}
+
+._sg_bg_white ._container {
+    background-color: white;
 }
 
 ._accordion-icon .card {
@@ -705,6 +717,7 @@ p._sub-tittle-konservasi {
 
 ._konservasi-kami-content {
     margin-top: 15%;
+    font-size: 30px;
 }
 
 ._border-right {
@@ -779,9 +792,10 @@ p._sub-tittle-konservasi {
 ._menu-navigation h6 {
     position: absolute;
     top: 100%;
-    margin-top: -25%;
+    margin-top: -47%;
     text-align: center;
     width: 100%;
+    padding: 31px;
 }
 
 #section-pembesaran ._container ._grid .slider-2 .slider-item-container .slider-item p {
@@ -793,7 +807,7 @@ p._sub-tittle-konservasi {
 }
 
 ._beranda-section-6 ._container ._grid:nth-child(3) embed {
-    height: 100%;
+    height: 322px;
 }
 
 ._card a {
@@ -806,6 +820,7 @@ p._sub-tittle-konservasi {
 
 .__section_id_28 ._container h4 {
     font-size: 21px;
+    padding: 0px 4px;
 }
 
 .__section_id_28 ._container img {
@@ -976,4 +991,34 @@ p._sub-tittle-konservasi {
     height: 74%;
     width: 220px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #2679BF) repeat left top;
+}
+
+.__component_id_26 {
+    max-width: unset;
+    width: 100%;
+}
+
+.__component_id_156 {
+    margin-top: -42%;
+}
+
+._page_konservasi-kami_detail {
+    background: url(/uploads/image/background-konservasi-detail.png);
+    background-repeat: no-repeat;
+    background-position-x: -473px;
+    background-size: 165%;
+    background-position-y: 1130px;
+}
+
+._page_konservasi-kami_detail .__section_id_24 .slider-2 .slider-text-container {
+    display: none;
+}
+
+._page_konservasi-kami_detail .__section_id_24 .slider-2 .preview-img h5,
+._page_konservasi-kami_detail .__section_id_24 .slider-2 .preview-img p {
+    display: none;
+}
+
+._page_konservasi-kami_detail .__section_id_24 .slider-2 .preview-img img {
+    height: 400px;
 }
