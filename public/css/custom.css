@@ -31,6 +31,10 @@ p {
     margin-bottom: 25px;
 }
 
+.burger-menu {
+    display: none;
+}
+
 ._show-mobile {
     display: none;
 }
