@@ -2,6 +2,9 @@
     body {
         width: 100%;
     }
+    .burger-menu {
+        display: none;
+    }
     ._navbar {}
     ._navbar ._menu-link {}
     ._navbar ._menu-link ul {}

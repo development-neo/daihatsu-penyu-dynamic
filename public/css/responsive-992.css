@@ -5,6 +5,9 @@
     ._navbar {
         width: 992px;
     }
+    .burger-menu {
+        display: none;
+    }
     ._navbar ._menu-link {}
     ._navbar ._menu-link ul {}
     ._navbar ._menu-link ul li {}
@@ -163,5 +166,8 @@
     }
     ._berita-berita-lain {
         width: 23% !important;
+    }
+    .slider-3 .slider-item-container .slider-item h4 {
+        margin-top: 140px;
     }
 }

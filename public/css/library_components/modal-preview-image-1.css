@@ -11,7 +11,7 @@
 .modal-preview-image-1 .preview-image {
     width: 764px;
     height: 300px;
-    margin: 115.67px auto 0px;
+    margin: 150px auto 0px;
     opacity: 1;
     animation: opacity 1s ease-in;
 }
@@ -48,7 +48,7 @@
 .modal-preview-image-1 .indicator {
     position: absolute;
     top: 45%;
-    padding: 0px 95px;
+    padding: 0px 180px;
     width: 100%;
 }
 
@@ -70,7 +70,7 @@
 
 .modal-preview-image-1 .indicator .btn-close-modal {
     position: absolute;
-    margin: -150px 140px 0px 0px;
+    margin: -155px 227px 0px 0px;
     top: 0;
     right: 0;
     border-radius: 15pc;

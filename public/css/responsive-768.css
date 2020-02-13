@@ -8,18 +8,24 @@
         p {
             font-size: 14px;
         }
+        ._navbar ._container ._grid {
+            display: block;
+        }
+        ._navbar ._container ._menu-link {
+            display: none;
+        }
         ._show-mobile {
-            visibility: visible;
-            display: unset;
+            display: none !important;
         }
         ._show-desktop {
-            display: none;
+            display: block !important;
         }
         .burger-menu {
             position: absolute;
             right: 0;
             margin-right: 20px;
             margin-top: 20px;
+            display: block;
         }
         ._beranda-section0 ._container ._grid ._show-desktop {
             visibility: visible;
@@ -32,12 +38,31 @@
             width: 768px;
         }
         ._navbar ._menu-link {
-            float: none;
+            float: none !important;
+            background-color: white;
+            height: fit-content;
+            width: 100% !important;
+            margin-top: 56px;
+            margin-left: -40px;
+            position: absolute !important;
+            border-top: 1px solid lightgray;
+            display: block;
         }
         ._navbar ._menu-link ul {}
         ._navbar ._menu-link ul li {
             float: left;
             width: 98%;
+        }
+        ._navbar ._menu-link a {
+            float: none;
+            width: fit-content;
+            padding: 0px;
+            list-style: none;
+            display: table;
+            color: black;
+            text-decoration: none;
+            margin: 20px;
+            width: 94%;
         }
         ._navbar ._menu-link ul li a {}
         ._footer ._menu-link {}
@@ -65,7 +90,6 @@
         ._container-margin-20 ._container {
             padding: 10px 5px;
         }
-        ._section ._container ._grid {}
         ._section ._container .grid-12 {}
         ._section ._container .grid-11 {}
         ._section ._container .grid-10 {}
@@ -281,5 +305,8 @@
         }
         ._beranda-section-6 ._container ._grid:nth-child(3) {
             height: 270px;
+        }
+        .slider-3 .slider-item-container .slider-item h4 {
+            margin-top: 100px;
         }
     }
