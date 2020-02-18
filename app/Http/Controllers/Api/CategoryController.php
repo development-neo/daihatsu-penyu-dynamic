@@ -17,8 +17,7 @@ class CategoryController
     {
         $Category = \App\Category::get();
         return response()->json([
-            'status' => 'success',
-            'Category' => $Category
+            'data' => $Category
         ], 200);
     }
     
