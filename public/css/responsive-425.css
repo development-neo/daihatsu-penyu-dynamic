@@ -2,6 +2,9 @@
         body {
             width: 100%;
         }
+        body._page_lokasi {
+            background-image: unset;
+        }
         p {
             font-size: 14px;
         }
@@ -67,6 +70,9 @@
         }
         ._footer ._container .grid-3 p {
             width: 100%;
+        }
+        ._footer ._container .__grid_id_131 {
+            padding: 10px;
         }
         ._navbar ._menu-link ul li a {}
         ._footer ._menu-link {}
@@ -595,5 +601,14 @@
         .slider-3 .slider-item-container .slider-item h4 {
             margin-top: 100px;
             font-size: 17px;
+        }
+        .__section_id_28 ._container ._grid {
+            margin-bottom: 50px;
+        }
+        .__section_id_14 .__grid_id_27 ._gradient:before {
+            width: 366px;
+        }
+        .__section_id_14 ._berita-image-2 ._gradient:before {
+            width: 172px;
         }
     }

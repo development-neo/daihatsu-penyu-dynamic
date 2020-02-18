@@ -110,7 +110,9 @@
             width: 23% !important;
         }
         ._berita-berita-lain img {}
-        ._berita-berita-lain h6 {}
+        ._berita-berita-lain h6 {
+            height: 35px;
+        }
         ._lokasi-image img {}
         ._galery-video {}
         ._galery-video-full {}
@@ -153,6 +155,7 @@
             background-position-x: 130px !important;
             background-size: 650px !important;
             height: 500px !important;
+            background-position-y: 115px;
         }
         ._beranda-section4 {
             background-position-x: 5% !important;
@@ -175,7 +178,7 @@
         ._icon-social-badge-youtube {}
         ._icon-social-badge-youtube:hover {}
         ._berita-image-2 img {
-            height: 117px !Important;
+            height: 127px !Important;
         }
         ._breadcrumb {}
         ._breadcrumb a {}
@@ -308,5 +311,26 @@
         }
         .slider-3 .slider-item-container .slider-item h4 {
             margin-top: 100px;
+        }
+        .__section_id_14 .__grid_id_27 ._gradient:before {
+            width: 285px;
+        }
+        .__section_id_14 ._berita-image-2 ._gradient:before {
+            width: 133px;
+        }
+        ._berita-berita-lain h3 {
+            font-size: 13px;
+        }
+        .slider-1 .preview-img .caption {
+            margin-top: 55px;
+        }
+        .__section_id_28 ._container ._grid a._btn {
+            width: 100%;
+        }
+        .__section_id_28 ._container ._grid {
+            padding: 10px 7px;
+        }
+        .__section_id_28 ._container h4 {
+            font-size: 16px;
         }
     }

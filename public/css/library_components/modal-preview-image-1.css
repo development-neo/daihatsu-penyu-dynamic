@@ -76,3 +76,15 @@
     border-radius: 15pc;
     cursor: pointer;
 }
+
+@media (max-width: 425px) and (min-width: 0px) {
+    .modal-preview-image-1 .indicator {
+        display: none;
+    }
+    .modal-preview-image-1 .preview-image {
+        width: 95%;
+        height: 388px;
+        margin: 72px 10px 0px;
+        cursor: pointer;
+    }
+}

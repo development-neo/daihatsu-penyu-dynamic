@@ -1,7 +1,11 @@
+// var screenSize = "";
 var tagItemImage = "";
 structureBase();
 $('.modal-preview-image-1').hide();
 
+// $(document).ready(function() {
+//     screenSize = $(window).width();
+// });
 
 // Action ESC button close
 $(document).on('keydown', function(event) {
@@ -114,6 +118,40 @@ function previewData(preview) {
 }
 
 function itemScrolling() {
+    // if (screenSize <= 425) {
+    //     console.log('cuy');
+    //     setInterval(function() {
+    //         var paramCounter = tagItemImage.children().length;
+    //         if (tagItemImage.find('.active').index() == paramCounter - 1) {
+    //             var preview = tagItemImage.children()[0].className;
+    //         } else {
+    //             var preview = tagItemImage.children()[tagItemImage.find('.active').index() + 1].className;
+    //         }
+    //         previewData(preview);
+    //         initializeVariable();
+    //         $('.modal-preview-image-1').show();
+    //     }, 5000);
+
+    //     // var obj_item = $('.modal-preview-image-1 .item-image');
+    //     // var item_active = obj_item.children('.active').index();
+
+
+    //     // // Data append request
+    //     // if (item_active > 5 && item_active < obj_item.children().length - 1) {
+    //     //     var batas = item_active - 5;
+    //     //     for (i = batas; i <= item_active + 1; i++) {
+    //     //         var data = $('.modal-preview-image-1 .item-image').children()[i];
+    //     //         data.style.display = "block";
+    //     //     }
+    //     // } else {
+    //     //     for (i = 0; i < 7; i++) {
+    //     //         var data = $('.modal-preview-image-1 .item-image').children()[i];
+    //     //         data.style.display = "block";
+    //     //     }
+    //     // }
+
+    // } else {
+    //     console.log('cok');
     var obj_item = $('.modal-preview-image-1 .item-image');
     var item_active = obj_item.children('.active').index();
 
@@ -138,7 +176,7 @@ function itemScrolling() {
             data.style.display = "block";
         }
     }
-
+    // }
 }
 
 function animationFadeIn(data) {
