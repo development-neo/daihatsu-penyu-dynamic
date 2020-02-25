@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'DoubleN';
+    src: url('/font/DoubleN.ttf');
+}
+
 h2 {
     font-size: 40px;
     margin-bottom: 31px;
@@ -79,7 +84,7 @@ p {
 
 ._navbar ._menu-link a.active {
     color: #2679BF;
-    border-bottom: 2px solid #2679BF;
+    border-bottom: 3px solid #2679BF;
 }
 
 ._navbar ._container {
@@ -180,6 +185,15 @@ p {
     display: table;
     padding: 20px 20px;
     /* border: .5px #aaa dashed; */
+}
+
+._page_tentang-kami ._footer ._container {
+    border-top: unset;
+}
+
+.__component_id_2 {
+    max-width: unset;
+    width: 100%;
 }
 
 ._container-margin-20 ._container {
@@ -390,7 +404,7 @@ body {
 }
 
 ._font-permanent-marker {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'DoubleN';
     color: #2679BF;
 }
 
@@ -473,7 +487,6 @@ body._page_lokasi {
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 140px;
 }
 
 ._beranda-section3 {
@@ -724,67 +737,6 @@ p._sub-tittle-konservasi {
     border-right: 1px solid black;
 }
 
-._card {
-    position: relative;
-}
-
-._card ._card-text-container {
-    bottom: 0px;
-    position: absolute;
-    padding: 10px 15px;
-}
-
-._card ._card-text-container ._card-heading {
-    font-size: 16px;
-    color: white;
-}
-
-._card ._card-text-container ._card-text {
-    font-size: 8px;
-    color: white;
-}
-
-.grid-6 ._card {
-    position: relative;
-    height: 423px;
-}
-
-.grid-6 ._card img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.grid-6 ._card ._card-text-container {
-    bottom: 0px;
-    position: absolute;
-    padding: 0px 10px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-}
-
-.grid-6 ._card ._card-text-container ._card-heading {
-    font-size: 16px;
-    color: white;
-}
-
-.grid-6 ._card ._card-text-container ._card-text {
-    font-size: 8px;
-    color: white;
-}
-
-.grid-6 ._card ._card-text-container ._card-text:nth-child(2) {
-    margin-bottom: 60px;
-}
-
-.grid-6 ._card ._card-text-container ._card-text:nth-child(3) {
-    display: table-cell;
-}
-
-.grid-6 ._card ._card-text-container ._card-text:nth-child(4) {
-    display: table-cell;
-    padding-left: 15px;
-}
-
 ._menu-navigation {
     height: 55px !important;
 }
@@ -808,14 +760,6 @@ p._sub-tittle-konservasi {
 
 ._beranda-section-6 ._container ._grid:nth-child(3) embed {
     height: 322px;
-}
-
-._card a {
-    color: white;
-}
-
-._card a:hover {
-    color: white;
 }
 
 .__section_id_28 ._container h4 {
@@ -952,45 +896,20 @@ p._sub-tittle-konservasi {
     object-fit: cover;
 }
 
+._grid .card-2 {
+    margin: 10px;
+}
+
+.__component_id_126 {
+    height: 480px !important;
+}
+
 
 /* End Page Berita read */
 
 :target {
     padding-top: 70px;
     margin-top: -70px;
-}
-
-._gradient:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 10;
-    height: 74%;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #2679BF) repeat left top;
-}
-
-.__section_id_14 .__grid_id_27 ._gradient:before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    right: 10;
-    height: 74%;
-    width: 460px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #2679BF) repeat left top;
-}
-
-.__section_id_14 ._berita-image-2 ._gradient:before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    right: 10;
-    height: 74%;
-    width: 220px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #2679BF) repeat left top;
 }
 
 .__component_id_26 {
