@@ -1,0 +1,1 @@
+$('.bootstrap_carousel_type_1 .carousel').attr('data-interval', 'false');

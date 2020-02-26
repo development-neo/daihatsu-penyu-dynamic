@@ -1,0 +1,20 @@
+._display_scroll {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 1.5s;
+    animation: animat_show 1.5s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+    0% {
+        opacity: 0;
+        margin-top: 20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

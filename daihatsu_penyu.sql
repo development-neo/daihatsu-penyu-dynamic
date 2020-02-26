@@ -13,12 +13,10 @@
 
 
 -- Dumping database structure for penyu_backup
-DROP DATABASE IF EXISTS `penyu_backup`;
 CREATE DATABASE IF NOT EXISTS `penyu_backup` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `penyu_backup`;
 
 -- Dumping structure for table penyu_backup.categories
-DROP TABLE IF EXISTS `categories`;
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -32,7 +30,6 @@ CREATE TABLE IF NOT EXISTS `categories` (
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.components
-DROP TABLE IF EXISTS `components`;
 CREATE TABLE IF NOT EXISTS `components` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `html_id` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -174,9 +171,9 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 	(123, NULL, NULL, '{"src":"_DSC5965.JPG","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 1, 30, 1, NULL, NULL),
 	(124, NULL, '_galery-video', '{"src":"https://www.youtube.com/embed/zfefVEgwGPk","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 5, 1, 31, 1, NULL, NULL),
 	(125, NULL, '_galery-video', '{"src":"https://www.youtube.com/embed/zfefVEgwGPk","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 5, 2, 31, 1, NULL, NULL),
-	(126, NULL, '_padding-5 _gradient', '{"src":"Image 7.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>Pelepasan Tukik</a>","additional":["Selengkapnya","Viewers","This is date"]}', NULL, 12, 1, 27, 1, NULL, NULL),
-	(127, NULL, '_padding-5 _gradient', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 1, 28, 1, NULL, NULL),
-	(128, NULL, '_padding-5 _gradient', '{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', '', 12, 2, 28, 1, NULL, NULL),
+	(126, NULL, '', '{"src":"Image 7.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>Pelepasan Tukik</a>","additional":["Selengkapnya","Viewers","This is date"]}', 'card-2', 12, 1, 27, 1, NULL, NULL),
+	(127, NULL, '', '{"src":"adventure-animal-animal-photography-2765872.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', 'card-2', 12, 1, 28, 1, NULL, NULL),
+	(128, NULL, '', '{"src":"batu-contact.png","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg","title":"<a href=\'#\'>This is title</a>","additional":["This is additional text"]}', 'card-2', 12, 2, 28, 1, NULL, NULL),
 	(129, NULL, '_padding-10 _font-ubuntu-marker', '{"type":"h3","value":"BERITA LAINYA"}', NULL, 2, 1, 29, 1, NULL, NULL),
 	(130, NULL, '_padding-10', '{"src":"_DSC5979.JPG","href":"https:\\/\\/wallpapermemory.com\\/uploads\\/200\\/mount-bromo-wallpaper-hd-1920x1200-320096.jpg"}', NULL, 4, 2, 29, 1, NULL, NULL),
 	(131, NULL, '_padding-10 _font-ubuntu-marker', '{"type":"h6","value":"<a href=\'\'>NAMA BERITA</a>"}', NULL, 2, 3, 29, 1, NULL, NULL),
@@ -202,7 +199,7 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 	(151, NULL, NULL, '{"type":"h2","value":"Pasri Jambak, Padang"}', NULL, 2, 1, 80, 1, NULL, NULL),
 	(152, NULL, NULL, '{"type":"h2","value":"Batu Hiu, Pangandaran"}', NULL, 2, 1, 82, 1, NULL, NULL),
 	(153, NULL, NULL, '{"type":"h2","value":"Pulau Pramuka, Jakarta"}', NULL, 2, 1, 84, 1, NULL, NULL),
-	(154, NULL, NULL, '{"src":"section7-beranda.png"}', NULL, 4, 1, 14, 1, NULL, NULL),
+	(154, NULL, '_display_scroll', '{"src":"section7-beranda.png"}', NULL, 4, 1, 14, 1, NULL, NULL),
 	(155, NULL, 'fa fa-instagram _icon-social-badge-instagram', '{"href":"google.com","value":""}', NULL, 8, 1, 86, 1, NULL, NULL),
 	(156, NULL, '_text-center', '{"type":"h6","value":"<a href=\'#section-sosialisasi\'>Sosialisasi</a>"}', NULL, 2, 1, 90, 1, NULL, NULL),
 	(157, NULL, '_text-center', '{"type":"h6","value":"<a href=\'#section-penyelamatan\'>Penyelamatan Penyu</a>"}', NULL, 2, 1, 91, 1, NULL, NULL),
@@ -294,7 +291,6 @@ INSERT INTO `components` (`id`, `html_id`, `html_class`, `content`, `library_com
 /*!40000 ALTER TABLE `components` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.css
-DROP TABLE IF EXISTS `css`;
 CREATE TABLE IF NOT EXISTS `css` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `projects` int(11) NOT NULL DEFAULT '0',
@@ -304,14 +300,13 @@ CREATE TABLE IF NOT EXISTS `css` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Dumping data for table penyu_backup.css: ~1 rows (approximately)
+-- Dumping data for table penyu_backup.css: ~0 rows (approximately)
 /*!40000 ALTER TABLE `css` DISABLE KEYS */;
 INSERT INTO `css` (`id`, `projects`, `code`, `created_at`, `updated_at`) VALUES
 	(1, 1, 'h2{font-size: 40px ; margin-bottom: 31px;}\r\nh3{font-size: 27px;}\r\np{font-size:20px;font-family: \'Lato\', sans-serif; letter-spacing: 1; line-height: 1.6;  margin-bottom: 31px;}\r\n._heading-konservasi-detail-h2{font-size: 27px;}\r\n._heading-konservasi-detail-h3{font-size: 21px;}\r\n._heading-konservasi-detail-p{font-size: 16px;}\r\n._heading-faq-accordion{margin-left:30px; margin-bottom: 25px;}\r\n._show-mobile{\r\ndisplay:none;\r\n}\r\n._show-desktop{\r\ndisplay: unset;\r\n}\r\n._section { }\r\n._navbar {position: fixed;left: 0px;top: 0px;width: 100%;background-color: #fff;z-index: 99999999; box-shadow: 0px 1px 5px lightgrey;}\r\n._navbar ._menu-link { float: right;}\r\n._navbar ._menu-link ul { width: 100%;padding: 0px;list-style: none;display: table;margin: 0px;}\r\n._navbar ._menu-link ul li { float: left;}\r\n._navbar ._menu-link ul li.active{ border-bottom:2px solid #2679BF;}\r\n._navbar ._menu-link ul li.active a{ color: #2679BF;}\r\n._navbar ._menu-link ul li a {text-decoration: none;color: #333;padding: 15px 10px;display: block;text-transform: capitalize; }\r\n ._footer ._menu-link { float: right;}\r\n._footer ._menu-link ul { width: 100%;padding: 0px;list-style: none;display: table;margin: 0px;}\r\n._footer ._menu-link ul li { float: left;}\r\n._footer ._menu-link ul li a {text-decoration: none;color: #333;padding: 8px 10px;display: block;text-transform: capitalize; }\r\n._footer ._container { border-top: .5px #aaa solid; }\r\n._navbar ._site-logo, ._footer ._site-logo {     width: 120px;\r\n    display: block;\r\n    float: left; }\r\n._navbar ._width-d-1000 a{\r\n    display: table;\r\n    float: left;\r\n    padding: 7px;\r\n}\r\n._footer ._site-contact_detail {     float: left;\r\n    margin: 10px 0px;\r\n    color: #9A9A9A; \r\n    font-size: 14px;}\r\n._footer ._container .grid-12 {\r\n    color: #9A9A9A;\r\n    font-size: 14px;\r\n}\r\n._footer ._container .grid-3 p {\r\n    width: 105%;\r\n}\r\n._footer ._container .grid-9 ._menu-link ul li a {\r\n    color: #197BBE;\r\n    font-size: 14px;\r\n}\r\n            ._text-center { text-align: center; }\r\n            ._text-right { text-align: right; }\r\n            ._float-right { float: right!important; }\r\n            ._container { width: 1000px; margin: 0px auto; display: block;}\r\n            ._section ._container { display: table; padding: 20px 20px; /*border: .5px #aaa dashed;*/}\r\n            ._container-margin-20 ._container { margin-top:20px;}\r\n            ._section ._container ._grid{ float: left; padding: 10px 0px; display: inherit;/*border: .5px #aaa dashed*/; position: relative;}\r\n            ._section ._container .grid-12 { width: 100%; }\r\n            ._section ._container .grid-11 { width: 91.666666666667%; }\r\n            ._section ._container .grid-10 { width: 83.333333333333%; }\r\n            ._section ._container .grid-9  { width: 75%; }\r\n            ._section ._container .grid-8  { width: 66.666666666666%; }\r\n            ._section ._container .grid-7  { width: 58.333333333333%; }\r\n            ._section ._container .grid-6  { width: 50%; }\r\n            ._section ._container .grid-5  { width: 41.666666666667%; }\r\n            ._section ._container .grid-4  { width: 33.333333333333%; }\r\n            ._section ._container .grid-3  { width: 25%; }\r\n            ._section ._container .grid-2  { width: 16.666666666667%; }\r\n            ._section ._container .grid-1  { width:  8.333333333333%; }\r\n            ._btn { padding: 5px 17px; display: block; width: 174px; text-align: center; border: .5px #2f94e0 solid; border-radius: 9px; color: white; background-color : #2f94e0;}\r\n            ._btn:hover { text-decoration: none; color: #2f94e0; background-color: #FFFFFF; }\r\n            ._text-center a { color:black;}\r\n._galery-image img {\r\nwidth: 25% !important;\r\n    float: left;\r\n    padding: 5px;\r\n    height: 150px;\r\n    object-fit: cover;\r\n    object-position: center;\r\n}\r\n._padding-10{\r\npadding : 10px;\r\n}\r\n._berita-berita-lain{\r\nbackground-color: #E8E8E8;\r\n    padding: 10px !important;\r\n    margin: 20px 0px 0px 10px !important;\r\n    width: 24% !important;\r\n}\r\n._berita-berita-lain img{\r\nwidth : 50%!important;\r\nfloat : left;\r\n}\r\n._berita-berita-lain h3{\r\nfont-size: 17px;\r\n    text-align: center;\r\n}\r\n._berita-berita-lain h6{\r\nheight : 65px;\r\n    border-top: 0.5px solid;\r\n}\r\n._berita-berita-lain h6 a{\r\ncolor: black;\r\nfont-size:9px\r\n}\r\n._image-lokasi-head{\r\nwidth: 100% !important;\r\n    object-fit: cover;\r\n    height: 400px;\r\n}\r\n._galery-video {\r\nwidth : 50% !important;\r\nfloat : left;\r\npadding : 5px;\r\n}\r\n._galery-video-full {\r\npadding : 5px;\r\nheight: 319px;\r\n}\r\n._container-width-full ._container {\r\nwidth: 100% !important;\r\n    padding: 20px 0px;	\r\n}\r\n._container-width-full ._container ._grid {\r\nwidth: 100% !important;\r\n    padding: 20px 0px;	\r\n}\r\n._section ._container ._grid-1000{\r\nwidth: 1000px !important;\r\nfloat: unset;\r\nmargin: 0px auto;\r\n}\r\nbody {\r\npadding-top: 60px;\r\n}\r\n._padding-konservasi-detail{\r\npadding: 20px!important;\r\n    margin-top: 100px;\r\n}\r\n._padding-less-container-grid ._container {\r\npadding: 0px !important;\r\n}\r\n._padding-less-container-grid ._container ._grid{\r\npadding: 0px !important;\r\n}\r\n._social-media-badge {\r\n    position: fixed;\r\n    z-index: 1;\r\n    top: 35%;\r\n    width: calc((100% - 980px) / 2);\r\n    display: block;\r\n    text-align: center;\r\n}\r\n._social-media-badge ._container{\r\nposition: absolute;\r\n    width:100%;\r\n}\r\n._font-permanent-marker {\r\nfont-family: \'Permanent Marker\', cursive;\r\ncolor : #2679BF;\r\n}\r\n._font-ubuntu-marker{\r\nfont-family: \'Ubuntu\', sans-serif;\r\n}\r\n._font-ubuntu-marker-bold{\r\nfont-family: \'Ubuntu\', sans-serif;\r\n    font-weight: bold;\r\n}\r\n._konservasi-detail-border {\r\n\r\n}\r\n._section-konservasi-overview .grid-2 {\r\nborder: .5px #aaa solid;\r\n    border-bottom: none;\r\n    border-top: none;\r\n    border-right: none !important;\r\n}\r\n\r\n._section-konservasi-overview .grid-2:nth-child(2) {\r\nborder:none!important;\r\n}\r\n._icon-alignment i {\r\nmargin : 0px 15px 0px 10px;\r\n}\r\n._section-konservasi-overview .grid-2:last-child {\r\nborder-right:none!important;\r\n}\r\n._beranda-section0{\r\nmargin-top:-50px;\r\n}\r\n._beranda-section1{\r\nbackground-image:url(/uploads/image/section1-beranda.png);\r\nbackground-position: center;\r\n    background-size: cover;\r\n    height: 565px;\r\nmargin-bottom:60px;\r\n}\r\n._beranda-section1 ._container ._grid h2{\r\nmargin-bottom:33px;\r\n}\r\n._beranda-section2{\r\nbackground-image: url(/uploads/image/section2-beranda.png);\r\n    background-size: 110%;\r\n    background-repeat: no-repeat;\r\n    background-position: center;\r\n    background-position-y: 80px;\r\n}\r\n._beranda-section3 {\r\n        background-image: url(/uploads/image/section3-beranda.png);\r\n    background-position: right;\r\n    background-size: 1000px;\r\n    background-repeat: no-repeat;\r\n    height: 580px;\r\n    padding-top: 5%;\r\n    margin-top: 50px;\r\n}\r\n._beranda-section3 ._container ._grid-4-custom{\r\nmargin-top:13%;\r\n}\r\n._beranda-section3 ._container ._grid-4-custom h2 {\r\n    margin-bottom: 30px;\r\n}\r\n._beranda-section4{\r\nbackground-image: url(/uploads/image/section4-beranda.png);\r\n    background-position-y: 45px;\r\n    background-position-x: 110px;\r\n    background-size: 600px;\r\n    background-repeat: no-repeat;\r\n    margin-top: 60px;\r\n}\r\n._beranda-section4 ._container ._grid {\r\n    padding-left: 90px;\r\n}\r\n._beranda-section4 ._container ._grid h2 {\r\n    margin-bottom: 30px;\r\n}\r\n._beranda-section5 ._container ._grid h2 {\r\n    margin-bottom: 25px;\r\n}\r\n._beranda-section-6{\r\nbackground-image: url(/uploads/image/section-galery-beranda.png);\r\n    background-position: top;\r\n    background-size: 100%;\r\n    background-repeat: no-repeat;\r\n    height: 550px;\r\n    margin-top: -40px;\r\n    padding-top: 50px;\r\n    margin-bottom: -100px;\r\n}\r\n._beranda-section-6 ._container .grid-12 {\r\n    margin-bottom: 30px;\r\n}\r\n._beranda-section-7{\r\nmargin-top: 105px;\r\n}\r\n._beranda-section-7 ._container ._grid h2{\r\nmargin-bottom:20px;\r\n}\r\n._tentang-kami-section3{\r\nbackground-image: url(/uploads/image/section3-tentang.png);\r\n    background-size: 100%;\r\n    background-position: bottom;\r\n    padding-bottom: 100px;\r\n    background-repeat: no-repeat;\r\n    margin-bottom: -52px;\r\n}\r\n.section-ilustrator ._container .grid-12 img {\r\n    height: 70%;\r\n    object-fit: cover;\r\n}\r\np._konservasi-kami-description {\r\n    height: 137px;\r\n    overflow: auto;\r\n    margin-bottom: 35px;\r\n}\r\np._sub-tittle-konservasi{\r\n    margin-bottom:51px;\r\n    margin-top: -31px;\r\n}\r\n._image-konservasi-grid {\r\n    margin-top: 45px;\r\n}\r\n#section-pembersihan{}{\r\n}\r\n#section-pembesaran{}\r\n#section-pelepasan{}\r\n#section-pembersihan{}\r\n#section-kegiatan{}\r\n.carousel-indicators{\r\nvisibility : hidden;\r\n}\r\n._icon-social-badge-instagram{\r\ncolor: #AA3A9E;\r\n    border: 1px solid;\r\n    padding: 7px 0px 0px 0px;\r\n    border-radius: 15pc;\r\n    width: 33px;\r\n    height: 33px;\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-instagram:hover{\r\ncolor: #882d7e;\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-facebook{\r\n    border: 1px solid;\r\n    padding: 8px 0px 0px 0px;\r\n    border-radius: 15pc;\r\n    width: 33px;\r\n    height: 33px;\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-facebook:hover{\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-twitter{\r\ncolor: #00ACEE;\r\n    border: 1px solid;\r\n    border-radius: 15pc;\r\n    width: 33px;\r\n    height: 33px;\r\n    padding: 7px 0px 0px 0px;\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-twitter:hover{\r\ncolor : #0c8cbd;\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-youtube{\r\ncolor: #FF0000;\r\n    width: 33px;\r\n    height: 33px;\r\n    border: 1px solid;\r\n    border-radius: 15pc;\r\n    padding: 6px 0px 0px 0px;\r\n    text-decoration: none;\r\n}\r\n._icon-social-badge-youtube:hover{\r\ncolor:#b50606;\r\n    text-decoration: none;\r\n}\r\n._berita-image-2 img{\r\nwidth: 100%;\r\n    height: 192px;\r\n    background-size: cover;\r\n}\r\n\r\n._breadcrumb{\r\nmargin: 0;\r\n    padding: 0;\r\n    margin-top: -10px;\r\n    margin-bottom: 0px;\r\n    font-size: 14px;\r\n}\r\n\r\n._breadcrumb a{\r\ncolor: black;\r\n}\r\n\r\n._breadcrumb .fa{\r\nmargin: 0px 5px;\r\n}\r\n\r\n._accordion-icon .icon-accordion{\r\nmargin-left: 655px;\r\nborder: 1px solid;\r\n    padding: 0px 5px;\r\n    border-radius: 15px;\r\n}\r\n\r\n._border ._container{\r\nborder: .5px solid black;\r\nmargin-bottom:30px;\r\n}\r\n._shadow ._container{\r\nbox-shadow: 0px 1px 10px lightgrey !important;\r\n    margin-bottom: 30px;\r\n    border-radius: 5px;\r\n}\r\n._accordion-icon .card {\r\n    border-radius: 0px;\r\nborder:unset;\r\nborder-bottom: 1px solid rgba(0,0,0,0.1)!important;\r\n    background-color: white;\r\n}\r\n._accordion-icon .card .card-header{\r\nbackground-color:white;\r\n}\r\n._accordion-icon .card .card-header .mb-0{\r\nborder-bottom:1px solid white;\r\n}\r\n._accordion-icon .card .card-header .mb-0 .btn{\r\ncolor: black;\r\n}\r\n._konservasi-kami-content {\r\nmargin-top : 15%;\r\n}\r\n._border-right{\r\n    border-right: 1px solid black;\r\n}\r\n._berita-image-2 ._card {\r\nposition:relative;\r\n}\r\n._berita-image-2 ._card ._card-text-container{\r\nbottom: 0px;\r\nposition:absolute;\r\npadding: 10px 15px;\r\n}\r\n._berita-image-2 ._card ._card-text-container ._card-heading{\r\nfont-size: 16px;\r\ncolor: white;\r\n}\r\n._berita-image-2 ._card ._card-text-container ._card-text{\r\nfont-size: 8px;\r\ncolor: white;\r\n}\r\n.grid-6 ._card {\r\nposition:relative;\r\nheight: 423px;\r\n}\r\n.grid-6 ._card img{\r\nheight: 100%;\r\nobject-fit: cover;\r\n}\r\n.grid-6 ._card ._card-text-container{\r\nbottom: 0px;\r\nposition:absolute;\r\npadding: 0px 10px;\r\n    margin-bottom: 40px;\r\n    margin-left: 40px;\r\n}\r\n.grid-6 ._card ._card-text-container ._card-heading{\r\nfont-size: 16px;\r\ncolor: white;\r\n}\r\n.grid-6 ._card ._card-text-container ._card-text{\r\nfont-size: 8px;\r\ncolor: white;\r\n}\r\n.grid-6 ._card ._card-text-container ._card-text:nth-child(2) {\r\nmargin-bottom: 60px;\r\n}\r\n.grid-6 ._card ._card-text-container ._card-text:nth-child(3) {\r\ndisplay:table-cell;\r\n}\r\n.grid-6 ._card ._card-text-container ._card-text:nth-child(4) {\r\ndisplay:table-cell;\r\npadding-left: 15px;\r\n}\r\n._menu-navigation{\r\n    height: 55px !important;\r\n}\r\n._menu-navigation h6{\r\n    position: absolute;\r\n    top: 100%;\r\n    margin-top: -25%;\r\n    text-align:center;\r\n    width:100%;\r\n}\r\n#section-pembesaran ._container ._grid .slider-2 .slider-item-container .slider-item p{\r\n   display: none;\r\n}\r\n\r\n._beranda-section-6 ._container ._grid:nth-child(3){\r\n   height: 322px;\r\n}\r\n._beranda-section-6 ._container ._grid:nth-child(3) embed{\r\n   height: 100%;\r\n}\r\n._card a{\r\n    color:white;\r\n}\r\n._card a:hover{\r\n    color:white;\r\n}\r\n:target {\r\n    padding-top: 70px;\r\n    margin-top: -70px;\r\n}\r\n._gradient:before {\r\n    content: \'\';\r\n    position: absolute;\r\n    left: 10px;\r\n    bottom: 10px;\r\n    right: 10;\r\n    height: 74%;\r\n    background: linear-gradient(to bottom,rgba(255,255,255,0),#2679BF) repeat left top;\r\n}', '2019-10-22 11:58:36', '2019-10-22 11:58:36');
 /*!40000 ALTER TABLE `css` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.css_responsive
-DROP TABLE IF EXISTS `css_responsive`;
 CREATE TABLE IF NOT EXISTS `css_responsive` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `css` int(11) NOT NULL DEFAULT '0',
@@ -334,7 +329,6 @@ INSERT INTO `css_responsive` (`id`, `css`, `code`, `max-width`, `min-width`, `cr
 /*!40000 ALTER TABLE `css_responsive` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.grids
-DROP TABLE IF EXISTS `grids`;
 CREATE TABLE IF NOT EXISTS `grids` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `html_id` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -483,10 +477,10 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 	(132, NULL, '_menu-link', 9, 2, 48, NULL, NULL, 1),
 	(133, NULL, NULL, 12, 3, 48, NULL, NULL, 1),
 	(134, NULL, NULL, 4, 1, 33, NULL, NULL, 1),
-	(135, NULL, NULL, 3, 1, 28, NULL, NULL, 1),
-	(136, NULL, NULL, 3, 2, 28, NULL, NULL, 1),
-	(137, NULL, NULL, 3, 3, 28, NULL, NULL, 1),
-	(138, NULL, NULL, 3, 4, 28, NULL, NULL, 1),
+	(135, NULL, '_display_scroll', 3, 1, 28, NULL, NULL, 1),
+	(136, NULL, '_display_scroll', 3, 2, 28, NULL, NULL, 1),
+	(137, NULL, '_display_scroll', 3, 3, 28, NULL, NULL, 1),
+	(138, NULL, '_display_scroll', 3, 4, 28, NULL, NULL, 1),
 	(139, NULL, '_image-berita', 12, 1, 74, NULL, NULL, 1),
 	(140, NULL, '_heading-berita', 12, 1, 75, NULL, NULL, 1),
 	(141, NULL, '_date-berita', 6, 2, 75, NULL, NULL, 1),
@@ -499,7 +493,6 @@ INSERT INTO `grids` (`id`, `html_id`, `html_class`, `length`, `sequence`, `secti
 /*!40000 ALTER TABLE `grids` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.groups
-DROP TABLE IF EXISTS `groups`;
 CREATE TABLE IF NOT EXISTS `groups` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -517,7 +510,6 @@ INSERT INTO `groups` (`id`, `name`, `created_at`, `updated_at`) VALUES
 /*!40000 ALTER TABLE `groups` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.library_components
-DROP TABLE IF EXISTS `library_components`;
 CREATE TABLE IF NOT EXISTS `library_components` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
@@ -541,7 +533,6 @@ INSERT INTO `library_components` (`id`, `name`, `css`, `javascript`, `created_at
 /*!40000 ALTER TABLE `library_components` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.migrations
-DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -569,7 +560,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.pages
-DROP TABLE IF EXISTS `pages`;
 CREATE TABLE IF NOT EXISTS `pages` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -604,7 +594,6 @@ INSERT INTO `pages` (`id`, `name`, `features_images`, `description`, `is_index`,
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.password_resets
-DROP TABLE IF EXISTS `password_resets`;
 CREATE TABLE IF NOT EXISTS `password_resets` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -617,7 +606,6 @@ CREATE TABLE IF NOT EXISTS `password_resets` (
 /*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.projects
-DROP TABLE IF EXISTS `projects`;
 CREATE TABLE IF NOT EXISTS `projects` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -627,14 +615,13 @@ CREATE TABLE IF NOT EXISTS `projects` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table penyu_backup.projects: ~1 rows (approximately)
+-- Dumping data for table penyu_backup.projects: ~0 rows (approximately)
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
 INSERT INTO `projects` (`id`, `name`, `status`, `created_at`, `updated_at`) VALUES
 	(1, 'daihatsu penyu', 1, NULL, NULL);
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.publics
-DROP TABLE IF EXISTS `publics`;
 CREATE TABLE IF NOT EXISTS `publics` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -668,7 +655,6 @@ INSERT INTO `publics` (`id`, `name`, `url`, `meta`, `parent`, `pages`, `projects
 /*!40000 ALTER TABLE `publics` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.sections
-DROP TABLE IF EXISTS `sections`;
 CREATE TABLE IF NOT EXISTS `sections` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -683,7 +669,7 @@ CREATE TABLE IF NOT EXISTS `sections` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table penyu_backup.sections: ~74 rows (approximately)
+-- Dumping data for table penyu_backup.sections: ~76 rows (approximately)
 /*!40000 ALTER TABLE `sections` DISABLE KEYS */;
 INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `pages`, `reference_id`, `status`, `created_at`, `updated_at`) VALUES
 	(1, 'section banner', NULL, '_container-width-full _padding-less-container-grid ._container _beranda-section0', 1, 1, NULL, 0, '2019-10-16 16:25:33', '2019-10-22 10:03:05'),
@@ -702,10 +688,10 @@ INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `page
 	(14, 'section news', NULL, '', 1, 7, NULL, 0, NULL, NULL),
 	(15, 'section images', NULL, '', 1, 6, NULL, 0, NULL, NULL),
 	(16, 'section videos', NULL, NULL, 2, 6, NULL, 0, NULL, NULL),
-	(17, 'section konservasi bali', NULL, '_konservasi-section1', 1, 3, NULL, 0, NULL, NULL),
-	(18, 'section konservasi padang', NULL, '_konservasi-section2', 2, 3, NULL, 0, NULL, NULL),
-	(19, 'section konservasi pangandaran', NULL, '_konservasi-section3', 3, 3, NULL, 0, NULL, NULL),
-	(20, 'section konservasi kepulauan seribu', NULL, '_konservasi-section4', 4, 3, NULL, 0, NULL, NULL),
+	(17, 'section konservasi bali', NULL, '_konservasi-section1 _display_scroll', 1, 3, NULL, 0, NULL, NULL),
+	(18, 'section konservasi padang', NULL, '_konservasi-section2 _display_scroll', 2, 3, NULL, 0, NULL, NULL),
+	(19, 'section konservasi pangandaran', NULL, '_konservasi-section3 _display_scroll', 3, 3, NULL, 0, NULL, NULL),
+	(20, 'section konservasi kepulauan seribu', NULL, '_konservasi-section4 _display_scroll', 4, 3, NULL, 0, NULL, NULL),
 	(21, 'section location ilustrator', NULL, 'section-ilustrator', 1, 9, NULL, 0, NULL, NULL),
 	(22, 'section sosialisasi', 'section-sosialisasi', '_shadow _sg_bg_white', 2, 9, NULL, 0, NULL, NULL),
 	(23, 'section penyelamatan penyu', 'section-penyelamatan', '_shadow _sg_bg_white', 3, 9, NULL, 0, NULL, NULL),
@@ -763,7 +749,6 @@ INSERT INTO `sections` (`id`, `name`, `html_id`, `html_class`, `sequence`, `page
 /*!40000 ALTER TABLE `sections` ENABLE KEYS */;
 
 -- Dumping structure for table penyu_backup.type_component
-DROP TABLE IF EXISTS `type_component`;
 CREATE TABLE IF NOT EXISTS `type_component` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
