@@ -1,9 +1,9 @@
 @media (max-width: 992px) and (min-width: 769px) {
     body {
-        width: 992px;
+        width: 100%;
     }
     ._navbar {
-        width: 992px;
+        width: 100%;
     }
     .burger-menu {
         display: none;
@@ -11,7 +11,12 @@
     ._navbar ._menu-link {}
     ._navbar ._menu-link ul {}
     ._navbar ._menu-link ul li {}
-    ._navbar ._menu-link ul li a {}
+    ._navbar ._menu-link a {
+        margin: 15px 6px 0px;
+    }
+    ._navbar ._container {
+        width: 95%;
+    }
     ._footer ._menu-link {}
     ._footer ._menu-link ul {}
     ._footer ._menu-link ul li {}
@@ -24,7 +29,7 @@
     ._text-right {}
     ._float-right {}
     ._container {
-        width: 850px;
+        width: 85%;
     }
     ._section ._container {}
     ._container-margin-20 ._container {}
@@ -162,7 +167,8 @@
         margin-top: 60px !important;
     }
     ._menu-navigation h6 {
-        margin-top: -29%;
+        margin-top: -35%;
+        padding: 0px 10px;
     }
     ._berita-berita-lain {
         width: 23% !important;

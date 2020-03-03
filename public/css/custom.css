@@ -445,7 +445,7 @@ body._page_faq {
     background-position-y: -600px;
 }
 
-body._page_kontak-kami {
+.__section_id_33 {
     background-image: url(/uploads/image/kontak.png);
     background-size: 102%;
     background-repeat: no-repeat;
@@ -476,6 +476,7 @@ body._page_lokasi {
     height: 565px;
     margin-bottom: 60px;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 ._beranda-section1 ._container ._grid h2 {
@@ -924,7 +925,7 @@ p._sub-tittle-konservasi {
 ._page_konservasi-kami_detail {
     background: url(/uploads/image/background-konservasi-detail.png);
     background-repeat: no-repeat;
-    background-position-x: -473px;
+    background-position-x: 58.5%;
     background-size: 165%;
     background-position-y: 1130px;
 }
