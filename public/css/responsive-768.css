@@ -1,4 +1,20 @@
     @media (max-width: 768px) and (min-width: 426px) {
+        ._page_konservasi-kami_detail {
+            background: unset;
+        }
+        /* body._page_kontak-kami {
+            background-image: url(/uploads/image/kontak-mobile.png);
+            background-size: 104%;
+            background-repeat: no-repeat;
+            background-position: top;
+        } */
+        body._page_lokasi {
+            background-image: url(/uploads/image/lokasi.png);
+            background-size: 113%;
+            background-repeat: no-repeat;
+            background-position-x: -60px;
+            background-position-y: 150px;
+        }
         body {
             width: 100%;
         }
@@ -35,7 +51,7 @@
             display: none;
         }
         ._navbar {
-            width: 768px;
+            width: 100%;
         }
         ._navbar ._menu-link {
             float: none !important;
@@ -43,10 +59,11 @@
             height: fit-content;
             width: 100% !important;
             margin-top: 56px;
-            margin-left: -40px;
+            margin-left: -5%;
             position: absolute !important;
             border-top: 1px solid lightgray;
             display: block;
+            box-shadow: 0px 15px 15px #00000024;
         }
         ._navbar ._menu-link ul {}
         ._navbar ._menu-link ul li {
@@ -82,10 +99,13 @@
             width: 90%;
         }
         ._section {
-            width: 768px;
+            width: 100%;
         }
         ._section ._container {
-            padding: 0px 40px;
+            padding: 30px 40px;
+        }
+        ._page_berita ._section ._container {
+            padding: unset;
         }
         ._container-margin-20 ._container {
             padding: 10px 5px;
@@ -111,7 +131,7 @@
         }
         ._berita-berita-lain img {}
         ._berita-berita-lain h6 {
-            height: 35px;
+            height: 40px;
         }
         ._lokasi-image img {}
         ._galery-video {}
@@ -291,7 +311,7 @@
             bottom: 0 !important
         }
         .slider-4 .slider-item-container .slider-item.active p {
-            height: 320px !important;
+            height: 100% !important;
             overflow: hidden !important;
         }
         ._konservasi-kami-content {
@@ -313,10 +333,10 @@
             margin-top: 100px;
         }
         .__section_id_14 .__grid_id_27 ._gradient:before {
-            width: 285px;
+            width: 100%;
         }
         .__section_id_14 ._berita-image-2 ._gradient:before {
-            width: 133px;
+            width: 100%;
         }
         ._berita-berita-lain h3 {
             font-size: 13px;
@@ -332,5 +352,18 @@
         }
         .__section_id_28 ._container h4 {
             font-size: 16px;
+            height: 60px;
+        }
+        .section-ilustrator ._container {
+            padding: 20px 0px;
+        }
+        ._menu-navigation {
+            border: unset;
+        }
+        ._menu-navigation h6 {
+            padding: 20px 5px;
+        }
+        .__component_id_126 {
+            height: 264px !important;
         }
     }
