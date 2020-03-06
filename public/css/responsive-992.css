@@ -176,4 +176,39 @@
     .slider-3 .slider-item-container .slider-item h4 {
         margin-top: 140px;
     }
+    .__grid_id_134 {
+        margin-top: 70px;
+    }
+    ._section.__section_id_33 {
+        height: 505px;
+    }
+    .__section_id_74 ._container {
+        padding: unset;
+        padding-left: 20px;
+        margin: unset;
+        margin-left: 73px;
+        width: 1226px;
+        object-fit: cover;
+    }
+    .__section_id_76 ._container .grid-3 {
+        margin-left: 2%;
+        margin-right: 0%;
+        margin-top: 31.9px;
+        width: 23.5%;
+        height: 241.09px;
+    }
+    .card-2 ._card-text-container {
+        bottom: 0px;
+        position: absolute;
+        padding: 0px 10px;
+        margin-bottom: -28px;
+        margin-left: 16px;
+    }
+    .card-2 ._card-text-container {
+        bottom: 0px;
+        position: absolute;
+        padding: 0px 10px;
+        margin-bottom: -20px;
+        margin-left: 24px;
+    }
 }
