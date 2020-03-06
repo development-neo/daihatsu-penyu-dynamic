@@ -632,5 +632,25 @@
     }
     ._section.__section_id_33 {
         height: 660px;
+        background: unset;
+    }
+    ._section._shadow._sg_bg_white {
+        padding: 0px 15px;
+    }
+    .__section_id_74 ._container {
+        padding: 20px;
+        margin: unset;
+        width: unset;
+    }
+    .__section_id_74 ._container ._image-berita img {
+        width: 1226px;
+        height: 380px;
+        object-fit: cover;
+    }
+    .__section_id_75 ._container ._heading-berita {
+        padding-top: 13px;
+    }
+    .__section_id_76 ._container .grid-3 {
+        margin-left: unset;
     }
 }

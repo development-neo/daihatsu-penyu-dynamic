@@ -3,7 +3,7 @@
         width: 100%;
     }
     ._page_konservasi-kami_detail {
-        background: unset !important;
+        /* background: unset !important; */
     }
     body._page_lokasi {
         background-image: unset;
@@ -644,5 +644,24 @@
     }
     ._page_konservasi-kami_detail .__section_id_24 .slider-2 .preview-img img {
         height: 200px;
+    }
+    .__section_id_33 {
+        background: unset;
+    }
+    .__section_id_74 ._container {
+        padding: 20px;
+        margin: unset;
+        width: unset;
+    }
+    .__section_id_74 ._container ._image-berita img {
+        width: 1226px;
+        height: 380px;
+        object-fit: cover;
+    }
+    .__section_id_75 ._container ._heading-berita {
+        padding-top: 13px;
+    }
+    .__section_id_76 ._container .grid-3 {
+        margin-left: unset;
     }
 }

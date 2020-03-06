@@ -1,369 +1,421 @@
-    @media (max-width: 768px) and (min-width: 426px) {
-        ._page_konservasi-kami_detail {
-            background: unset;
-        }
-        /* body._page_kontak-kami {
-            background-image: url(/uploads/image/kontak-mobile.png);
-            background-size: 104%;
-            background-repeat: no-repeat;
-            background-position: top;
-        } */
-        body._page_lokasi {
-            background-image: url(/uploads/image/lokasi.png);
-            background-size: 113%;
-            background-repeat: no-repeat;
-            background-position-x: -60px;
-            background-position-y: 150px;
-        }
-        body {
-            width: 100%;
-        }
-        h2 {
-            font-size: 36px;
-        }
-        p {
-            font-size: 14px;
-        }
-        ._navbar ._container ._grid {
-            display: block;
-        }
-        ._navbar ._container ._menu-link {
-            display: none;
-        }
-        ._show-mobile {
-            display: none !important;
-        }
-        ._show-desktop {
-            display: block !important;
-        }
-        .burger-menu {
-            position: absolute;
-            right: 0;
-            margin-right: 20px;
-            margin-top: 20px;
-            display: block;
-        }
-        ._beranda-section0 ._container ._grid ._show-desktop {
-            visibility: visible;
-            display: unset;
-        }
-        ._beranda-section0 ._container ._grid ._show-mobile {
-            display: none;
-        }
-        ._navbar {
-            width: 100%;
-        }
-        ._navbar ._menu-link {
-            float: none !important;
-            background-color: white;
-            height: fit-content;
-            width: 100% !important;
-            margin-top: 56px;
-            margin-left: -5%;
-            position: absolute !important;
-            border-top: 1px solid lightgray;
-            display: block;
-            box-shadow: 0px 15px 15px #00000024;
-        }
-        ._navbar ._menu-link ul {}
-        ._navbar ._menu-link ul li {
-            float: left;
-            width: 98%;
-        }
-        ._navbar ._menu-link a {
-            float: none;
-            width: fit-content;
-            padding: 0px;
-            list-style: none;
-            display: table;
-            color: black;
-            text-decoration: none;
-            margin: 20px;
-            width: 94%;
-        }
-        ._navbar ._menu-link ul li a {}
-        ._footer ._menu-link {}
-        ._footer ._menu-link ul {}
-        ._footer ._menu-link ul li {}
-        ._footer ._menu-link ul li a {}
-        ._footer ._container {}
-        ._footer ._site-logo {}
-        ._navbar ._site-logo {
-            margin-left: 20px;
-        }
-        ._footer ._site-contact_detail {}
-        ._text-center {}
-        ._text-right {}
-        ._float-right {}
-        ._container {
-            width: 90%;
-        }
-        ._section {
-            width: 100%;
-        }
-        ._section ._container {
-            padding: 30px 40px;
-        }
-        ._page_berita ._section ._container {
-            padding: unset;
-        }
-        ._container-margin-20 ._container {
-            padding: 10px 5px;
-        }
-        ._section ._container .grid-12 {}
-        ._section ._container .grid-11 {}
-        ._section ._container .grid-10 {}
-        ._section ._container .grid-9 {}
-        ._section ._container .grid-8 {}
-        ._section ._container .grid-7 {}
-        ._section ._container .grid-6 {}
-        ._section ._container .grid-5 {}
-        ._section ._container .grid-4 {}
-        ._section ._container .grid-3 {}
-        ._section ._container .grid-2 {}
-        ._section ._container .grid-1 {}
-        ._btn {}
-        ._btn:hover {}
-        ._galery-image img {}
-        ._padding-10 {}
-        ._berita-berita-lain {
-            width: 23% !important;
-        }
-        ._berita-berita-lain img {}
-        ._berita-berita-lain h6 {
-            height: 40px;
-        }
-        ._lokasi-image img {}
-        ._galery-video {}
-        ._galery-video-full {}
-        ._container-width-full ._container {
-            padding: unset !important;
-        }
-        ._container-width-full ._container ._grid {}
-        ._section ._container ._grid-1000 {
-            width: 90% !important;
-        }
-        ._padding-less-container-grid ._container {
-            padding: unset !important;
-        }
-        ._padding-less-container-grid ._container ._grid {}
-        ._social-media-badge {
-            display: none;
-        }
-        ._social-media-badge ._container {}
-        ._font-permanent-marker {}
-        ._font-ubuntu-marker {}
-        ._font-ubuntu-marker-bold {}
-        ._section-konservasi-overview .grid-2 {}
-        ._section-konservasi-overview .grid-2:nth-child(2) {}
-        ._icon-alignment i {}
-        ._section-konservasi-overview .grid-2:last-child {}
-        .carousel-control-next {}
-        .carousel-control-prev {}
-        ._beranda-section1 {
-            background-size: 100%;
-            background-repeat: no-repeat;
-            padding: 40px;
-            background-position-y: 45px;
-            height: 400px;
-        }
-        ._beranda-section1 ._container .grid-6 {
-            width: 360px;
-        }
-        ._beranda-section2 {}
-        ._beranda-section3 {
-            background-position-x: 130px !important;
-            background-size: 650px !important;
-            height: 500px !important;
-            background-position-y: 115px;
-        }
-        ._beranda-section4 {
-            background-position-x: 5% !important;
-            background-size: 360px !important;
-            margin-top: unset !important;
-        }
-        ._beranda-section4 ._container ._grid {
-            padding-left: unset !important;
-        }
-        ._beranda-section-6 {
-            height: 450px;
-        }
-        .carousel-indicators {}
-        ._icon-social-badge-instagram {}
-        ._icon-social-badge-instagram:hover {}
-        ._icon-social-badge-facebook {}
-        ._icon-social-badge-facebook:hover {}
-        ._icon-social-badge-twitter {}
-        ._icon-social-badge-twitter:hover {}
-        ._icon-social-badge-youtube {}
-        ._icon-social-badge-youtube:hover {}
-        ._berita-image-2 img {
-            height: 127px !Important;
-        }
-        ._breadcrumb {}
-        ._breadcrumb a {}
-        ._breadcrumb .fa {}
-        ._accordion-icon .icon-accordion {
-            margin-left: unset;
-            position: absolute;
-            right: 0;
-            top: 25px;
-            width: 20px;
-            height: 20px;
-            padding: 1px;
-        }
-        ._border ._container {
-            border: none;
-            box-shadow: 0px 1px 5px lightgrey;
-        }
-        ._shadow ._container {}
-        ._accordion-icon .card {}
-        ._accordion-icon .card .card-header {}
-        ._accordion-icon .card .card-header .mb-0 {}
-        ._accordion-icon .card .card-header .mb-0 .btn {}
-        ._konservasi-kami-content {}
-         :target {}
-        .slider-3 .slider-item-container .slider-item img {
-            width: 80px !important;
-            height: 80px !important;
-        }
-        .slider-3 .slider-item-container .active img {
-            width: 110px !Important;
-            height: 110px !Important;
-            top: 5% !important;
-        }
-        .slider-3 .slider-item-container .slider-item:first-child {
-            left: 20% !Important;
-        }
-        .slider-3 .slider-item-container .slider-item:nth-child(2) {
-            left: 30% !Important;
-        }
-        .slider-3 .slider-item-container .slider-item:nth-child(4) {
-            right: 30% !Important;
-        }
-        .slider-3 .slider-item-container .slider-item:last-child {
-            right: 20% !Important;
-        }
-        .slider-3 .slider-item-container .slider-item img:first-child,
-        .slider-3 .slider-item-container .slider-item img:last-child {
-            left: 0 !important;
-            right: 0 !important;
-        }
-        .slider-3 .slider-item-container .slider-item h5 {
-            margin-top: 120px !important;
-        }
-        .bootstrap_carousel_type_3 .carousel .carousel-indicators {
-            bottom: 30% !important;
-        }
-        .bootstrap_carousel_type_3 .carousel .carousel-control-next {
-            left: 90% !important;
-        }
-        ._tentang-kami-section3 {
-            padding-bottom: 30px !important;
-            margin-bottom: -30px;
-        }
-        .slider-4 .slider-item-container .slider-item {
-            height: 100px !important;
-            top: 455px !important;
-            margin: 0px 8px 0px 0px !important;
-        }
-        .slider-4 .slider-item-container .slider-item img {
-            width: 100% !important;
-            object-fit: cover !important;
-        }
-        .slider-4 .slider-item-container .slider-item.active {
-            height: 555px !important;
-        }
-        .slider-4 .slider-item-container .slider-item.active img {
-            width: 100% !important;
-            height: 100% !important;
-        }
-        .grid-6 ._card {
-            height: 275px;
-        }
-        .slider-1 .slider-item-container .slider-item img {
-            width: 50px !important;
-            height: 50px !important;
-        }
-        .slider-1 .slider-item-container .slider-item.active img {
-            width: 65px !important;
-            height: 65px !important;
-        }
-        .slider-1 .preview-img img {
-            margin-top: -45px !important;
-        }
-        .slider-1 {
-            height: 400px !important;
-        }
-        .bootstrap_carousel_type_1 .carousel .carousel-item .carousel-caption.d-none.d-md-block h5 {
-            left: -30px !important;
-        }
-        .bootstrap_carousel_type_1 .carousel .carousel-item img {
-            margin-top: 50px;
-        }
-        ._beranda-section-6 ._container .grid-12 {
-            margin-bottom: 15px;
-        }
-        .bootstrap_carousel_type_1 .carousel .carousel-control-next {
-            bottom: 0 !important
-        }
-        .bootstrap_carousel_type_1 .carousel .carousel-control-prev {
-            bottom: 0 !important
-        }
-        .slider-4 .slider-item-container .slider-item.active p {
-            height: 100% !important;
-            overflow: hidden !important;
-        }
-        ._konservasi-kami-content {
-            font-size: 24px;
-        }
-        ._section._konservasi-section4 {
-            margin-bottom: 55px;
-        }
-        ._menu-navigation h6 {
-            margin-top: -45% !important;
-        }
-        ._section.section-ilustrator {
-            margin-bottom: 20px;
-        }
-        ._beranda-section-6 ._container ._grid:nth-child(3) {
-            height: 270px;
-        }
-        .slider-3 .slider-item-container .slider-item h4 {
-            margin-top: 100px;
-        }
-        .__section_id_14 .__grid_id_27 ._gradient:before {
-            width: 100%;
-        }
-        .__section_id_14 ._berita-image-2 ._gradient:before {
-            width: 100%;
-        }
-        ._berita-berita-lain h3 {
-            font-size: 13px;
-        }
-        .slider-1 .preview-img .caption {
-            margin-top: 55px;
-        }
-        .__section_id_28 ._container ._grid a._btn {
-            width: 100%;
-        }
-        .__section_id_28 ._container ._grid {
-            padding: 10px 7px;
-        }
-        .__section_id_28 ._container h4 {
-            font-size: 16px;
-            height: 60px;
-        }
-        .section-ilustrator ._container {
-            padding: 20px 0px;
-        }
-        ._menu-navigation {
-            border: unset;
-        }
-        ._menu-navigation h6 {
-            padding: 20px 5px;
-        }
-        .__component_id_126 {
-            height: 264px !important;
+@media (max-width: 768px) and (min-width: 426px) {
+    ._page_konservasi-kami_detail {
+        background: unset;
+    }
+    /* body._page_kontak-kami {
+    background-image: url(/uploads/image/kontak-mobile.png);
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-position: top;
+} */
+    body._page_lokasi {
+        background-image: url(/uploads/image/lokasi.png);
+        background-size: 113%;
+        background-repeat: no-repeat;
+        background-position-x: -60px;
+        background-position-y: 150px;
+    }
+    body {
+        width: 100%;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 14px;
+    }
+    ._navbar ._container ._grid {
+        display: block;
+    }
+    ._navbar ._container ._menu-link {
+        display: none;
+    }
+    ._show-mobile {
+        display: none !important;
+    }
+    ._show-desktop {
+        display: block !important;
+    }
+    .burger-menu {
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 20px;
+        display: block;
+    }
+    ._beranda-section0 ._container ._grid ._show-desktop {
+        visibility: visible;
+        display: unset;
+    }
+    ._beranda-section0 ._container ._grid ._show-mobile {
+        display: none;
+    }
+    ._navbar {
+        width: 100%;
+    }
+    ._navbar ._menu-link {
+        float: none !important;
+        background-color: white;
+        height: fit-content;
+        width: 100% !important;
+        margin-top: 56px;
+        margin-left: -5%;
+        position: absolute !important;
+        border-top: 1px solid lightgray;
+        display: block;
+        box-shadow: 0px 15px 15px #00000024;
+    }
+    ._navbar ._menu-link ul {}
+    ._navbar ._menu-link ul li {
+        float: left;
+        width: 98%;
+    }
+    ._navbar ._menu-link a {
+        float: none;
+        width: fit-content;
+        padding: 0px;
+        list-style: none;
+        display: table;
+        color: black;
+        text-decoration: none;
+        margin: 20px;
+        width: 94%;
+    }
+    ._navbar ._menu-link ul li a {}
+    ._footer ._menu-link {}
+    ._footer ._menu-link ul {}
+    ._footer ._menu-link ul li {}
+    ._footer ._menu-link ul li a {}
+    ._footer ._container {}
+    ._footer ._site-logo {}
+    ._navbar ._site-logo {
+        margin-left: 20px;
+    }
+    ._footer ._site-contact_detail {}
+    ._text-center {}
+    ._text-right {}
+    ._float-right {}
+    ._container {
+        width: 90%;
+    }
+    ._section {
+        width: 100%;
+    }
+    ._section ._container {
+        padding: 30px 40px;
+    }
+    ._page_berita ._section ._container {
+        padding: unset;
+    }
+    ._container-margin-20 ._container {
+        padding: 10px 5px;
+    }
+    ._section ._container .grid-12 {}
+    ._section ._container .grid-11 {}
+    ._section ._container .grid-10 {}
+    ._section ._container .grid-9 {}
+    ._section ._container .grid-8 {}
+    ._section ._container .grid-7 {}
+    ._section ._container .grid-6 {}
+    ._section ._container .grid-5 {}
+    ._section ._container .grid-4 {}
+    ._section ._container .grid-3 {}
+    ._section ._container .grid-2 {}
+    ._section ._container .grid-1 {}
+    ._btn {}
+    ._btn:hover {}
+    ._galery-image img {}
+    ._padding-10 {}
+    ._berita-berita-lain {
+        width: 23% !important;
+    }
+    ._berita-berita-lain img {}
+    ._berita-berita-lain h6 {
+        height: 40px;
+    }
+    ._lokasi-image img {}
+    ._galery-video {}
+    ._galery-video-full {}
+    ._container-width-full ._container {
+        padding: unset !important;
+    }
+    ._container-width-full ._container ._grid {}
+    ._section ._container ._grid-1000 {
+        width: 90% !important;
+    }
+    ._padding-less-container-grid ._container {
+        padding: unset !important;
+    }
+    ._padding-less-container-grid ._container ._grid {}
+    ._social-media-badge {
+        display: none;
+    }
+    ._social-media-badge ._container {}
+    ._font-permanent-marker {}
+    ._font-ubuntu-marker {}
+    ._font-ubuntu-marker-bold {}
+    ._section-konservasi-overview .grid-2 {}
+    ._section-konservasi-overview .grid-2:nth-child(2) {}
+    ._icon-alignment i {}
+    ._section-konservasi-overview .grid-2:last-child {}
+    .carousel-control-next {}
+    .carousel-control-prev {}
+    ._beranda-section1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 40px;
+        background-position-y: 45px;
+        height: 400px;
+    }
+    ._beranda-section1 ._container .grid-6 {
+        width: 360px;
+    }
+    ._beranda-section2 {}
+    ._beranda-section3 {
+        background-position-x: 130px !important;
+        background-size: 650px !important;
+        height: 500px !important;
+        background-position-y: 115px;
+    }
+    ._beranda-section4 {
+        background-position-x: 5% !important;
+        background-size: 360px !important;
+        margin-top: unset !important;
+    }
+    ._beranda-section4 ._container ._grid {
+        padding-left: unset !important;
+    }
+    ._beranda-section-6 {
+        height: 450px;
+    }
+    .carousel-indicators {}
+    ._icon-social-badge-instagram {}
+    ._icon-social-badge-instagram:hover {}
+    ._icon-social-badge-facebook {}
+    ._icon-social-badge-facebook:hover {}
+    ._icon-social-badge-twitter {}
+    ._icon-social-badge-twitter:hover {}
+    ._icon-social-badge-youtube {}
+    ._icon-social-badge-youtube:hover {}
+    ._berita-image-2 img {
+        height: 127px !Important;
+    }
+    ._breadcrumb {}
+    ._breadcrumb a {}
+    ._breadcrumb .fa {}
+    ._accordion-icon .icon-accordion {
+        margin-left: unset;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        width: 20px;
+        height: 20px;
+        padding: 1px;
+    }
+    ._border ._container {
+        border: none;
+        box-shadow: 0px 1px 5px lightgrey;
+    }
+    ._shadow ._container {}
+    ._accordion-icon .card {}
+    ._accordion-icon .card .card-header {}
+    ._accordion-icon .card .card-header .mb-0 {}
+    ._accordion-icon .card .card-header .mb-0 .btn {}
+    ._konservasi-kami-content {}
+     :target {}
+    .slider-3 .slider-item-container .slider-item img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .slider-3 .slider-item-container .active img {
+        width: 110px !Important;
+        height: 110px !Important;
+        top: 5% !important;
+    }
+    .slider-3 .slider-item-container .slider-item:first-child {
+        left: 20% !Important;
+    }
+    .slider-3 .slider-item-container .slider-item:nth-child(2) {
+        left: 30% !Important;
+    }
+    .slider-3 .slider-item-container .slider-item:nth-child(4) {
+        right: 30% !Important;
+    }
+    .slider-3 .slider-item-container .slider-item:last-child {
+        right: 20% !Important;
+    }
+    .slider-3 .slider-item-container .slider-item img:first-child,
+    .slider-3 .slider-item-container .slider-item img:last-child {
+        left: 0 !important;
+        right: 0 !important;
+    }
+    .slider-3 .slider-item-container .slider-item h5 {
+        margin-top: 120px !important;
+    }
+    .bootstrap_carousel_type_3 .carousel .carousel-indicators {
+        bottom: 30% !important;
+    }
+    .bootstrap_carousel_type_3 .carousel .carousel-control-next {
+        left: 90% !important;
+    }
+    ._tentang-kami-section3 {
+        padding-bottom: 30px !important;
+        margin-bottom: -30px;
+    }
+    .slider-4 .slider-item-container .slider-item {
+        height: 100px !important;
+        top: 455px !important;
+        margin: 0px 8px 0px 0px !important;
+    }
+    .slider-4 .slider-item-container .slider-item img {
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    .slider-4 .slider-item-container .slider-item.active {
+        height: 555px !important;
+    }
+    .slider-4 .slider-item-container .slider-item.active img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .grid-6 ._card {
+        height: 275px;
+    }
+    .slider-1 .slider-item-container .slider-item img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .slider-1 .slider-item-container .slider-item.active img {
+        width: 65px !important;
+        height: 65px !important;
+    }
+    .slider-1 .preview-img img {
+        margin-top: -45px !important;
+    }
+    .slider-1 {
+        height: 400px !important;
+    }
+    .bootstrap_carousel_type_1 .carousel .carousel-item .carousel-caption.d-none.d-md-block h5 {
+        left: -30px !important;
+    }
+    .bootstrap_carousel_type_1 .carousel .carousel-item img {
+        margin-top: 50px;
+    }
+    ._beranda-section-6 ._container .grid-12 {
+        margin-bottom: 15px;
+    }
+    .bootstrap_carousel_type_1 .carousel .carousel-control-next {
+        bottom: 0 !important
+    }
+    .bootstrap_carousel_type_1 .carousel .carousel-control-prev {
+        bottom: 0 !important
+    }
+    .slider-4 .slider-item-container .slider-item.active p {
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+    ._konservasi-kami-content {
+        font-size: 24px;
+    }
+    ._section._konservasi-section4 {
+        margin-bottom: 55px;
+    }
+    ._menu-navigation h6 {
+        margin-top: -45% !important;
+    }
+    ._section.section-ilustrator {
+        margin-bottom: 20px;
+    }
+    ._beranda-section-6 ._container ._grid:nth-child(3) {
+        height: 270px;
+    }
+    .slider-3 .slider-item-container .slider-item h4 {
+        margin-top: 100px;
+    }
+    .__section_id_14 .__grid_id_27 ._gradient:before {
+        width: 100%;
+    }
+    .__section_id_14 ._berita-image-2 ._gradient:before {
+        width: 100%;
+    }
+    ._berita-berita-lain h3 {
+        font-size: 13px;
+    }
+    .slider-1 .preview-img .caption {
+        margin-top: 55px;
+    }
+    .__section_id_28 ._container ._grid a._btn {
+        width: 100%;
+    }
+    .__section_id_28 ._container ._grid {
+        padding: 10px 7px;
+    }
+    .__section_id_28 ._container h4 {
+        font-size: 16px;
+        height: 60px;
+    }
+    .section-ilustrator ._container {
+        padding: 20px 0px;
+    }
+    ._menu-navigation {
+        border: unset;
+    }
+    ._menu-navigation h6 {
+        padding: 20px 5px;
+    }
+    .__component_id_126 {
+        height: 264px !important;
+    }
+    .__grid_id_134 {
+        margin-top: 5%;
+    }
+    ._section.__section_id_33 {
+        height: 400px;
+    }
+    .__section_id_74 ._container {
+        padding: 20px;
+        margin: unset;
+        width: unset;
+    }
+    .__section_id_74 ._container ._image-berita img {
+        width: 1226px;
+        height: 410px;
+        object-fit: cover;
+        padding: 0px 38px;
+    }
+    .__section_id_75 ._container ._heading-berita {
+        padding-top: 24px;
+    }
+    .__section_id_76 ._container .grid-3 {
+        margin-left: 0px;
+        margin-right: 2.6%;
+        margin-top: 31.9px;
+        width: 23%;
+        height: 209.09px;
+    }
+    .card-2 ._card-text-container {
+        bottom: 0px;
+        position: absolute;
+        padding: 0px 10px;
+        margin-bottom: -41px;
+        margin-left: unset;
+    }
+    @media (max-width: 652px) and (min-width: 420px) {
+        .__component_id_220 {
+            font-size: 31px;
+        }
+        ._section.__section_id_33 {
+            height: 63%;
+        }
+        ._section.__section_id_33 {
+            height: 250px;
+        }
+        .__component_id_221 {
+            font-size: 12px;
+            height: 79px;
+        }
+        .__section_id_76 ._container .grid-3 {
+            width: 47.4%;
         }
     }
+}

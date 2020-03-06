@@ -89,6 +89,22 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) and (min-width: 425px) {
+    .modal-preview-image-1 .preview-image {
+        width: 80%;
+        height: 415px;
+    }
+    .modal-preview-image-1 .indicator {
+        width: 94%;
+    }
+    .modal-preview-image-1 .indicator .btn-close-modal {
+        margin: 0px 31px 0px 0px;
+    }
+    .modal-preview-image-1 .item-image {
+        width: fit-content;
+    }
+}
+
 @media (max-width: 425px) and (min-width: 0px) {
     .modal-preview-image-1 .indicator {
         display: none;
@@ -98,5 +114,13 @@
         height: 388px;
         margin: 72px 10px 0px;
         cursor: pointer;
+    }
+    .modal-preview-image-1 .item-image {
+        width: fit-content;
+    }
+    .modal-preview-image-1 .item-image img {
+        width: 29.2%;
+        height: 100%;
+        margin-right: unset;
     }
 }

@@ -450,6 +450,7 @@ body._page_faq {
     background-size: 102%;
     background-repeat: no-repeat;
     background-position: top;
+    background-position-y: -6px;
 }
 
 body._page_lokasi {
@@ -815,7 +816,7 @@ p._sub-tittle-konservasi {
     background-image: url(/uploads/image/berita-read.png);
     background-size: 106.2%;
     background-repeat: no-repeat;
-    background-position-y: 375px;
+    background-position: bottom left;
 }
 
 .__section_id_75 ._container {
@@ -883,7 +884,7 @@ p._sub-tittle-konservasi {
     margin-left: unset;
 }
 
-.__section_id_76 ._container .grid-3:nth-last-child() {
+.__section_id_76 ._container .grid-3:nth-child(5) {
     margin-right: unset;
 }
 
