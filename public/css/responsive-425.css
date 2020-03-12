@@ -2,6 +2,9 @@
     body {
         width: 100%;
     }
+    .__grid_id_17 {
+        padding: unset !important;
+    }
     body._page_lokasi {
         background-image: unset;
     }
@@ -95,7 +98,9 @@
     }
     ._section ._container {}
     ._container-margin-20 ._container {}
-    ._section ._container ._grid {}
+    ._section ._container ._grid {
+        padding: 20px;
+    }
     ._section ._container .grid-12 {
         width: 100%;
     }
@@ -166,7 +171,7 @@
         width: 100% !important;
     }
     ._container-width-full ._container ._grid-1000 {
-        padding: 20px 20px;
+        padding: 20px 40px;
     }
     ._padding-less-container-grid ._container {}
     ._padding-less-container-grid ._container ._grid {}
@@ -192,11 +197,12 @@
     ._beranda-section1 {
         background: url(/uploads/image/section1-mobile.png);
         background-position: bottom;
-        background-size: 250%;
-        background-position-y: 140px;
+        background-size: 136%;
+        background-position-y: bottom;
         height: unset;
-        padding-bottom: 315px;
+        padding-bottom: 204px;
         background-repeat: no-repeat;
+        margin: unset;
     }
     ._beranda-section1 ._container ._grid h2 {
         text-align: center;
@@ -423,12 +429,12 @@
         padding-bottom: unset !important;
         background-image: unset !important;
     }
-    ._konservasi-section1 {
-        margin-top: -60px;
-    }
     ._padding-konservasi-detail {
         padding: unset !important;
         margin-top: unset !important;
+    }
+    ._konservasi-section1 {
+        margin-top: -60px;
     }
     ._konservasi-section1 ._container ._grid ._image-konservasi-grid {
         position: absolute;
@@ -574,19 +580,19 @@
     .slider-1 .slider-item-container .slider-item:nth-child(5) {
         position: absolute !important;
         top: 80px !important;
-        left: 55 !important;
+        left: 20% !important;
         width: unset !important;
     }
     .slider-1 .slider-item-container .slider-item:nth-child(6) {
         position: absolute !important;
         top: 80px !important;
-        left: 152 !important;
+        left: 42% !important;
         width: unset !important;
     }
     .slider-1 .slider-item-container .slider-item:nth-child(7) {
         position: absolute !important;
         top: 80px !important;
-        left: 250 !important;
+        left: 65% !important;
         width: unset !important;
     }
     .slider-1 .slider-item-container {

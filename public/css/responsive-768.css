@@ -8,12 +8,11 @@
     background-repeat: no-repeat;
     background-position: top;
 } */
+    ._page_tentang-kami ._section ._container {
+        padding: 30px 15px;
+    }
     body._page_lokasi {
-        background-image: url(/uploads/image/lokasi.png);
-        background-size: 113%;
-        background-repeat: no-repeat;
-        background-position-x: -60px;
-        background-position-y: 150px;
+        background: unset;
     }
     body {
         width: 100%;
@@ -141,7 +140,7 @@
     }
     ._container-width-full ._container ._grid {}
     ._section ._container ._grid-1000 {
-        width: 90% !important;
+        width: 85% !important;
     }
     ._padding-less-container-grid ._container {
         padding: unset !important;
@@ -160,33 +159,53 @@
     ._section-konservasi-overview .grid-2:last-child {}
     .carousel-control-next {}
     .carousel-control-prev {}
-    ._beranda-section1 {
-        background-size: 100%;
-        background-repeat: no-repeat;
-        padding: 40px;
-        background-position-y: 45px;
-        height: 400px;
-    }
     ._beranda-section1 ._container .grid-6 {
         width: 360px;
     }
-    ._beranda-section2 {}
+    ._beranda-section1 {
+        background: url(/uploads/image/section1-mobile.png);
+        background-position: bottom;
+        background-size: 100%;
+        background-position-y: bottom;
+        height: 66%;
+        margin: unset;
+        background-repeat: no-repeat;
+    }
+    ._beranda-section2 {
+        background-position-y: 78%;
+    }
     ._beranda-section3 {
-        background-position-x: 130px !important;
-        background-size: 650px !important;
-        height: 500px !important;
-        background-position-y: 115px;
+        background: url(/uploads/image/section3-mobile.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 375px !important;
+        height: 570px !important;
+        background-position-y: bottom;
+    }
+    ._beranda-section3 ._container ._grid-4-custom {
+        margin-top: unset;
     }
     ._beranda-section4 {
-        background-position-x: 5% !important;
+        background-position-x: center;
         background-size: 360px !important;
         margin-top: unset !important;
+        height: 65%;
+        background-position-y: bottom;
     }
     ._beranda-section4 ._container ._grid {
         padding-left: unset !important;
     }
+    ._beranda-section5 {
+        margin-top: 55px;
+    }
     ._beranda-section-6 {
         height: 450px;
+    }
+    ._beranda-section-6 ._container .grid-6 {
+        width: 50% !important;
+    }
+    ._beranda-section-6 ._container ._grid:nth-child(3) embed {
+        height: 260px;
     }
     .carousel-indicators {}
     ._icon-social-badge-instagram {}
@@ -397,8 +416,103 @@
         bottom: 0px;
         position: absolute;
         padding: 0px 10px;
-        margin-bottom: -41px;
-        margin-left: unset;
+        margin-bottom: 20px;
+        margin-left: 21px;
+    }
+    ._berita-image-2 .card-2 ._card-text-container {
+        bottom: -65px;
+        position: absolute;
+        padding: 0px 10px;
+        margin-left: 7px;
+    }
+    ._konservasi-section1 {
+        margin-top: -60px;
+    }
+    ._konservasi-section1 ._container ._grid ._image-konservasi-grid {
+        position: absolute;
+        top: 100px;
+        margin: auto !important;
+        padding: 0 !important;
+        left: 0;
+        right: 0;
+    }
+    ._konservasi-section2 {
+        margin-top: -60px;
+    }
+    ._konservasi-section2 ._container ._grid ._image-konservasi-grid {
+        position: absolute;
+        top: -625;
+        margin: auto !important;
+        padding: 0 !important;
+        left: 0;
+        right: 0;
+    }
+    ._konservasi-section3 {
+        margin-top: -60px;
+    }
+    ._konservasi-section3 ._container ._grid ._image-konservasi-grid {
+        position: absolute;
+        top: 150;
+        margin: auto !important;
+        padding: 0 !important;
+        left: 0;
+        right: 0;
+    }
+    ._konservasi-section4 {
+        margin-top: -60px;
+    }
+    ._konservasi-section4 ._container ._grid ._image-konservasi-grid {
+        position: absolute;
+        top: -725px;
+        margin: auto !important;
+        padding: 0 !important;
+        left: 0;
+        right: 0;
+    }
+    ._konservasi-kami-description {
+        margin-top: 400px;
+    }
+    ._konservasi-section1 ._container ._grid {
+        text-align: center;
+    }
+    ._konservasi-section2 ._container ._grid {
+        text-align: center;
+    }
+    ._konservasi-section3 ._container ._grid {
+        text-align: center;
+    }
+    ._konservasi-section4 ._container ._grid {
+        text-align: center;
+    }
+    ._konservasi-section1 ._container ._grid a {
+        width: 100%
+    }
+    ._konservasi-section2 ._container ._grid a {
+        width: 100%
+    }
+    ._konservasi-section3 ._container ._grid a {
+        width: 100%
+    }
+    ._konservasi-section4 ._container ._grid a {
+        width: 100%
+    }
+    ._section ._container .grid-6 {
+        width: 100%;
+    }
+    ._page_berita ._section ._container .grid-6 {
+        width: 50%;
+    }
+    ._konservasi-kami-content {
+        margin-top: 7%;
+    }
+    .grid-3._display_scroll {
+        width: 100% !important;
+    }
+    ._display_scroll {
+        margin-top: 30px;
+    }
+    ._display_scroll:nth-child(1) {
+        margin-top: unset;
     }
     @media (max-width: 652px) and (min-width: 420px) {
         .__component_id_220 {
@@ -408,14 +522,79 @@
             height: 63%;
         }
         ._section.__section_id_33 {
-            height: 250px;
+            height: 130%;
         }
         .__component_id_221 {
-            font-size: 12px;
-            height: 79px;
+            font-size: 18px;
+            height: 200px;
+            width: 200%;
+        }
+        .__grid_id_134 {
+            margin-top: 135%;
         }
         .__section_id_76 ._container .grid-3 {
             width: 47.4%;
+        }
+        ._konservasi-section4 ._container ._grid ._image-konservasi-grid {
+            top: -662;
+        }
+        .slider-1 .slider-item-container {
+            width: 100%;
+            margin: 0% 0%;
+        }
+        ._beranda-section2 {
+            background-position-y: 67% !important;
+        }
+        ._beranda-section4 {
+            height: 76%;
+        }
+        ._grid.grid-2._menu-navigation {
+            width: 33%;
+        }
+        ._menu-navigation h6 {
+            margin-top: -35% !important;
+        }
+        ._display_scroll ._btn {
+            padding: 7px 17px;
+            display: block;
+            width: 174px;
+            text-align: center;
+            border: .5px #2f94e0 solid;
+            border-radius: 9px;
+            color: white;
+            background-color: #2f94e0;
+            font-size: 18px;
+        }
+        .__section_id_28 ._container h4 {
+            font-size: 25px;
+            height: 60px;
+        }
+        body._page_kontak-kami {
+            background-image: url(/uploads/image/kontak-mobile.png);
+            background-size: 104%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .__section_id_33 {
+            background: unset;
+        }
+        ._berita-berita-lain h6 {
+            height: 78px;
+        }
+        ._berita-berita-lain {
+            width: 47% !important;
+        }
+        ._berita-image-2 {
+            width: 50% !important;
+        }
+        ._page_berita ._section ._container .grid-6 {
+            width: 100%;
+        }
+        .__component_id_126 {
+            height: 425px !important;
+        }
+        ._berita-image-2 img {
+            height: 220px !Important;
         }
     }
 }

@@ -58,7 +58,7 @@
     ._container-width-full ._container {}
     ._container-width-full ._container ._grid {}
     ._section ._container ._grid-1000 {
-        width: 850px !important;
+        width: 85% !important;
     }
     ._padding-less-container-grid ._container {}
     ._padding-less-container-grid ._container ._grid {}
@@ -201,14 +201,20 @@
         bottom: 0px;
         position: absolute;
         padding: 0px 10px;
-        margin-bottom: -28px;
+        margin-bottom: 23px;
         margin-left: 16px;
     }
-    .card-2 ._card-text-container {
+    ._berita-image-2 .card-2 ._card-text-container {
         bottom: 0px;
         position: absolute;
         padding: 0px 10px;
-        margin-bottom: -20px;
-        margin-left: 24px;
+        margin-bottom: -28px;
+        margin-left: 16px;
+    }
+    .slider-1 .preview-img .caption {
+        margin-top: 68px;
+    }
+    .__section_id_28 ._container h4 {
+        height: 75px;
     }
 }
