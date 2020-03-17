@@ -138,16 +138,19 @@ function itemScrolling() {
 
         // Data append request        
         if (item_active == 0) {
+            console.log("IKI A");
             for (i = item_active; i <= item_active + 2; i++) {
                 var data = $('.modal-preview-image-1 .item-image').children()[i];
                 data.style.display = "block";
             }
         } else if (item_active == obj_item.children().length - 1) {
+            console.log("IKI B");
             for (i = item_active - 2; i <= item_active; i++) {
                 var data = $('.modal-preview-image-1 .item-image').children()[i];
                 data.style.display = "block";
             }
         } else {
+            console.log("IKI C");
             for (i = item_active - 1; i <= item_active + 1; i++) {
                 var data = $('.modal-preview-image-1 .item-image').children()[i];
                 data.style.display = "block";
@@ -157,17 +160,23 @@ function itemScrolling() {
     } else if (screen.width <= 768 && screen.width >= 426) {
         var obj_item = $('.modal-preview-image-1 .item-image');
         var item_active = obj_item.children('.active').index();
+        console.log(item_active);
 
         obj_item.children().hide();
 
         // Data append request        
         if (item_active == 0) {
-            for (i = item_active; i <= item_active + 3; i++) {
+            for (i = item_active; i <= 3; i++) {
                 var data = $('.modal-preview-image-1 .item-image').children()[i];
                 data.style.display = "block";
             }
         } else if (item_active == obj_item.children().length - 1) {
             for (i = item_active - 3; i <= item_active; i++) {
+                var data = $('.modal-preview-image-1 .item-image').children()[i];
+                data.style.display = "block";
+            }
+        } else if (item_active == 1) {
+            for (i = item_active - 1; i <= item_active + 2; i++) {
                 var data = $('.modal-preview-image-1 .item-image').children()[i];
                 data.style.display = "block";
             }
