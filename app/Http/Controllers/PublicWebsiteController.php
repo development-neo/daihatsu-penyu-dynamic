@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class IntepreterController
+class PublicWebsiteController extends Controller
 {
     
     public function index($segment = '', $segment2 = '', $segment3 = '', $segment4 = '', $segment5 = '')
@@ -12,6 +12,9 @@ class IntepreterController
         $html = new \App\Projects;
         $html = $html->array_initialization();
         $intepreter = $this->intepreter($html);
+        // echo '<pre>';
+        // print_r($intepreter);
+        // exit;
         return view('render_html', compact('intepreter'));
     }
 
@@ -19,27 +22,51 @@ class IntepreterController
         $sections = $html['body']['sections'];
         $intepreter['head'] = [
             'meta' => $html['meta'],
-            'css' => $html['css'],
-            'title' => $html['name']['page'],
+            'css' => $html['css']
         ];
 
-        $intepreter['body'] = [
-            'class' => '',
-            'navbar' => '',
-            'section' => '',
-            'footer' => '',
-        ];
-
-        $intepreter['body']['class'] = $html['name']['class'];
-        // $intepreter['body']['navbar'] .= '<div class="_navbar">';
-        // $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
-        // foreach($html['body']['navbar']['logo'] as $logo)
-        //     $intepreter['body']['navbar'] .= '<a href="/beranda"><img src="'.$logo.'" class="_site-logo"></a>';
-        // $intepreter['body']['navbar'] .= '</div>';
-        // $intepreter['body']['navbar'] .= '</div>';
+        $intepreter['body']['navbar'] = '';
+        $intepreter['body']['navbar'] .= '<div class="_navbar">';
+        $intepreter['body']['navbar'] .= '<div class="_container _width-d-1000">';
+        foreach($html['body']['navbar']['logo'] as $logo)
+            $intepreter['body']['navbar'] .= '<a href="/beranda"><img src="'.$logo.'" class="_site-logo"></a>';
+        $intepreter['body']['navbar'] .= '</div>';
+        $intepreter['body']['navbar'] .= '</div>';
 
         $intepreter['body']['footer'] = '';
-        
+        $intepreter['body']['footer'] .= '<div class="_footer _section ">';
+        $intepreter['body']['footer'] .= '<div class="_container _width-d-1000">';
+        $intepreter['body']['footer'] .= '
+            <div class="_grid grid-3">
+                <h3>Contact Customer Service</h3>
+                <hr/>
+                <h3>1-500 898</h3>
+            </div>
+            <div class="_grid grid-3">
+                <h5>Need Help ?</h5>
+                <hr/>
+                <a href="">Contact Us</a>
+                <a href="">FAQ</a>
+            </div>
+            <div class="_grid grid-3">
+                <h5>Lorem Ipsum</h5>
+                <hr/>
+                <a href="">Lorem Ipsum</a>
+                <a href="">Lorem Ipsum</a>
+            </div>
+            <div class="_grid grid-3">
+                <h5>Connect</h5>
+                <hr/>
+                <div class="_socmed-container">
+                    <a href=""><i class="fa fa-facebook"/></i></a>
+                    <a href=""><i class="fa fa-twitter"/></i></a>
+                    <a href=""><i class="fa fa-instagram"/></i></a>
+                    <a href=""><i class="fa fa-youtube"/></i></a>
+                </div>
+            </div>
+        ';
+        $intepreter['body']['footer'] .= '</div>';
+        $intepreter['body']['footer'] .= '</div>';
 
         $intepreter['body']['section'] = '';
         if(!empty($sections))
@@ -50,23 +77,12 @@ class IntepreterController
                     foreach($d_sections['grids'] as $key => $d_grids) {
                         $intepreter['body']['section'] .= '<div class="_grid grid-'.$d_grids['length'].' '.$d_grids['class'].'">';
                         // $intepreter['body']['section'] .= '<div style="position: absolute;top: 0px;right: 0px;z-index: 20;background-color: #aaa;font-size: 14px;padding: 10px 20px;color: #fff;">'.
-                        //     'Section ID : '. $d_sections['pk'].'<br/>'.
-                        //     'Grid ID : '. $d_grids['pk'].
-                        //     '</div>';
+                        // 'Section ID : '. $d_sections['pk'].'<br/>'.
+                        // 'Grid ID : '. $d_grids['pk'].
+                        // '</div>';
                         if(!empty($d_grids['components'])) {
                             foreach($d_grids['components'] as $d_components) {
                                 $JsonController = new \App\Http\Controllers\jsonController;
-                                if($d_components['type'] == 'image' || $d_components['type'] == 'video' || $d_components['type'] == 'heading' || $d_components['type'] == 'paragraph' || $d_components['type'] == 'card') {
-                                    $attribute = (array)$d_components['data']->attribute;
-                                    $attribute['class'] = $d_components['class'] . ' ' . $d_components['library_component'];
-                                    $attribute['id'] = $d_components['id'];
-                                    $d_components['data']->attribute = (object)$attribute;
-                                }
-                                // $d_components['data']->attribute = [
-                                //     'id' => $d_components['id'],
-                                //     'class' => $d_components['class'],
-                                // ];
-                                // $d_components['data']->attribute['id'] = $d_components['id'];
                                 if(isset($_GET['json']))
                                     $intepreter['body']['section'] .= '<pre>'.print_r($d_components['data'], true).'</pre>';
                                 else
@@ -88,26 +104,26 @@ class IntepreterController
     public function render_component($d_components) {
 
         $string = '';
-        if($d_components['type'] == 'banner') 
-            $string = $this->banner($d_components);
-        elseif($d_components['type'] == 'heading') 
-            $string = $this->heading($d_components);
-        elseif($d_components['type'] == 'paragraph') 
-            $string = $this->paragraph($d_components);
-        elseif($d_components['type'] == 'image') 
-            $string = $this->image($d_components);
-        elseif($d_components['type'] == 'video') 
-            $string = $this->video($d_components);
-        elseif($d_components['type'] == 'button') 
-            $string = $this->button($d_components);
-        elseif($d_components['type'] == 'link') 
-            $string = $this->link($d_components);
-        elseif($d_components['type'] == 'accordion') 
-            $string = $this->accordion($d_components);
-        elseif($d_components['type'] == 'slider') 
-            $string = $this->slider($d_components);
-        elseif($d_components['type'] == 'card') 
-            $string = $this->card($d_components);
+        // if($d_components['type'] == 'banner') 
+        //     $string = $this->banner($d_components);
+        // elseif($d_components['type'] == 'heading') 
+        //     $string = $this->heading($d_components);
+        // elseif($d_components['type'] == 'paragraph') 
+        //     $string = $this->paragraph($d_components);
+        // elseif($d_components['type'] == 'image') 
+        //     $string = $this->image($d_components);
+        // elseif($d_components['type'] == 'video') 
+        //     $string = $this->video($d_components);
+        // elseif($d_components['type'] == 'button') 
+        //     $string = $this->button($d_components);
+        // elseif($d_components['type'] == 'link') 
+        //     $string = $this->link($d_components);
+        // elseif($d_components['type'] == 'accordion') 
+        //     $string = $this->accordion($d_components);
+        // elseif($d_components['type'] == 'slider') 
+        //     $string = $this->slider($d_components);
+        // elseif($d_components['type'] == 'card') 
+        //     $string = $this->card($d_components);
 
         return $string;
     } 
@@ -181,7 +197,7 @@ class IntepreterController
         $d_components = (array)$d_components;
         $d_components['data'] = (array)$d_components['data'];
         $string = '';
-        $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="max-width: 100%;"/>';
+        $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"/>';
         return $string;
 
     }
@@ -190,21 +206,8 @@ class IntepreterController
 
         $d_components = (array)$d_components;
         $d_components['data'] = (array)$d_components['data'];
-        $string = '<div class="'.$d_components['class'].'video">';
-        
-        if(is_object($d_components['data']['src'])) {
-            if(array_key_exists('img', $d_components['data']['src'])) {
-                if(strpos($d_components['data']['src']->img, 'http') !== false)
-                    $string .= '<img src="'.$d_components['data']['src']->img.'">';
-                else
-                    $string .= '<img src="'.url('uploads/image/').'/'.$d_components['data']['src']->img.'">';
-            }
-            if(array_key_exists('embed', $d_components['data']['src']))
-                $string .= '<embed src="'.$d_components['data']['src']->embed.'" style="width: 100%;height auto"></embed>';
-        } else {
-            $string .= '<embed src="'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;"></embed>';
-        }
-        $string .= '</div>';
+        $string = '';
+        $string .= '<embed src="'.$d_components['data']['src'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'" style="width: 100%;height auto"></embed>';
         return $string;
 
     }
@@ -224,7 +227,7 @@ class IntepreterController
         $d_components = (array)$d_components;
         $d_components['data'] = (array)$d_components['data'];
         $string = '';
-        $string .= '<a href="'.(strpos($d_components['data']['href'], 'http') !== false ? $d_components['data']['href'] : url($d_components['data']['href'])).'" id="'.$d_components['id'].'" class="'.$d_components['class'].'">'.$d_components['data']['value'].'</a>';
+        $string .= '<a href="'.$d_components['data']['href'].'" id="'.$d_components['id'].'" class="'.$d_components['class'].'">'.$d_components['data']['value'].'</a>';
         return $string;
 
     }
@@ -275,21 +278,10 @@ class IntepreterController
             foreach($data as $key_data => $d_data) {
                 $arr_d_data = (array)$d_data;
                 $string .= '<div class="slider-item '. ($key_data == 0 ? 'active' : '') . '">';
-                if(is_object($arr_d_data['src'])) {
-                    if(array_key_exists('img', $arr_d_data['src'])) {
-                        if(strpos($arr_d_data['src']->img, 'http') !== false)
-                            $string .= '<img src="'.$arr_d_data['src']->img.'">';
-                        else
-                            $string .= '<img src="'.url('uploads/image/').'/'.$arr_d_data['src']->img.'">';
-                    }
-                    if(array_key_exists('embed', $arr_d_data['src']))
-                        $string .= '<embed src="'.$arr_d_data['src']->embed.'" style="width: 100%;height auto"></embed>';
-                } else {
-                    if(strpos($arr_d_data['src'], 'http') !== false)
-                        $string .= '<img src="'.$arr_d_data['src'].'">';
-                    else
-                        $string .= '<img src="'.url('uploads/image/').'/'.$arr_d_data['src'].'">';
-                }
+                if(strpos($arr_d_data['src'], 'http') !== false)
+                    $string .= '<img src="'.$arr_d_data['src'].'">';
+                else
+                    $string .= '<img src="'.url('uploads/image/').'/'.$arr_d_data['src'].'">';
                 $string .= '<div class="slider-text-container">';
                 if(array_key_exists('heading', $arr_d_data))
                     if(count($arr_d_data['heading']) > 0)
@@ -320,7 +312,7 @@ class IntepreterController
                                             if(array_key_exists('image', $content))
                                                 $string .= '<img src="' . $content->image . '"/>';
                                             if(array_key_exists('text', $content))
-                                                $string .= '<p class="_paragraph_small _text_right _sg_line_color_2"">' . $content->text . '</p>';
+                                                $string .= '<h5>' . $content->text . '</h5>';
                                             $string .= '</div>';
                                         }
                                     }
@@ -334,7 +326,7 @@ class IntepreterController
                                     foreach($additional as $key_item => $item_additional) 
                                         $string .= $this->button([
                                             'id' => '',
-                                            'class' => '_btn _button _primary _sm _bordered',
+                                            'class' => '',
                                             'data' => $item_additional
                                         ]);
                                     $string .= '</div>';
@@ -345,7 +337,7 @@ class IntepreterController
                                     foreach($additional as $key_item => $item_additional)
                                         $string .= $this->paragraph([
                                             'id' => '',
-                                            'class' => '_paragraph_small',
+                                            'class' => '',
                                             'data' => $item_additional
                                         ]);
                                     $string .= '</div>';

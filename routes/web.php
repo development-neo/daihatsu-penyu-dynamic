@@ -1,5 +1,8 @@
 <?php
 
+Route::get('/json/generate-object', 'JsonController@generateObject');
+Route::get('/json/preview-object', 'JsonController@previewObject');
+
 Route::group([
     'prefix' => '{segment}',
     'where' => [

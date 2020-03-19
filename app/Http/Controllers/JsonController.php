@@ -4,29 +4,400 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class JsonController extends Controller
+class jsonController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
+    private $object;
+    
     public function __construct()
     {
-        // $this->middleware('auth');
+        $this->object = [
+            'tag' => '',
+            'attribute' => [
+                
+            ],
+            'child' => [
+                
+            ],
+        ];
     }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index($segment = '', $segment2 = '', $segment3 = '', $segment4 = '', $segment5 = '')
     {
         $html = new \App\Projects;
         $html = $html->array_initialization();
         $intepreter = $this->intepreter($html);
         return view('render_html', compact('intepreter'));
+    }
+
+    public function generateObject() {
+
+        $Components = new \App\ComponentsObject;
+        $Components = $Components
+            ->where('type_component_id', 4)
+            ->get();
+
+            // dd($Components);
+
+        echo '<pre style="font-size:10px;">';
+        $array = [];
+
+        foreach($Components as $key => $temp) {
+            $html_object = $this->object;
+            $content = json_decode($temp->content);
+            if($temp->type_component_id == '1') {
+                $html_object['tag'] = 'div';
+                $html_object['attribute']['class'] = $temp->library_component;
+
+                $carousel = $this->object;
+                $carousel['tag'] = 'div';
+                $carousel['attribute'] = [
+                    'class' => $temp['class'] . ' carousel slide',
+                    'id' => $temp['html_id'],
+                    'data-ride' => 'carousel'
+                ];
+
+                $indicator = $this->object;
+                $indicator['tag'] = 'ol';
+                $indicator['attribute'] = [
+                    'class' => 'carousel-indicators'
+                ];
+
+                $carouseInner = $this->object;
+                $carouseInner['tag'] = 'div';
+                $carouseInner['attribute'] = [
+                    'class' => 'carousel-inner'
+                ];
+
+                $i = 0;
+                if(count($content) > 0) 
+                    foreach($content as $keys => $contents) {
+                        $a = $this->object;
+                        $a['tag'] = 'li';
+                        $a['attribute'] = [
+                            'data-target' => '#'.$temp['html_id'],
+                            'data-slide-to' => $keys,
+                            'class' => ($i == 0 ? 'active' : ''),
+                        ];
+                        $indicator['child'][$i] = $a;
+
+                        $carouselItem = $this->object;
+                        $carouselItem['tag'] = 'div';
+                        $carouselItem['attribute'] = [
+                            'class' => 'carousel-item '.($i == 0 ? 'active' : '')
+                        ];
+
+                        $a = $this->object;
+                        $a['tag'] = 'img';
+                        $a['attribute'] = [
+                            'src' => $contents->src,
+                            'style' => 'width: 100%;'
+                        ];
+                        $b = $this->object;
+                        $b['tag'] = 'div';
+                        $b['attribute'] = [
+                            'class' => 'carousel-caption d-none d-md-block',
+                        ];
+
+                        if(isset($contents->heading)) {
+
+                            $heading = $this->object;
+                            $heading['tag'] = 'h5';
+                            $heading['child'][0]['text'] = $contents->heading;
+
+                            array_push($b['child'], $heading);
+
+                        }
+
+                        if(isset($contents->description)) {
+
+                            $description = $this->object;
+                            $description['tag'] = 'p';
+                            $description['child'][0]['text'] = $contents->description;
+
+                            array_push($b['child'], $description);
+
+                        }
+                        
+                        $carouselItem['child'][0] = $a;
+                        $carouselItem['child'][1] = $b;
+                        $carouseInner['child'][$i] = $carouselItem;
+
+                        $i++;
+                        // $string .= '<li data-target="#'.$d_components['id'].'" data-slide-to="'.$key.'" '. ($key == 0 ? ' class="active"' : '') . '></li>';
+                    }
+
+                $carouselControlLeft = $this->object;
+                $carouselControlLeft['tag'] = 'a';
+                $carouselControlLeft['attribute'] = [
+                    'class' => 'carousel-control-prev',
+                    'href' => '#'.$temp['html_id'],
+                    'role' => 'button',
+                    'data-slide' => 'prev',
+                ];
+                $carouselControlLeft['child'][0] = $this->object;
+                $carouselControlLeft['child'][0]['tag'] = 'span';
+                $carouselControlLeft['child'][0]['attribute'] = [
+                    'class' => 'carousel-control-prev-icon',
+                    'aria-hidden' => 'true',
+                ];
+                $carouselControlLeft['child'][1] = $this->object;
+                $carouselControlLeft['child'][1]['tag'] = 'span';
+                $carouselControlLeft['child'][1]['attribute'] = [
+                    'class' => 'sr-only',
+                ];
+                $carouselControlLeft['child'][1]['child'][0]['text'] = 'Previous';
+
+                $carouselControlRight = $this->object;
+                $carouselControlRight['tag'] = 'a';
+                $carouselControlRight['attribute'] = [
+                    'class' => 'carousel-control-next',
+                    'href' => '#'.$temp['html_id'],
+                    'role' => 'button',
+                    'data-slide' => 'next',
+                ];
+                $carouselControlRight['child'][0] = $this->object;
+                $carouselControlRight['child'][0]['tag'] = 'span';
+                $carouselControlRight['child'][0]['attribute'] = [
+                    'class' => 'carousel-control-next-icon',
+                    'aria-hidden' => 'true',
+                ];
+                $carouselControlRight['child'][1] = $this->object;
+                $carouselControlRight['child'][1]['tag'] = 'span';
+                $carouselControlRight['child'][1]['attribute'] = [
+                    'class' => 'sr-only',
+                ];
+                $carouselControlRight['child'][1]['child'][0]['text'] = 'Previous';
+
+                $carousel['child'][0] = $indicator;
+                $carousel['child'][1] = $carouseInner;
+                $carousel['child'][2] = $carouselControlLeft;
+                $carousel['child'][3] = $carouselControlRight;
+                $html_object['child'][0] = $carousel;
+                // $string .= '<div id="'.$d_components['id'].'" class="'.$d_components['class'].' carousel slide" data-ride="carousel">';
+
+                // print_r($content);exit;
+
+
+                // print_r($html_object);
+                // print_r($this->objectToHtml((object)$html_object));
+                // exit;
+            } elseif($temp->type_component_id == '2') {
+                $html_object['tag'] = $content->type;
+                $html_object['child'][0]['text'] = $content->value;
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '3') {
+                $html_object['tag'] = $content->type;
+                $html_object['child'][0]['text'] = $content->value;
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '4') {
+                $html_object['tag'] = 'img';
+                $html_object['attribute']['src'] = $content->src;
+                // $html_object['attribute']['onclick'] = 'window.location.href="' . $content->src .'"';
+                // $html_object['attribute']['target'] = '_blank';
+                $html_object['attribute']['style'] = 'max-width: 100%';
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '5') {
+                $html_object['tag'] = 'embed';
+                $html_object['attribute']['src'] = $content->src;
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '6') {
+                
+                $e = 0;
+                $html_object['tag'] = 'div';
+                $html_object['attribute']['class'] = $temp->library_component;
+                $html_object['attribute']['id'] = '';
+                $slider_item_container = $this->object;
+                $slider_item_container['tag'] = 'div';
+                $slider_item_container['attribute']['class'] = 'slider-item-container '.$temp->html_class;
+                $slider_item_container['attribute']['id'] = $temp->html_id;
+                foreach($content as $l => $contents) {
+                    $slider_item = $this->object;
+                    $slider_item['tag'] = 'div';
+                    $slider_item['attribute']['class'] = 'slider-item' .($l == 0 ? ' active' : '');
+                    $slider_item['child'][0] = $this->object;
+                    $slider_item['child'][0]['tag'] = 'img';
+                    $slider_item['child'][0]['attribute']['src'] = $contents->src;
+                    $slider_item['child'][1] = $this->object;
+                    $slider_item['child'][1]['tag'] = 'div';
+                    $slider_item['child'][1]['attribute']['class'] = 'slider-text-container';
+                    $k = 0;
+                    if(isset($contents->heading)) {
+                        foreach($contents->heading as $m => $heading) {
+                            $text_item = $this->object;
+                            $text_item['tag'] = $heading->tag;
+                            $text_item['attribute']['class'] = 'slider-heading';
+                            $text_item['child'][0]['text'] = $heading->text;
+                            $slider_item['child'][1]['child'][$k] = $text_item;
+                            $k = $m;
+                        }
+                        $k += 1;
+                    }
+                    if(isset($contents->description)) {
+                        foreach($contents->description as $m => $description) {
+                            $text_item = $this->object;
+                            $text_item['tag'] = $description->tag;
+                            $text_item['attribute']['class'] = 'slider-description';
+                            $text_item['child'][0]['text'] = $description->text;
+                            $slider_item['child'][1]['child'][$k + $m] = $text_item;
+                        }
+                        if(isset($contents->additional) && count($contents->additional) > 0) {
+                            foreach($contents->additional as $m => $additionals) {
+                                if($m == 'slider') {
+                                    $group = $this->object;
+                                    $group['tag'] = 'div';
+                                    $group['attribute']['class'] = '_additional-slider';
+                                    $ul = $this->object;
+                                    $ul['tag'] = 'ul';
+                                    $ul['attribute']['class'] = '_indicator-additional-slider';
+                                    foreach($additionals as $key => $slcontent) {
+                                        $li = $this->object;
+                                        $li['tag'] = 'li';
+                                        $li['attribute']['target'] = 'additional-slider-'.$key;
+                                        $li['child'][0] = $this->object;
+                                        $li['child'][0]['tag'] = 'span';
+                                        $li['child'][0]['child'][0]['text'] = $slcontent->indicator;
+                                        array_push($ul['child'], $li);
+                                    }
+                                    $group['child'][0] = $ul;
+                                    $cas = $this->object;
+                                    $cas['tag'] = 'div';
+                                    $cas['attribute']['class'] = '_content-additional-slider';
+                                    foreach($additionals as $key => $slcontent) {
+                                        $cs = $this->object;
+                                        $cs['tag'] = 'div';
+                                        $cs['attribute']['class'] = '_content-slider';
+                                        $cs['attribute']['id'] = 'additional-slider-'.$e.'-'.$key;
+                                        foreach($slcontent->content as $b => $con) {
+                                            $cs['child'][$b] = $this->object;
+                                            $cs['child'][$b]['tag'] = 'div';
+                                            $cs['child'][$b]['attribute']['class'] = '_item-additional-slider '. ($b == 0 ? 'active' : '');
+                                            $img = $this->object;
+                                            $img['tag'] = 'img';
+                                            $img['attribute']['src'] = $con->image;
+                                            $cs['child'][$b]['child'][0] = $img;
+                                            $text = $this->object;
+                                            $text['tag'] = 'h5';
+                                            $text['child'][0]['text'] = $con->text;
+                                            $cs['child'][$b]['child'][1] = $text;
+                                        }
+                                        array_push($cas['child'], $cs);
+                                    }
+                                    $group['child'][1] = $cas;
+                                    $e += 1;
+                                    echo '<pre>'; print_r($additionals); echo '</pre>';
+                                } else {
+                                    $group = $this->object;
+                                    $group['tag'] = 'div';
+                                    $group['attribute']['class'] = '_'.$m.'-group';
+                                    foreach($additionals as $n => $components) {
+                                        $component = $this->object;
+                                        $component['tag'] = isset($components->type) ? $components->type :'a';
+                                        $component['attribute']['href'] = isset($components->href) ? $components->href : '';
+                                        if($m == 'button') {
+                                            $component['attribute']['class'] = '_btn';
+                                        }
+                                        $component['child'][0]['text'] = isset($components->value) ? $components->value : '';
+                                        $group['child'][$n] = $component;
+                                    }
+                                }
+                                array_push($slider_item['child'], $group);
+                            }
+                        }
+                    }
+                    $slider_item_container['child'][$l] = $slider_item;
+                }
+                $html_object['child'][0] = $slider_item_container;
+                // print_r($html_object); exit;
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '7') {
+                $html_object['tag'] = 'a';
+                $html_object['attribute']['href'] = $content->href;
+                $html_object['attribute']['class'] = '_btn '.$temp->html_class;
+                $html_object['attribute']['id'] = $temp->html_id;
+                $html_object['child'][0]['text'] = $content->value;
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '8') {
+                $html_object['tag'] = 'a';
+                $html_object['attribute']['href'] = $content->href;
+                $html_object['attribute']['class'] = $temp->html_class;
+                $html_object['attribute']['id'] = $temp->html_id;
+                $html_object['child'][0]['text'] = $content->value;
+                array_push($array, $html_object);
+            } elseif($temp->type_component_id == '12') {
+                $html_object['tag'] = 'div';
+                $html_object['attribute']['class'] = '_card';
+                $html_object['child'][0] = $this->object;
+                $html_object['child'][0]['tag'] = 'img';
+                $html_object['child'][0]['attribute']['style'] = 'width: 100%';
+                $html_object['child'][0]['attribute']['src'] = $content->src;
+                $html_object['child'][1] = $this->object;
+                $html_object['child'][1]['tag'] = 'div';
+                $html_object['child'][1]['attribute']['class'] = '_card-text-container';
+                $html_object['child'][1]['child'][0] = $this->object;
+                $html_object['child'][1]['child'][0]['tag'] = 'h4';
+                $html_object['child'][1]['child'][0]['attribute']['class'] = '_card-heading';
+                $html_object['child'][1]['child'][0]['child'][0]['text'] = $content->title;
+                $html_object['child'][1]['child'][1] = $this->object;
+                $html_object['child'][1]['child'][1]['tag'] = 'p';
+                $html_object['child'][1]['child'][1]['attribute']['class'] = '_card-text';
+                $html_object['child'][1]['child'][1]['child'][0]['text'] = $content->additional[0];
+                $html_object['child'][1]['child'][2] = $this->object;
+                $html_object['child'][1]['child'][2]['tag'] = 'p';
+                $html_object['child'][1]['child'][2]['attribute']['class'] = '_card-text';
+                // $html_object['child'][1]['child'][2]['child'][0]['text'] = $content->additional[1];
+                array_push($array, $html_object);
+                echo '<pre>'; print_r($content->additional); echo '</pre>';
+            }
+            // echo '<pre>'; print_r($content); echo '</pre>';
+            \App\Components::where('id', $temp->id)
+                ->update(['content' => json_encode($html_object)]);
+            // echo json_encode($html_object);
+            // echo '<br/>-----------<br/>';
+        }
+        // print_r($array);
+    }
+
+    public function previewObject() {
+        
+        $Components = new \App\Components;
+        $Components = $Components
+            ->get();
+
+        $html = '';
+        foreach($Components as $key => $temp) {
+            $content = json_decode($temp->content);
+            // echo '<pre>';print_r($content->child); echo '</pre>';
+            $html .= $this->objectToHtml($content);
+            // echo '<br/>------------<br/>';
+        }
+        echo $html;
+        
+    }
+
+    public function objectToHtml($content) {
+        $html = '';
+        if(isset($content->tag)) {
+            $html = '<'.$content->tag;
+            if(count($content->attribute) > 0) {
+                foreach($content->attribute as $attr => $val) {
+                    if($content->tag == 'img' && $attr == 'src') {
+                        if(strpos($val ,'uploads/image') !== false) 
+                            $html .= ' '.$attr.'=\''.url($val).'\'';
+                        else 
+                            $html .= ' '.$attr.'=\''.url('uploads/image/'.$val).'\'';
+                    } else
+                        $html .= ' '.$attr.'=\''.$val.'\'';
+                }
+            }
+            $html .= '>';
+            if(count($content->child) > 0) 
+                foreach($content->child as $key => $temp) 
+                    $html .= $this->objectToHtml($temp);
+            $html .= '</'.$content->tag.'>';
+        } elseif(isset($content->text))
+            $html .= $content->text;
+        return $html;
     }
 
     public function intepreter($html = '') {
