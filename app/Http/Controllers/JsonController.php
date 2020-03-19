@@ -379,7 +379,7 @@ class JsonController extends Controller
         $html = '';
         if(isset($content->tag)) {
             $html = '<'.$content->tag;
-            if(isset($content->attribute) && count($content->attribute) > 0) {
+            if(isset($content->attribute) && count((array) $content->attribute) > 0) {
                 foreach($content->attribute as $attr => $val) {
                     if($content->tag == 'img' && $attr == 'src') {
                         if(strpos($val ,'uploads/image') !== false) 
@@ -391,7 +391,7 @@ class JsonController extends Controller
                 }
             }
             $html .= '>';
-            if(isset($content->attribute) && count($content->child) > 0) 
+            if(isset($content->attribute) && count((array) $content->child) > 0) 
                 foreach($content->child as $key => $temp) 
                     $html .= $this->objectToHtml($temp);
             $html .= '</'.$content->tag.'>';
