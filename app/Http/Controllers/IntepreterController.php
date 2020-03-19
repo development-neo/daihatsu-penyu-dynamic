@@ -55,7 +55,7 @@ class IntepreterController
                         //     '</div>';
                         if(!empty($d_grids['components'])) {
                             foreach($d_grids['components'] as $d_components) {
-                                $JsonController = new \App\Http\Controllers\jsonController;
+                                $JsonController = new \App\Http\Controllers\JsonController;
                                 if($d_components['type'] == 'image' || $d_components['type'] == 'video' || $d_components['type'] == 'heading' || $d_components['type'] == 'paragraph' || $d_components['type'] == 'card') {
                                     $attribute = (array)$d_components['data']->attribute;
                                     $attribute['class'] = $d_components['class'] . ' ' . $d_components['library_component'];

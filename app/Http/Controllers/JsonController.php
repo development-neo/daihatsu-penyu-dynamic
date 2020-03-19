@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class jsonController extends Controller
+class JsonController extends Controller
 {
 
     private $object;
