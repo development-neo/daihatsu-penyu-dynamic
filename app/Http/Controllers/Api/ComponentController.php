@@ -38,10 +38,45 @@ class ComponentController
                 'input' => $validator->messages(),
             ], 200);
         else {
-            $Components = \App\Components::find($id);
+            $Component = \App\Components::find($id);
+            $Component->type_component = $Component->m_type_component()->first()->name;
+            $JC = new \App\Http\Controllers\JsonController();
+            $Component->component_html = $JC->objectToHtml(json_decode($Component->content));
             return response()->json([
                 'status' => 'success',
-                'Components' => $Components
+                'data' => $Component
+            ], 200);
+        }
+    }
+
+    public function getByGrid($id)
+    {
+        
+        $validator = Validator::make([
+            'id' => $id
+        ], [
+            'id' => 'required|exists:grids',
+        ]);
+    
+        if ($validator->fails())
+            return response()->json([
+                'status' => 'failed',
+                'input' => $validator->messages(),
+            ], 200);
+        else {
+            $Components = \App\Components::where('grids', $id)
+                ->orderBy('sequence')
+                ->get();
+            $data = [];
+            foreach($Components as $key => $temp) {
+                $temp['type_component'] = $temp->m_type_component()->first()->name;
+                $JC = new \App\Http\Controllers\JsonController();
+                $temp['component_html'] = $JC->objectToHtml(json_decode($temp->content));
+                array_push($data, $temp);
+            }
+            return response()->json([
+                'status' => 'success',
+                'data' => $data
             ], 200);
         }
     }

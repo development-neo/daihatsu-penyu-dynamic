@@ -46,6 +46,31 @@ class GridController
         }
     }
 
+    public function getBySection($id)
+    {
+        
+        $validator = Validator::make([
+            'id' => $id
+        ], [
+            'id' => 'required|exists:sections',
+        ]);
+    
+        if ($validator->fails())
+            return response()->json([
+                'status' => 'failed',
+                'input' => $validator->messages(),
+            ], 200);
+        else {
+            $Grids = \App\Grids::where('sections', $id)
+                ->orderBy('sequence')
+                ->get();
+            return response()->json([
+                'status' => 'success',
+                'data' => $Grids
+            ], 200);
+        }
+    }
+
     public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [

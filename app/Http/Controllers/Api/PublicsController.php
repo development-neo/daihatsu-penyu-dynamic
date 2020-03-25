@@ -17,9 +17,13 @@ class PublicsController
     public function index(Request $request)
     {
         $Publics = \App\Publics::get();
+        $data = [];
+        foreach($Publics as $key => $temp) {
+            $temp['url'] = url($temp->public_url());
+            array_push($data, $temp);
+        }
         return response()->json([
-            'status' => 'success',
-            'Publics' => $Publics
+            'data' => $data
         ], 200);
     }
     
@@ -39,9 +43,11 @@ class PublicsController
             ], 200);
         else {
             $Publics = \App\Publics::find($id);
+            $Publics['url'] = url($Publics->public_url());
+            
             return response()->json([
                 'status' => 'success',
-                'Publics' => $Publics
+                'data' => $Publics
             ], 200);
         }
     }

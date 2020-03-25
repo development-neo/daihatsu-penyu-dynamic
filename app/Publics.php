@@ -22,5 +22,19 @@ class Publics extends Model
     public function my_child() {
         return $this->hasMany('App\Publics', 'parent', 'id');
     }
+    
+    public function my_parent() {
+        return $this->belongsTo('App\Publics', 'parent', 'id');
+    }
+
+    public function public_url() {
+        // $my_parent = $this->my_child()->get();
+        // dd($my_parent);
+        if($this->parent != '' && $this->parent != null) {
+            return $this->my_parent()->first()->url . '/' . $this->url;
+        }
+        else
+            return $this->url;
+    }
 
 }

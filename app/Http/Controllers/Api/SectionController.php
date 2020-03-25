@@ -41,7 +41,33 @@ class SectionController
             $Sections = \App\Sections::find($id);
             return response()->json([
                 'status' => 'success',
-                'Sections' => $Sections
+                'data' => $Sections
+            ], 200);
+        }
+    }
+    
+    public function getByPage($id)
+    {
+        
+        $validator = Validator::make([
+            'id' => $id
+        ], [
+            'id' => 'required|exists:pages',
+        ]);
+    
+        if ($validator->fails())
+            return response()->json([
+                'status' => 'failed',
+                'input' => $validator->messages(),
+            ], 200);
+        else {
+            $Sections = \App\Sections::where('pages', $id)
+                ->where('sequence','!=',0)
+                ->orderBy('sequence')
+                ->get();
+            return response()->json([
+                'status' => 'success',
+                'data' => $Sections
             ], 200);
         }
     }

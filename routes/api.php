@@ -53,6 +53,7 @@ Route::post('/group/delete', 'GroupController@delete');
 
 Route::get('/section', 'SectionController@index');
 Route::get('/section/get/{id}', 'SectionController@get');
+Route::get('/section/get-by-page/{id}', 'SectionController@getByPage');
 Route::post('/section/create', 'SectionController@create');
 Route::post('/section/update', 'SectionController@update');
 Route::post('/section/delete', 'SectionController@delete');
@@ -60,6 +61,7 @@ Route::post('/section/update-sequence', 'SectionController@updateSequence');
 
 Route::get('/grid', 'GridController@index');
 Route::get('/grid/get/{id}', 'GridController@get');
+Route::get('/grid/get-by-section/{id}', 'GridController@getBySection');
 Route::post('/grid/create', 'GridController@create');
 Route::post('/grid/update', 'GridController@update');
 Route::post('/grid/delete', 'GridController@delete');
@@ -67,6 +69,7 @@ Route::post('/grid/update-sequence', 'GridController@updateSequence');
 
 Route::get('/component', 'ComponentController@index');
 Route::get('/component/get/{id}', 'ComponentController@get');
+Route::get('/component/get-by-grid/{id}', 'ComponentController@getByGrid');
 Route::post('/component/create', 'ComponentController@create');
 Route::post('/component/update', 'ComponentController@update');
 Route::post('/component/delete', 'ComponentController@delete');
