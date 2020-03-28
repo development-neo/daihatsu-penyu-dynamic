@@ -384,6 +384,8 @@ class JsonController extends Controller
                     if($content->tag == 'img' && $attr == 'src') {
                         if(strpos($val ,'uploads/image') !== false) 
                             $html .= ' '.$attr.'=\''.url($val).'\'';
+                        elseif(strpos($val ,'http') !== false)
+                            $html .= ' '.$attr.'=\''.$val.'\'';
                         else 
                             $html .= ' '.$attr.'=\''.url('uploads/image/'.$val).'\'';
                     } else

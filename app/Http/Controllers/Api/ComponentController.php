@@ -81,6 +81,12 @@ class ComponentController
         }
     }
 
+    public function getPreviewObjectHTML(Request $request) {
+        $JC = new \App\Http\Controllers\JsonController();
+        return $JC->objectToHtml(json_decode($request->content));
+
+    }
+
     public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -141,6 +147,25 @@ class ComponentController
                 'status' => 'success'
             ], 200);
         }
+    }
+
+    public function updateContent(Request $request) {
+        
+        // dd($request->content);
+        // if ($validator->fails())
+        //     return response()->json([
+        //         'status' => 'failed',
+        //         'input' => $validator->messages(),
+        //     ], 200);
+        // else {
+            \App\Components::where('id', $request->id)
+                ->update([
+                    'content' => $request->content,
+                ]);
+            return response()->json([
+                'status' => 'success'
+            ], 200);
+        // }
     }
     
     public function delete(Request $request)

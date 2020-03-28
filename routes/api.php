@@ -70,10 +70,14 @@ Route::post('/grid/update-sequence', 'GridController@updateSequence');
 Route::get('/component', 'ComponentController@index');
 Route::get('/component/get/{id}', 'ComponentController@get');
 Route::get('/component/get-by-grid/{id}', 'ComponentController@getByGrid');
+Route::post('/component/get-preview-object-html', 'ComponentController@getPreviewObjectHTML');
 Route::post('/component/create', 'ComponentController@create');
 Route::post('/component/update', 'ComponentController@update');
 Route::post('/component/delete', 'ComponentController@delete');
 Route::post('/component/update-sequence', 'ComponentController@updateSequence');
+Route::post('/component/update-content', 'ComponentController@updateContent');
+
+Route::get('/uploads/images', 'UploadsController@images');
 
 Route::post('/css/update', 'CssController@update');
 
