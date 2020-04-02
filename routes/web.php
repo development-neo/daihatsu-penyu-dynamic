@@ -3,6 +3,8 @@
 Route::get('/json/generate-object', 'JsonController@generateObject');
 Route::get('/json/preview-object', 'JsonController@previewObject');
 
+Route::get('/cms', 'CMSController@index');
+
 Route::group([
     'prefix' => '{segment}',
     'where' => [
