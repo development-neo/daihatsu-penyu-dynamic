@@ -144,4 +144,15 @@ class PublicsController
         }
     }
 
+    public function updateMeta(Request $request, $id)
+    {
+        $Projects = \App\Publics::where('id', $id)
+            ->update([
+                'meta' => $request->meta,
+            ]);
+        return response()->json([
+            'status' => 'success'
+        ], 200);
+    }
+    
 }

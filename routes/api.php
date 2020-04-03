@@ -38,6 +38,7 @@ Route::get('/publics/get/{id}', 'PublicsController@get');
 Route::post('/publics/create', 'PublicsController@create');
 Route::post('/publics/update', 'PublicsController@update');
 Route::post('/publics/delete', 'PublicsController@delete');
+Route::post('/publics/update-meta/{id}', 'PublicsController@updateMeta');
 
 Route::get('/pages', 'PagesController@index');
 Route::get('/pages/get/{id}', 'PagesController@get');
