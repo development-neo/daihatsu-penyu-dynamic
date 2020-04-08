@@ -16,9 +16,15 @@ class PostsController
     public function index(Request $request)
     {
         $Posts = \App\Posts::get();
+        if(count($Posts) > 0)
+            foreach($Posts as $key => $temp) {
+                $Posts[$key]->m_status_name = $temp->m_status_name();
+                $Posts[$key]->m_category_name = $temp->m_category()->first()->name;
+            }
+            
         return response()->json([
             'status' => 'success',
-            'Posts' => $Posts
+            'data' => $Posts
         ], 200);
     }
     
@@ -39,7 +45,7 @@ class PostsController
             $Posts = \App\Posts::find($id);
             return response()->json([
                 'status' => 'success',
-                'Posts' => $Posts
+                'data' => $Posts
             ], 200);
         }
     }
@@ -51,7 +57,7 @@ class PostsController
             'content' => 'required',
             'category' => 'required',
         ]);
-    
+        
         if ($validator->fails())
             return response()->json([
                 'status' => 'failed',
@@ -62,7 +68,7 @@ class PostsController
                 'title' => $request->title,
                 'caption' => $request->caption,
                 'content' => $request->content,
-                'tags' => $request->tags,
+                'tags' => implode(',',$request->tag),
                 'date' => $request->date,
                 'category' => $request->category,
                 'image' => $request->image,

@@ -38,7 +38,7 @@ class CategoryController
             $Category = \App\Category::find($id);
             return response()->json([
                 'status' => 'success',
-                'Category' => $Category
+                'data' => $Category
             ], 200);
         }
     }
@@ -143,7 +143,8 @@ class CategoryController
             $Category = \App\Category::where('id', $request->id)
                 ->forceDelete();
             return response()->json([
-                'status' => 'success'
+                'status' => 'success',
+                'message' => 'Data Sucessfuly Deleted !'
             ], 200);
         }
     }
